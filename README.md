@@ -58,14 +58,22 @@
 ## 报告问题
 
 *（该部分建议您拥有使用Github或任何远程代码托管平台的经验）  
+
 **（Github并未提供完整的简体中文支持，因此下文的部分内容会使用网页上的英文原文）  
+
 针对应用能源2的崩溃，建议，或发现BUG？创建一个新的Issue吧！  
 
+
 1.确保您的问题尚未得到回答或修复，并且您使用的是最新版本。在提交之前，还要考虑您的问题是否有效。  
+
 *如果原版游戏和AE2本身已经可以实现，则该建议将被视为无效。  
+
 *若您要求我们提供更小的版本、更紧凑的版本或更高效的版本，此类建议也将被视为无效。  
-2.转到[Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues)然后单击[New Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/new)  
-3.如果针对步骤1所要求的前提条件确认无误，请使用我们提供的模板之一。它还将包含有关所需或有用信息的更多详细信息。  
+
+2.转到[Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues)然后单击[New Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/new)。  
+
+3.如果针对步骤1所要求的前提条件确认无误，请使用我们提供的模板之一。它还将包含有关所需或有用信息的更多详细信息。 
+ 
 4.点击“Submit New Issue”，等待反馈！  
 
 提供尽可能多的细节确实有助于我们更快地发现和解决问题，也有助于您尽快获修复后的版本。  

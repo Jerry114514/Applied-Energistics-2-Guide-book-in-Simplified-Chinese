@@ -27,7 +27,7 @@ navigation:
 * [AE2 机械工程](ae2-mechanics/ae2-mechanics-index.md)
 * [一些示例](example-setups/example-setups-index.md)
 * [物品，方块与机械](items-blocks-machines/items-blocks-machines-index.md)
-* [您目前使用的汉化内容是由B站赛格尼CyGouNy翻译的，欢迎向我提出文本方面的建议或报告错误]
+* [您目前使用的汉化内容是由我，即B站赛格尼CyGouNy翻译的，欢迎向我提出文本方面的建议或报告错误]
 
 <GameScene zoom="4" interactive={true}>
   <ImportStructure src="assets/assemblies/autocraft_setup_greebles.snbt" />

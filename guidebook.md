@@ -1,6 +1,6 @@
-# Contributing to the Guidebook
+# 为指南做出贡献
 
-The guidebook is written in Markdown. You can find the files in [the guidebook folder](./guidebook).
+本指南由Markdown语法写成. 您可在此找到指南的文件[the guidebook folder](./guidebook)。
 
 To contribute, you need to:
 

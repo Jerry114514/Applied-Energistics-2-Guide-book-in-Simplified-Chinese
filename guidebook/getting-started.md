@@ -5,53 +5,51 @@ navigation:
 ---
 
 <div class="notification is-info">
-  The following information only applies to Applied Energistics 2 in Minecraft 1.20 and newer.
+  以下文章中的内容皆仅适用于 1.20 或更新版本的 AE2 模组。
 </div>
 
-# Getting Started
+# 新手上路
 
-## Getting The Initial Materials)
+## 获取初始材料
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="assets/assemblies/meteor_interior.snbt" />
 </GameScene>
 
-To get started with Applied Energistics 2, one must first find a [meteorite](ae2-mechanics/meteorites.md). These are fairly common and tend to leave massive holes in the terrain, so you've probably encountered one in your travels.
-If you haven't, you can craft a <ItemLink id="meteorite_compass" />, which will point toward the nearest <ItemLink id="mysterious_cube" />.
+要开始您的 应用能源2 征程，首先必须找到一颗[陨石]（ae2-mechanics/astroperties.md）。这些是相当常见的，往往会在地形上留下巨大的洞，所以你可能在探索过程中遇到过。
+如果你还没有，你可以创建一个<ItemLink id=“astroite_compass”/>，它将指向最近的<ItemLink id=“mysterious_cube”/>。
 
-Once you have found a meteorite, mine into its center. You will find certus quartz clusters, certus quartz buds, [budding certus blocks](items-blocks-machines/budding_certus.md) of various types, and a Mysterious Cube in the center.
+一旦你发现了一颗陨石，就尝试向其中心挖掘。您会发现各种类型的赛特斯石英簇、赛特斯石英芽、[萌芽的赛特斯石英母岩]（items blocks machines/budding_centrus.md）和陨石中心的神秘方块。
 
-Mine the certus quartz clusters and any certus quartz blocks you find. You can also pick up the budding certus blocks, but without silk touch they will degrade by 1 tier.
+开采赛特斯石英簇和你找到的任何赛特斯石英块。你也可以捡起萌芽的赛特斯石英母岩，但如果没有精准采集，它们会损坏，并降级一等品质。
 
-Do not break any flawless budding certus, as even with silk touch they will degrade to flawed budding certus, and it is impossible to repair them back to flawless.
+不要破坏任何无瑕的赛特斯石英母岩，因为即使有精准采集，它们也会损坏为有瑕的赛特斯石英母岩，而且不可能将其修复回无瑕状态。
 
-Also mine the Mysterious Cube in the center of the meteorite to gain all 4 inscriber presses.
+同时也要挖掘陨石中心的神秘方块，以获得所有4个压印模板。
 
-## Growing Certus Quartz
+## 种植赛特斯石英
 
 <GameScene zoom="4" background="transparent">
 <ImportStructure src="assets/assemblies/budding_certus_1.snbt" />
 </GameScene>
 
-Certus quartz buds will sprout from [budding certus blocks](items-blocks-machines/budding_certus.md), similar to amethyst. If you break a bud that is not finished
-growing, it will drop one <ItemLink id="certus_quartz_dust" />, unchanged by fortune. If you break a fully grown cluster, it will drop four
-<ItemLink id="certus_quartz_crystal" />s, and fortune will increase this number.
+赛特斯石英芽将从[萌芽的赛特斯石英母岩]（items blocks machines/budding_centrus.md）中钻出，类似于紫水晶。如果你破坏了一个尚未成熟的芽簇时，
+它将掉落一个<ItemLink id=“certus_quartz_dust”/>，且不受时运影响。如果你破坏一个完全生长的芽簇，它则会掉落四个
+<ItemLink id=“certus_quartz_crystal”/>s，并且时运会增加掉落物数量。
 
-There are 4 tiers of budding certus blocks: Flawless, Flawed, Chipped, and Damaged.
+根据不同的品质，赛特斯石英母岩共分四等: 无瑕的，有瑕的，开裂的，损坏的。
 
 <GameScene zoom="4" background="transparent">
 <ImportStructure src="assets/assemblies/budding_blocks.snbt" />
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Every time a bud grows by another stage, the budding block has a chance to degrade by one tier, eventually turning into
-a plain certus quartz block. They can be repaired (and new budding blocks created) by throwing the budding block (or a
-certus quartz block) in water with one or more <ItemLink id="charged_certus_quartz_crystal" />.
+每当一个芽簇生长到另一个阶段，母岩就有可能降等一层，最终变成一块普通的赛特斯石英块。
+通过将萌芽方块（或无瑕萌芽石英方块）投入水中来修复（并生成新的萌芽方块）。
 
 <RecipeFor id="damaged_budding_quartz" />
 
-Flawless budding certus blocks will not degrade and will generate certus infinitely. However they cannot be crafted or moved
-with a pickaxe, even with silk touch. (they *can* be moved with [spatial storage](ae2-mechanics/spatial-io.md) though)
+一个或多个无瑕萌芽石英方块不会降解，并且会无限生成萌芽石英。然而，它们无法用镐开采或移动，即使使用精准采集也不行。(they *can* be moved with [spatial storage](ae2-mechanics/spatial-io.md) though)
 
 By themselves, certus quartz buds grow very slowly. Luckily the <ItemLink id="growth_accelerator" /> massively
 accelerates this process when placed adjacent to the budding block. You should build a few of these as your first priority.

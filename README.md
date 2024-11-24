@@ -2,34 +2,34 @@
 [![Latest Release](https://img.shields.io/github/v/release/AppliedEnergistics/Applied-Energistics-2?style=flat-square&label=Release)](https://github.com/AppliedEnergistics/Applied-Energistics-2/releases)
 [![Latest PreRelease](https://img.shields.io/github/v/release/AppliedEnergistics/Applied-Energistics-2?include_prereleases&style=flat-square&label=Pre)](https://github.com/AppliedEnergistics/Applied-Energistics-2/releases)
 
-# Applied Energistics 2
+# 应用能源2 （又称AE2）
 
-## Table of Contents
+## 
 
-* [About](#about)
-* [Contacts](#contacts)
-* [License](#license)
-* [Downloads](#downloads)
-* [Installation](#installation)
-* [Issues](#issues)
-* [API](#applied-energistics-2-api)
-* [Building](#building)
-* [Contribution](#contribution)
-* [Localization](#applied-energistics-2-localization)
-* [Credits](#credits)
+* [关于](#about)
+* [联系我们](#contacts)
+* [许可与声明](#license)
+* [下载方式](#downloads)
+* [安装](#installation)
+* [报告问题](#issues)
+* [API接口](#applied-energistics-2-api)
+* [构建](#building)
+* [贡献](#contribution)
+* [本地化](#applied-energistics-2-localization)
+* [开发人员](#credits)
 
-## About
+## 简介
 
-A Mod about Matter, Energy and using them to conquer the world..
+这是一个与物质和能源关联，并依靠这些去征服世界的模组...
 
-## Contacts
+## 联系我们
 
-* [Website](https://appliedenergistics.org/)
-* [Players Guide](https://guide.appliedenergistics.org/)
-* [Discord](https://discord.gg/Zd6t9ka7ne)
-* [GitHub](https://github.com/AppliedEnergistics/Applied-Energistics-2)
+* [官方网站](https://appliedenergistics.org/)
+* [玩家指南](https://guide.appliedenergistics.org/)
+* [Discord 服务器链接](https://discord.gg/Zd6t9ka7ne)
+* [GitHub 仓库](https://github.com/AppliedEnergistics/Applied-Energistics-2)
 
-## License
+## 许可与声明
 
 * Applied Energistics 2 API
   - (c) 2013 - 2020 AlgorithmX2 et al
@@ -47,32 +47,35 @@ A Mod about Matter, Energy and using them to conquer the world..
     - [EminYILDIRIM](https://freesound.org/people/EminYILDIRIM/sounds/536108/) 
     - [![License](https://img.shields.io/badge/License-CC%20BY%204.0-yellow.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 
-## Downloads
+## 下载方式
 
-Downloads can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) or on the [official website](https://appliedenergistics.github.io/download).
+您可前往 CurseForge [CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 或我们的官方网站 [应用能源2 官网](https://appliedenergistics.github.io/download)下载此模组。
 
-## Installation
+## 安装
 
-You install this mod by putting it into the `minecraft/mods/` folder. It has no additional hard dependencies.
+您可以通过将该模组的.jar文件放入 “minecraft/mods/” 文件夹来安装此模组。它没有额外的硬依赖关系。
 
-## Issues
+## 报告问题
 
-Applied Energistics 2 crashing, have a suggestion, found a bug?  Create an issue now!
+*（该部分建议您拥有使用Github或任何远程代码托管平台的经验）
+**（Github并未提供完整的简体中文支持，因此下文的部分内容会使用网页上的英文原文）
+针对应用能源2的崩溃，建议，或发现BUG？创建一个新的Issue吧！
 
-1. Make sure your issue has not already been answered or fixed and you are using the latest version. Also think about whether your issue is a valid one before submitting it.
-    * If it is already possible with vanilla and AE2 itself, the suggestion will be considered invalid.
-    * Asking for a smaller version, more compact version, or more efficient version of something will also be considered invalid.
-2. Go to [the issues page](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues) and click [new issue](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/new)
-3. If applicable, use one of the provided templates. It will also contain further details about required or useful information to add.
-4. Click `Submit New Issue`, and wait for feedback!
+1.确保您的问题尚未得到回答或修复，并且您使用的是最新版本。在提交之前，还要考虑您的问题是否有效。
+*如果原版游戏和AE2本身已经可以实现，则该建议将被视为无效。
+*若您要求我们提供更小的版本、更紧凑的版本或更高效的版本，此类建议也将被视为无效。
+2.转到[Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues)然后单击[New Issues](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/new)
+3.如果针对步骤1所要求的前提条件确认无误，请使用我们提供的模板之一。它还将包含有关所需或有用信息的更多详细信息。
+4.点击“Submit New Issue”，等待反馈！
 
-Providing as many details as possible does help us to find and resolve the issue faster and also you getting a fixed version as fast as possible.
+提供尽可能多的细节确实有助于我们更快地发现和解决问题，也有助于您尽快获修复后的版本。
 
-Please note that we might close any issue not matching these requirements. 
+请注意，我们可能会关闭任何不符合这些要求的问题。
 
-## Applied Energistics 2 API
+## 应用能源2 API接口
 
-The API for Applied Energistics 2. It is open source to discuss changes, improve documentation, and provide better add-on support in general.
+以下是应用能源2的接口，它们皆是开源的，可以讨论更改、改进文档并提供更好的附加组件支持。
+（译者实力有限，下文不翻译了）
 
 ### Maven
 
@@ -107,77 +110,78 @@ A change of the `MAJOR` version will be an API break and can lead to various cra
 
 An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for the API only or `appeng:appliedenergistics2-fabric:12.9.5` for the whole mod.
 
-## Building
+## 构建
 
-1. Clone this repository via 
-  - SSH `git clone git@github.com:AppliedEnergistics/Applied-Energistics-2.git` or 
+1. 通过以下方式克隆AE2的仓库
+  - SSH `git clone git@github.com:AppliedEnergistics/Applied-Energistics-2.git` 或
   - HTTPS `git clone https://github.com/AppliedEnergistics/Applied-Energistics-2.git`
-2. Build using the `gradlew runData build` command. Jar will be in `build/libs`
-3. For core developer: Setup IDE
+2. 使用 `gradlew runData build` 命令来构建仓库. .jar 文件将会被储存在 `build/libs` 中。
+3. 开发人员看此: Setup IDE
   - IntelliJ: Import as gradle project
   - Eclipse: Import as gradle project or execute gradle task `eclipse` and potentially `genEclipseRuns`
 
-## Contribution
+## 贡献
 
-Before you want to add major changes, you might want to discuss them with us first, before wasting your time.
-If you are still willing to contribute to this project, you can contribute via [Pull-Request](https://help.github.com/articles/creating-a-pull-request).
+在您想添加重大更改之前，您可能想先与我们讨论一下，以避免浪费时间。
+如果你仍然愿意为这个项目做出贡献，你可以通过 [Pull Request] 做出贡献(https://help.github.com/articles/creating-a-pull-request).
 
-The [guidelines for contributing](https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/master/.github/CONTRIBUTING.md) contain more detailed information about topics like the used code style and should also be considered.
+[贡献指南](https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/master/.github/CONTRIBUTING.md)包含有关所用代码样式等主题的更详细信息，也应予以考虑。
 
-Here are a few things to keep in mind that will help get your PR approved.
+以下是一些需要记住的事情，这将有助于你的PR获得批准。
 
-* A PR should be focused on content. Any PRs where the changes are only syntax will be rejected.
-* Use the file you are editing as a style guide.
-* Consider your feature.
-  - Is your suggestion already possible using Vanilla + AE2?
-  - Make sure your feature isn't already in the works, or hasn't been rejected previously.
-  - Does your feature simplify another feature of AE2? These changes will not be accepted.
-  - If your feature can be done by any popular mod, discuss with us first.
+*PR应该注重内容。任何仅更改语法的PR都将被拒绝。
+*将您正在编辑的文件用作样式指南。
+*考虑一下你的特点。
+-您的建议是否已经可以用于原版游戏+AE2？
+-确保你的功能尚未开发，或者之前没有被拒绝。
+-您的功能是否简化了AE2的另一个功能？这些更改将不被接受。
+-如果你的功能可以通过任何流行的模组完成，请先与我们讨论。
 
-**Getting Started**
+**新手上路**
 
-1. Fork this repository
-2. Clone the fork via
-  * SSH `git clone git@github.com:<your username>/Applied-Energistics-2.git` or 
-  * HTTPS `git clone https://github.com/<your username>/Applied-Energistics-2.git`
-3. Change code base
-4. Run `gradlew spotlessApply` to apply automatic code formatting
-5. Add changes to git `git add -A`
-6. Commit changes to your clone `git commit -m "<summary of made changes>"`
-7. Push to your fork `git push`
-8. Create a Pull-Request on GitHub
-9. Wait for review
-10. Squash commits for cleaner history
+（其实用Github Desktop更简单了）
+1. 创建一个AE2的复刻（Fork）。
+2. 通过以下方式之一克隆该复刻：
+  * SSH `git clone git@github.com:<your username>/Applied-Energistics-2.git` 或 
+  * HTTPS `git clone https://github.com/<your username>/Applied-Energistics-2.git`。
+3. 更改代码库。
+4. 运行`gradlew spotlessApply`以应用自动代码格式化。
+5. 若欲向git提交更改，使用 `git add -A`。
+6. 确认提交更改至克隆库，使用 `git commit -m "<summary of made changes>"`
+7. 推送更新到复刻库，使用 `git push`。
+8. 在Github上提交PR。
+9. 等待审核。
+10. Squash commits for cleaner history。（？）
 
-If you are only doing single file pull requests, GitHub supports using a quick way without the need of cloning your fork. Also read up about [synching](https://help.github.com/articles/syncing-a-fork) if you plan to contribute on regular basis.
+如果你只做单文件拉取请求，GitHub支持使用一种快速的方法，而不需要克隆你的fork。另请阅读[同步复刻](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)如果你打算定期做出贡献。
 
-## Applied Energistics 2 Localization
+## 应用能源2 本地化
 
-### English Text
+### 英语文本
 
-`en_US` is included in this repository, fixes to typos are welcome.
+`en_US` 已包含在本仓库中, 欢迎修正拼写错误.
 
-### Encoding
+### 编码
 
-Files must be encoded as UTF-8.
+文件必须以UTF-8格式编码。
 
-### New or updated Translations
+### 新的/更新 翻译文件
 
-We use Crowdin crowd-sourced translations for our localization. You can participate in localizing Applied Energistics 2 on our [Crowdin Page](https://appliedenergistics2.crowdin.com/applied-energistics-2).
+我们使用Crowdin众包翻译进行本地化。您可以在我们的[Coldin页面]上参与应用能源2的本地化(https://appliedenergistics2.crowdin.com/applied-energistics-2).
 
-Please keep in mind that we use [String format](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html) to pass additional data to the text for displaying.
-Therefore you should preserve parts like `%s` or `%1$d%%`, which allows us to replace them with the correct values while you still have the option to change their order for match the rules of grammar.
-This might not be possible for some languages. Should this be the case, please contact us.
+请记住，我们使用[String格式](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)将附加数据传递给文本以供显示。
+因此，您应该保留像“%s”或“%1$d%%”这样的部分，这样我们就可以用正确的值替换它们，同时您仍然可以选择更改它们的顺序以匹配对应语言的语法。
+对于某些语言来说，这可能是不可能的。如果是这样的话，请联系我们。
 
-### Final Note
+### 结语
 
-If you have have issues localizing something feel free to contact us on IRC, at #AppliedEnergistics on Esper.net
+如果您在本地化方面有任何问题，请随时通过IRC联系我们，网址为Esper.net上的#AppliedEnergys
 
-Thanks to everyone helping out to improve localization of AE2.
+感谢大家帮助改进AE2的本地化。
 
-## Credits
+## 开发人员
 
-Thanks to
+感谢以下人员/组织/项目:
  
 * Notch et al for Minecraft
 * Lex et al for MinecraftForge

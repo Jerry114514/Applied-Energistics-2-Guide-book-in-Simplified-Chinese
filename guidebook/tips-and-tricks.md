@@ -4,15 +4,15 @@ navigation:
   position: 20
 ---
 
-# Tips and Tricks
+# 提示和技巧
 
-A load of random little recommendations
+一堆随机的小建议
 
-* Remove Optifine
-* You can rotate and zoom into guidebook scenes that have the zoom and annotation hide/show buttons
-* Keep your network treelike and avoid loops
-* Full-block [devices](ae2-mechanics/devices.md) in groups of 8 or less unless you deeply understand how [channels](ae2-mechanics/channels.md)
-  route through a network
+* 移除 Optifine。
+* 您可以旋转和放大具有缩放和 注释隐藏/显示 按钮的指南场景。
+* 保持网络以树状结构排布以避免循环。
+* 除非您深入了解[频道]（ae2-mechanicals/channels.md）的工作原理，否则请以8个或更少的一组来完整阻止[设备]（ae2 mechanicals/devices.md）
+通过网络路由。
 * Pick a wood and stick with it for all your [patterns](items-blocks-machines/patterns.md). Yes, enabling substitutions
   in patterns sometimes works, but using the same wood type everywhere greatly reduces hassle.
 * Arrange your [patterns](items-blocks-machines/patterns.md) vertically in the <ItemLink id="pattern_access_terminal" />/

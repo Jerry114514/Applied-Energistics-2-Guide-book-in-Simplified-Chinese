@@ -6,11 +6,13 @@
 
 * 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。  
 
-* 因为所有文档皆以Markdown语法写成，若您能访问GitHub，建议fork到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读。  
+* 因为所有文档皆以Markdown语法写成，若您能经常访问GitHub，建议复刻（Fork）到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读。  
 
-* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，此处是针对AE2项目自带的自读文件的汉化。  
+* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，您正在阅读的此处文本是针对AE2项目自带的自读文件的汉化。  
 
 * 本项目所翻译之文档仅适用于 Minecraft 1.20.1 版本的AE2模组，若您希望将这些内容应用至其他版本的AE2，请先与官方发布的对应版本的文档进行校对。
+
+* 若您是第一次阅读该文档，请先阅读 `guidebook` 文件夹内的 `读前须知.md`。
 
 ## 
 
@@ -173,6 +175,10 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 
 ## 应用能源2 本地化
 
+### 简体中文
+
+`zh_CN` 的指南书部分由[@Jerry114514]翻译。[B站账号](https://space.bilibili.com/57439297)
+
 ### 英语文本
 
 `en_US` 已包含在本仓库中, 欢迎修正拼写错误.
@@ -183,7 +189,7 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 
 ### 新的/更新 翻译文件
 
-我们使用Crowdin众包翻译进行本地化。您可以在我们的[Coldin页面](https://appliedenergistics2.crowdin.com/applied-energistics-2)上参与应用能源2的本地化。 
+我们使用Crowdin众包翻译进行本地化。您可以在我们的[Crowdin页面](https://appliedenergistics2.crowdin.com/applied-energistics-2)上参与应用能源2的本地化。 
 
 请记住，我们使用[String格式](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)将附加数据传递给文本以供显示。  
 因此，您应该保留像“%s”或“%1$d%%”这样的部分，这样我们就可以用正确的值替换它们，同时您仍然可以选择更改它们的顺序以匹配对应语言的语法。  
@@ -202,5 +208,5 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 * Notch et al for Minecraft  
 * Lex et al for MinecraftForge  
 * AlgorithmX2 for AppliedEnergistics2  
-* [Ridanisaurus Rid](https://github.com/Ridanisaurus/) for the new 2020 textures  
-* all [contributors](https://github.com/AppliedEnergistics/Applied-Energistics-2/graphs/contributors)  
+* [Ridanisaurus Rid](https://github.com/Ridanisaurus/) 制作的 2020 份新材质 
+* 所有的 [贡献者们](https://github.com/AppliedEnergistics/Applied-Energistics-2/graphs/contributors)  

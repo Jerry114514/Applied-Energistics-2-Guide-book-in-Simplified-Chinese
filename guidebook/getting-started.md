@@ -74,55 +74,47 @@ ME在这里读作 “诶-姆-哎”, 意思是 “基于物质与能量”.
 
 当你将 **ME物品存储元件** 放入 **ME** 箱子中时，储存在元件内的物品便会显现。你可以像使用箱子一样增删物品，但是物品实际上是储存在存储元件内，而非ME箱子本身。
 
-The <ItemLink id="chest" /> is quite situational and limited in utility. To really
-take advantage of AE2, you need to set up an [ME Network](ae2-mechanics/me-network-connections.md).
+虽然从ME箱子入门是介绍ME概念的好办法, 但要真正发挥ME的优势，你需要设置并部署[ME网络](ae2-mechanics/me-network-connections.md).
 
-## Your Very First ME System
+## 试运行你的第一个ME网络
 
-Now that you have all of the basic materials and machines for Applied Energistics 2, you can make your first ME (Matter Energy) system. This will be a very basic one, no autocrafting, no logistics, just nice, simple, searchable storage.
+现在你已经掌握了 应用能源2 的所有基本材料和机器，你可以开始制作你的第一个ME（质能）网络了。但只会是比较基础的部分，没有自动合成，没有物流逻辑，不过美而精致，并且可以搜索存储内容。
 
-<GameScene zoom="6" interactive={true}>
-<ImportStructure src="assets/assemblies/tiny_me_system.snbt" />
 
-</GameScene>
-
-*   Your ingredients list:
-    * 1x <ItemLink id="drive" />
-    * 1x <ItemLink id="terminal" /> or <ItemLink id="crafting_terminal" />
-    * 1x <ItemLink id="energy_acceptor" />
-    * A few [cables](items-blocks-machines/cables.md), either glass, covered, or smart, but not dense
-    * A few [storage cells](items-blocks-machines/storage_cells.md), recommended of the 4k variety for a good mix of
-    capacity and types (it would be more efficient to [partition](items-blocks-machines/cell_workbench.md) a mix of 4k and 1k but that's a complexity we won't go into now)
+*   以下是你的材料清单:
+    * 1x **ME驱动**
+    * 1x **ME终端** or **ME合成终端**
+    * 1x **能源接收器**
+    * 一些 [线缆](items-blocks-machines/cables.md)，可以是玻璃线缆，包层线缆，或者智能线缆，但不能是致密线缆
+    * 一些 [ME存储元件](items-blocks-machines/storage_cells.md), 在此推荐以 4k 规格作为混搭，实现最优化的类型混合与容量。(将4k与1k元件混合并[分区](items-blocks-machines/cell_workbench.md)会更有效率。但其过于复杂，我们现在不会讨论。)
 ---
-1.  Place the drive down.
-2.  The energy acceptor (and several other AE2 [devices](ae2-mechanics/devices.md)) comes in 2 modes, cube and flat. They can be switched between in a crafting grid. If your energy acceptor is a cube, place it down next to the drive. If it's a flat square, place a cable on the drive and place the acceptor on that.
-3.  Run energy into the energy acceptor with a cable/pipe/conduit from your favorite energy-generation mod.
-4.  Place a cable on top of the drive (or otherwise at eye level) and place your terminal or crafting terminal on it.
-5.  Put your storage cells into the drive
-6.  Profit
-7.  Fiddle with the terminal's settings
-8.  Bask in your ultimate power and ability
-9.  Realize that this network is, in the grand scheme, rather small
+1.  放置ME驱动.
+2.  能源接收器(和其他的一些AE2 [设备](ae2-mechanics/devices.md)) 有两种模式，方块和平面。可以通过工作台（或合成格）切换模式。如果你的能源接收器处于方块模式下, 把它放在ME驱动器的旁边。 若处于平面模式下，在ME驱动器上放一根线缆，然后把接收器放在上面。
+3.  使用你最喜欢的 *能源生成模块* 的线缆/管道/导管将能量输入能量接收器。
+4.  将线缆放在ME驱动器顶部（或与眼睛齐平），然后将您的终端或合成终端放在上面。
+5.  将ME存储元件放入驱动器。
+6.  享受ME系统带来的舒适感。
+7.  摆弄终端的设置。
+8.  尽情享受你的终极力量和能力。
+9.  然后意识到从总体上看，这个网络算是相当小的。
 
-### Expanding your Network
+### 扩展您的网络
 
-So you have some basic storage, and access to that storage, it's a good start, but you'll likely be looking to maybe
-automate some processing.
+那么现在，你有了一些基本的ME存储空间，并且你可以访问这些存储空间，这是一个很好的开始，但你可能会考虑自动化一些步骤。
 
-A great example of this is to place a <ItemLink id="export_bus" /> on the top of a furnace to
-dump in ores, and a <ItemLink id="import_bus" />
-on the bottom of the furnace to extract furnaced ores.
+一个不错的例子便是在熔炉的顶部放一个**ME输出总线**从而向其内部加入粗矿，
+再在底部放置一个**ME输入总线**以便提取烧制好的矿物。
 
-The <ItemLink id="export_bus" /> lets you export items from the network, into the attached
-inventory, while the <ItemLink id="import_bus" /> imports items from the attached inventory into
-the network.
+**ME输出总线**可以让你将物品从网络中取出并导出到某个组件内，而**ME输入总线**则是将物品从某个组件内取出导入到网络内。
 
-### Overcoming Limits
+### 超越极限
 
-At this point you probably getting close to 8 or so [devices](ae2-mechanics/devices.md), once you hit 9 devices you'll have to start
-managing [channels](ae2-mechanics/channels.md). Many devices but not all, require a channel to
-function.
+在这个时候，你可能会拥有8个左右的[设备](ae2-mechanics/devices.md)，一旦你达到9个设备，你就必须开始管理[频道](ae2-mechanics/channels.md)。
+许多设备（但不是全部）需要一个频道来发挥功能。
 
-By default a network can support 8 channels, once you break this limit, you'll have to add
-an <ItemLink id="controller" /> to your network. this allows you to expand your network greatly.
-[Smart cables](items-blocks-machines/cables.md) will allow you to see how channels are routed through your network. Use them extensively when starting out to learn how channels act, or if you have a lot of redstone and glowstone.
+在默认情况下，网络至多可以支持8个频道,一旦打破这个限制, 你就必须向你的网络中加入一个**ME控制器**。
+这使你可以大大扩展网络。
+[智能线缆](items-blocks-machines/cables.md) 将允许你查看频道是如何通过网络路由的。 
+在开始学习**频道**的行为时，如果你有很多的红石和萤石，请多多使用它们。
+
+# *本篇完。*

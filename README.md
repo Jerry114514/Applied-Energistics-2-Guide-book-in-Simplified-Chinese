@@ -4,6 +4,14 @@
 
 # 应用能源2 （又称AE2）
 
+* 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。  
+
+* 因为所有文档皆以Markdown语法写成，若您能访问GitHub，建议fork到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读。  
+
+* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，此处是针对AE2项目自带的自读文件的汉化。  
+
+* 本项目所翻译之文档仅适用于 Minecraft 1.20.1 版本的AE2模组，若您希望将这些内容应用至其他版本的AE2，请先与官方发布的对应版本的文档进行校对。
+
 ## 
 
 * [关于](#about)
@@ -49,7 +57,7 @@
 
 ## 下载方式
 
-您可前往 CurseForge [前往CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 或我们的官方网站 [应用能源2 官网](https://appliedenergistics.github.io/download)下载此模组。
+您可前往 CurseForge [点此前往CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 或我们的官方网站 [点此前往应用能源2 官网](https://appliedenergistics.github.io/download)下载此模组。
 
 ## 安装
 

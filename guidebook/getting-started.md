@@ -12,16 +12,12 @@ navigation:
 
 ## 获取初始材料
 
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="assets/assemblies/meteor_interior.snbt" />
-</GameScene>
-
 要开始您的 应用能源2 征程，首先必须找到一颗[陨石]（ae2-mechanics/astroperties.md）。这些是相当常见的，往往会在地形上留下巨大的洞，所以你可能在探索过程中遇到过。
-如果你还没有，你可以创建一个<ItemLink id=“astroite_compass”/>，它将指向最近的<ItemLink id=“mysterious_cube”/>。
+如果你还没有，你可以创建一个[陨石罗盘]，它将指向最近的[陨石坑]。
 
 一旦你发现了一颗陨石，就尝试向其中心挖掘。您会发现各种类型的赛特斯石英簇、赛特斯石英芽、[萌芽的赛特斯石英母岩]（items blocks machines/budding_centrus.md）和陨石中心的神秘方块。
 
-开采赛特斯石英簇和你找到的任何赛特斯石英块。你也可以捡起萌芽的赛特斯石英母岩，但如果没有精准采集，它们会损坏，并降级一等品质。
+开采赛特斯石英簇和你找到的任何赛特斯石英块。你也可以捡起萌芽的赛特斯石英母岩，但如果没有精准采集的话，它们会损坏，并降级一等品质。
 
 不要破坏任何无瑕的赛特斯石英母岩，因为即使有精准采集，它们也会损坏为有瑕的赛特斯石英母岩，而且不可能将其修复回无瑕状态。
 
@@ -29,40 +25,23 @@ navigation:
 
 ## 种植赛特斯石英
 
-<GameScene zoom="4" background="transparent">
-<ImportStructure src="assets/assemblies/budding_certus_1.snbt" />
-</GameScene>
-
-赛特斯石英芽将从[萌芽的赛特斯石英母岩]（items blocks machines/budding_centrus.md）中钻出，类似于紫水晶。如果你破坏了一个尚未成熟的芽簇时，
-它将掉落一个<ItemLink id=“certus_quartz_dust”/>，且不受时运影响。如果你破坏一个完全生长的芽簇，它则会掉落四个
-<ItemLink id=“certus_quartz_crystal”/>s，并且时运会增加掉落物数量。
+赛特斯石英芽将从[赛特斯石英母岩]（items blocks machines/budding_centrus.md）中钻出，类似于紫水晶。如果你破坏了一个尚未成熟的芽簇时，
+它将掉落一个[赛特斯石英粉]，且不受时运影响。如果你破坏一个完全生长的芽簇，它则会掉落四个
+[赛特斯石英水晶]s，并且时运会增加掉落物数量。
 
 根据不同的品质，赛特斯石英母岩共分四等: 无瑕的，有瑕的，开裂的，损坏的。
 
-<GameScene zoom="4" background="transparent">
-<ImportStructure src="assets/assemblies/budding_blocks.snbt" />
-<IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
 每当一个芽簇生长到另一个阶段，母岩就有可能降等一层，最终变成一块普通的赛特斯石英块。
-通过将萌芽方块（或无瑕萌芽石英方块）投入水中来修复（并生成新的萌芽方块）。
+通过将母岩（或无瑕的石英母岩）投入水中来修复（并生成新的母岩）。
 
-<RecipeFor id="damaged_budding_quartz" />
+一个或多个无瑕的石英母岩不会降解，并且会无限生成石英芽。然而，它们无法用镐开采或移动，即使使用精准采集也不行。(但他们 *可以* 通过 [spatial storage](ae2-mechanics/spatial-io.md) 所移动)
 
-一个或多个无瑕萌芽石英方块不会降解，并且会无限生成萌芽石英。然而，它们无法用镐开采或移动，即使使用精准采集也不行。(they *can* be moved with [spatial storage](ae2-mechanics/spatial-io.md) though)
+就其本身而言，石英芽的生长非常缓慢。幸运的是，当[催生器]大规模放置在母岩块附近时，会加速这一过程。你应该把上述内容的其中一些作为你的首要任务。
 
-By themselves, certus quartz buds grow very slowly. Luckily the <ItemLink id="growth_accelerator" /> massively
-accelerates this process when placed adjacent to the budding block. You should build a few of these as your first priority.
 
-<GameScene zoom="4" background="transparent">
-<ImportStructure src="assets/assemblies/budding_certus_2.snbt" />
-<IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+如果你没有足够的赛特斯石英来制作[能源接收器]或[谐振仓]，你可以制作一个[木制曲柄]并将其粘在催生器末端。
 
-If you don't have enough quartz to also make an <ItemLink id="energy_acceptor" /> or <ItemLink id="vibration_chamber" />,
-you can make a <ItemLink id="crank" /> and stick it on the end of your accelerator.
-
-Harvesting the certus automatically is [described here](example-setups/simple-certus-farm.md).
+关于自动化收集赛特斯石英的内容，[已在此记载](example-setups/simple-certus-farm.md).
 
 ## A Quick Aside on Fluix
 

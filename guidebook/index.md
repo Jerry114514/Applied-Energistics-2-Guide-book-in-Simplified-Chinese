@@ -24,8 +24,8 @@ navigation:
 
 * [新手上路](getting-started.md)
 * [提示和技巧](tips-and-tricks.md)
-* [AE2 机械工程](ae2-mechanics/ae2-mechanics-index.md)
-* [一些示例](example-setups/example-setups-index.md)
+* [AE2 机械工程](ae2-mechanics/ae2-mechanics-index.md)(此处请自行翻找位于 `guidebook/ae2-mechanics` 内的文档)
+* [一些建筑/设备组示例](example-setups/example-setups-index.md)(此处请自行翻找位于 `guidebook/example-setups` 内的文档)
 * [物品，方块与机械](items-blocks-machines/items-blocks-machines-index.md)
 * [您目前使用的汉化内容是由我，即B站赛格尼CyGouNy翻译的，欢迎向我提出文本方面的建议或报告错误]
 

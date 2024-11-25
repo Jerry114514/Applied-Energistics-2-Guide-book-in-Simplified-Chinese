@@ -49,7 +49,7 @@
 
 ## 下载方式
 
-您可前往 CurseForge [CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 或我们的官方网站 [应用能源2 官网](https://appliedenergistics.github.io/download)下载此模组。
+您可前往 CurseForge [前往CurseForge](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 或我们的官方网站 [应用能源2 官网](https://appliedenergistics.github.io/download)下载此模组。
 
 ## 安装
 
@@ -175,7 +175,7 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 
 ### 新的/更新 翻译文件
 
-我们使用Crowdin众包翻译进行本地化。您可以在我们的[Coldin页面]上参与应用能源2的本地化(https://appliedenergistics2.crowdin.com/applied-energistics-2).  
+我们使用Crowdin众包翻译进行本地化。您可以在我们的[Coldin页面](https://appliedenergistics2.crowdin.com/applied-energistics-2)上参与应用能源2的本地化。 
 
 请记住，我们使用[String格式](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)将附加数据传递给文本以供显示。  
 因此，您应该保留像“%s”或“%1$d%%”这样的部分，这样我们就可以用正确的值替换它们，同时您仍然可以选择更改它们的顺序以匹配对应语言的语法。  

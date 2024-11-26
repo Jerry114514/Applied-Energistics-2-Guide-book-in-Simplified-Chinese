@@ -11,8 +11,8 @@ navigation:
 * 移除 Optifine。
 * 您可以旋转和放大具有缩放和 注释隐藏/显示 按钮的指南场景。
 * 保持网络以树状结构排布以避免循环。
-* 除非您深入了解[频道](ae2-mechanicals/channels.md)的工作原理，否则请以8个或更少的一组来完整阻止[设备](ae2 mechanicals/devices.md)
-通过网络路由。
+* 除非您深入了解[频道](ae2-mechanicals/channels.md)的工作原理，否则请以8个或更少数量的设备来组装“设备组”，从而阻止[设备](ae2 mechanicals/devices.md)通过网络路由。
+
 * Pick a wood and stick with it for all your [patterns](items-blocks-machines/patterns.md). Yes, enabling substitutions
   in patterns sometimes works, but using the same wood type everywhere greatly reduces hassle.
 * Arrange your [patterns](items-blocks-machines/patterns.md) vertically in the <ItemLink id="pattern_access_terminal" />/

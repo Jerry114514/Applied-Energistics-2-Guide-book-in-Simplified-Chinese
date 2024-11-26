@@ -4,6 +4,6 @@ navigation:
   position: 30
 ---
 
-# AE2 Mechanics
+# AE2 机械
 
 <SubPages />

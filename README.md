@@ -141,7 +141,7 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 ## 贡献
 
 在您想添加重大更改之前，您可能想先与我们讨论一下，以避免浪费时间。  
-如果你仍然愿意为这个项目做出贡献，你可以通过 [Pull Request] 做出贡献(https://help.github.com/articles/creating-a-pull-request).  
+如果你仍然愿意为这个项目做出贡献，你可以通过 [提交PR](https://help.github.com/articles/creating-a-pull-request)做出贡献。  
 
 [贡献指南](https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/master/.github/CONTRIBUTING.md)包含有关所用代码样式等主题的更详细信息，也应予以考虑。  
 
@@ -171,7 +171,7 @@ An example string would be `appeng:appliedenergistics2-fabric:12.9.5:api` for th
 9. 等待审核。  
 10. Squash commits for cleaner history。（？）  
 
-如果你只做单文件拉取请求，GitHub支持使用一种快速的方法，而不需要克隆你的fork。另请阅读[同步复刻](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)如果你打算定期做出贡献。  
+如果你只做单文件拉取请求，GitHub支持使用一种快速的方法，而不需要克隆你的复刻。另请阅读[同步复刻](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)如果你打算定期做出贡献。  
 
 ## 应用能源2 本地化
 

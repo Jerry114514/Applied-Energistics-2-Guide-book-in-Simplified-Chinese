@@ -5,26 +5,28 @@ navigation:
   icon: pattern_provider
 ---
 
-# Autocrafting
+# 自动合成
 
-### The Big One
+### 最重要的
 
 <GameScene zoom="4" interactive={true}>
   <ImportStructure src="../assets/assemblies/autocraft_setup_greebles.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Autocrafting is one of the primary functions of AE2. Instead of manually having to craft the correct number of each sub-ingredient
-and labor away like some sort of *plebian*, you can ask your ME system to do it for you. Or automatically craft items and export them somewhere.
-Or automatically keep certain amounts of items in stock through clever emergent behavior. It also works with fluids, and, if you have
-certain addons for extra mod material types, like Mekanism gasses, those materials too. It's pretty great.
+作为手动放置配方的更优解，且避免让你像流水线工人一般重复工作，自动合成是 AE2 的主要功能之一。  
 
-It is quite a complex topic, so strap in and let's go.
+你可以让你的ME系统为你代，或者自动合成物品并将其导出到某个地方。  
 
-An autocrafting setup consists of 3 things:
-- The thing sending the crafting request
-- The crafting CPU
-- The <ItemLink id="pattern_provider" />.
+亦或是通过某些新兴技术使其自动控制存储空间内的物品的数量。 对于流体，甚至你如果拥有一些其他模组中含有的流体，例如 “通用机械” 中的气体，上述的内容也同样适用。   
+
+
+这是一个相当复杂的话题，所以让我们赶紧开始吧。
+
+要想组装一个自动合成系统，你需要准备如下物品：
+- 能够发送合成请求的东西
+- 合成处理器
+- **ME样板供应器**
 
 Here is what happens:
 

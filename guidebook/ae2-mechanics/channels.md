@@ -5,13 +5,12 @@ navigation:
   icon: controller
 ---
 
-# Channels
+# 频道
 
-Applied Energistics 2's [ME Networks](me-network-connections.md) require
-Channels to support [devices](../ae2-mechanics/devices.md) which use networked storage, or other network
-services. Think of channels like USB cables to all your devices. A computer only has so many USB ports and can only support
-so many devices connected to it. Most machines, full-block devices, and standard cables can only pass through
-up to 8 channels. You can think of full-block devices and standard cables as a bundle of 8 "channel wires". However, [dense cables](../items-blocks-machines/cables.md#dense-cable) can support up
+应用能源2的 [ME网络](me-network-connections.md) 需要频道来支持使用网络进行存储或其他网络的 [设备](../ae2-mechanics/devices.md)。 
+此时不如先看看你的电脑或者其他设备上的 USB 接口，你会发现，一台电脑上只有这么多 USB 接口，一般来说，有多少接口便只能驱动对应数量的设备。 
+大多数的机器，完整方块设备，以及标准线缆只能通过至多8个频道。 
+You can think of full-block devices and standard cables as a bundle of 8 "channel wires". However, [dense cables](../items-blocks-machines/cables.md#dense-cable) can support up
 to 32 channels. The only other devices capable of transmitting 32 are <ItemLink id="me_p2p_tunnel" />
 and the [Quantum Network Bridge](../items-blocks-machines/quantum_bridge.md). Each time a device uses up a channel, imagine pulling off a usb "wire" from
 the bundle, which obviously means that "wire" isn't available further down the line.

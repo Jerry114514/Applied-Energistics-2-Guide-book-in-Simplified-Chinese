@@ -5,43 +5,20 @@ navigation:
   icon: quartz_cluster
 ---
 
-# Certus Growth
+# 赛特斯石英的生长
 
-## Basically just copy-pasted from the getting started page
+## 内容几乎与 “新手上路” 文章中的描述一致
+赛特斯石英芽将从**赛特斯石英母岩**中钻出，类似于紫水晶。如果你破坏了一个尚未成熟的芽簇时，
+它将掉落一个**赛特斯石英粉**，且不受时运影响。如果你破坏一个完全生长的芽簇，它则会掉落四个**赛特斯石英水晶**，并且时运会增加掉落物数量。
 
-<GameScene zoom="6" background="transparent">
-<ImportStructure src="../assets/assemblies/budding_certus_1.snbt" />
-</GameScene>
+根据不同的品质，赛特斯石英母岩共分四等: *无瑕的，有瑕的，开裂的，损坏的*。
 
-Certus quartz buds will sprout from [budding certus blocks](../items-blocks-machines/budding_certus.md), similar to amethyst. If you break a bud that is not finished
-growing, it will drop one <ItemLink id="certus_quartz_dust" />, unchanged by fortune. If you break a fully grown cluster, it will drop four
-<ItemLink id="certus_quartz_crystal" />s, and fortune will increase this number.
+每当一个芽簇生长到另一个阶段，母岩就有可能降等一层，最终变成一块普通的赛特斯石英块。
+通过将母岩投入水中来修复（或投掷无瑕的石英母岩并生成新的母岩）。
 
-There are 4 tiers of budding certus blocks: Flawless, Flawed, Chipped, and Damaged.
+一个或多个无瑕的石英母岩不会降解，并且会无限生成石英芽。然而，它们无法用镐开采或移动，即使使用精准采集也不行。(但他们 *可以* 通过 [spatial storage](ae2-mechanics/spatial-io.md) 所移动)
+就其本身而言，石英芽的生长非常缓慢。幸运的是，当**催生器**大规模放置在母岩块附近时，会加速这一过程。建议把制作一些**催生器**作为你的首要任务。
 
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="../assets/assemblies/budding_blocks.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+如果你没有足够的赛特斯石英来制作**能源接收器**或**谐振仓**，你可以制作一个**木制曲柄**并将其粘在催生器末端。
 
-Every time a bud grows by another stage, the budding block has a chance to degrade by one tier, eventually turning into
-a plain certus quartz block. They can be repaired (and new budding blocks created) by throwing the budding block (or a
-certus quartz block) in water with one or more <ItemLink id="charged_certus_quartz_crystal" />.
-
-<RecipeFor id="damaged_budding_quartz" />
-
-Flawless budding certus blocks will not degrade and will generate certus infinitely. However they cannot be crafted or moved
-with a pickaxe, even with silk touch. (they *can* be moved with [spatial storage](../ae2-mechanics/spatial-io.md) though)
-
-By themselves, certus quartz buds grow very slowly. Luckily the <ItemLink id="growth_accelerator" /> massively
-accelerates this process when placed adjacent to the budding block. You should build a few of these as your first priority.
-
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="../assets/assemblies/budding_certus_2.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
-If you don't have enough quartz to also make an <ItemLink id="energy_acceptor" /> or <ItemLink id="vibration_chamber" />,
-you can make a <ItemLink id="crank" /> and stick it on the end of your accelerator.
-
-Harvesting the certus automatically is [described here](../example-setups/simple-certus-farm.md).
+关于自动化收集赛特斯石英的内容，[已在此记载](example-setups/simple-certus-farm.md)。

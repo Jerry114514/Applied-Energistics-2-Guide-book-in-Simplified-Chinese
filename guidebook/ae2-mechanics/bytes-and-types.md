@@ -5,7 +5,7 @@ navigation:
   icon: creative_item_cell
 ---
 
-# Bytes and Types
+# 字节与类型
 
 <Row>
     <ItemImage id="item_storage_cell_1k" scale="4" />

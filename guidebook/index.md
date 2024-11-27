@@ -11,7 +11,7 @@ navigation:
 # 如何正确使用本指南？
 
 * 访问左侧的侧边栏以查阅目录。
-* 许多页面都有交互式场景。如果一个场景旁边有 ![加号](assets/diagrams/plus.png)
+* 许多页面都有互动式情境。如果一个场景旁边有 ![加号](assets/diagrams/plus.png)
 和 ![减号](assets/diagrams/minus.png) (zoom) 按钮, 你可以旋转和移动相机。
 左键单击并拖动以旋转，右键单击并拖曳以平移。
 

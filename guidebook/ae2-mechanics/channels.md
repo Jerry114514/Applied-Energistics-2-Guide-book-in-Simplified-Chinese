@@ -7,7 +7,7 @@ navigation:
 
 # 频道
 
-应用能源2的 [ME网络](me-network-connections.md) 需要频道来支持使用网络进行存储或其他网络的 [设备](../ae2-mechanics/devices.md)。 
+应用能源2的 [ME网络](me-network-connections.md) 需要频道来支持使用网络进行存储或其他网络的 [设备](../ae2-mechanics/devices.md)。  
 
 此时不如先看看你的电脑或者其他设备上的 USB 接口，你会发现，一台电脑上只有这么多 USB 接口，一般来说，有多少接口便只能驱动对应数量的设备。
 

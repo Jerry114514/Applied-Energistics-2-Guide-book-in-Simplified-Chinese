@@ -7,7 +7,7 @@ navigation:
 
 # 字节与类型
 
-[存储元件](../items-blocks-machines/storage_cells.md)由*字节*和*类型*定义。字节，就像你现在用的电脑的硬盘，是存储元件中“东西”总量的计量单位。   
+[存储元件](../items-blocks-machines/storage_cells.md)由 *字节* 和 *类型* 定义。字节，就像你现在用的电脑的硬盘，是存储元件中“东西”总量的计量单位。   
 *类型* 是衡量一个单元格中存储了多少不同类型的物品的单位。每个类型代表一个独特的物品，因此4096块圆石是1种类型，但16把拥有不同附魔的剑有16便有16种类型。  
 
 每个存储元件可以存储固定数量的数据。 
@@ -40,18 +40,19 @@ navigation:
 | 64k ME物品存储元件  |  65,536 |    63 |            512 | 137.25 |      184 |   27 |        16 |
 | 256k ME物品存储元件 | 262,144 |    63 |           2048 |    414 |      553 |   81 |        48 |
 
-## Storage Capacity with Varying Type Count
+## 不同类型的存储容量
 
-The upfront cost of types is such that a cell holding 1 type can hold 2x as much as a cell with all 63 types in use.
+关于每种类型的消耗空间，一个有趣的点是：如果一个格子只用于存储一种类型的物品，那么其可收纳物品的数量要比 存放63种物品类型的数量要多出一倍。
+（是的，这段确实很绕，不妨配上表格和横向柱状比例图试试吧。）
 
-| Cell                                     | Total Capacity of Cell With 1 Type In Use | Total Capacity of Cell With 63 Types In Use |
+| 存储元件类型                                      | 只存储一种类型时的总容量 | 存储63种类型时的总容量 |
 | ---------------------------------------- | ----------------------------------------: | ------------------------------------------: |
-| <ItemLink id="item_storage_cell_1k" />   |                                     8,128 |                                       4,160 |
-| <ItemLink id="item_storage_cell_4k" />   |                                    32,512 |                                      16,640 |
-| <ItemLink id="item_storage_cell_16k" />  |                                   130,048 |                                      66,560 |
-| <ItemLink id="item_storage_cell_64k" />  |                                   520,192 |                                     266,240 |
-| <ItemLink id="item_storage_cell_256k" /> |                                 2,080,768 |                                   1,064,960 |
+| 1k ME物品存储元件   |                                     8,128 |                                       4,160 |
+| 4k ME物品存储元件   |                                    32,512 |                                      16,640 |
+| 16k ME物品存储元件   |                                   130,048 |                                      66,560 |
+| 64k ME物品存储元件  |                                   520,192 |                                     266,240 |
+| 256k ME物品存储元件 |                                 2,080,768 |                                   1,064,960 |
 
-![A Cell With 1 Type](../assets/diagrams/1_type_cell.png)
+![只存储了一种类型物品的存储单元](../assets/diagrams/1_type_cell.png)
 
-![A Cell With 63 Types](../assets/diagrams/63_type_cell.png)
+![存储了63类型物品的存储单元](../assets/diagrams/63_type_cell.png)

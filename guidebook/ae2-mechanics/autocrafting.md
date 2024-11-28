@@ -30,8 +30,7 @@ navigation:
 
 Here is what happens:
 
-1.  Something creates a crafting request. This can be you in the terminal clicking on something autocraftable,
-    or an export bus or interface with a crafting card requesting one of the item they're set to export/stock.
+1.  某物发送了一个制作请求。这可以是您在终端中单击可自动合成的东西，输出总线，或是与制作卡的接口，请求他们设置为要输出/入库的物品之一。
 
 *   (**IMPORTANT:** use whatever you have bound to "pick block" (usually middle-mouse) to request crafts of something you already have in stock, this can conflict with inventory sorting mods),
 

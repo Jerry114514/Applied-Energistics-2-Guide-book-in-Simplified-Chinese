@@ -5,13 +5,12 @@ navigation:
 icon: fluix_glass_cable
 ---
 
-# Cable Subparts
+# 线缆-子章节
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/subparts_demonstration.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-In AE2, certain [devices](devices.md) and components can be placed on cables in the same block. This is useful for compact setups.
-Shift-right-clicking with a <ItemLink id="certus_quartz_wrench" /> or <ItemLink id="network_tool" /> can break a single
-subpart (or the cable) off without breaking everything in that block.
+在AE2中，某些[设备](devices.md)和组件可以用同一方块中的电缆连接。这对于紧凑布局非常有用。
+使用**赛特斯石英扳手**或**网络工具**时按下右键+Shift，可以断开单个子部件（或线缆），而不会破坏该方块内的其他所有部件。

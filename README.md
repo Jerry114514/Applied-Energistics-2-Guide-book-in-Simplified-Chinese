@@ -1,5 +1,7 @@
 # 应用能源2 （又称AE2）
 
+## 请于文末查看已翻译完成的文章。
+
 * 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。  
 
 * 因为所有文档皆以Markdown语法写成，若您能经常访问GitHub，建议复刻（Fork）到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读（例如Vscode）。  
@@ -32,3 +34,18 @@
 
 * Q：为何不直接在Crowdin上参与汉化？  
   A：因为指南书的文本并未在列。  
+
+## 已翻译完全的文章
+
+`guidebook`:
+* 读前须知.md
+* index.md  总目录  
+* getting-started.md 新手上路  
+
+`guidebook/ae2-mechanics`：
+* ae2-mechanics-index.md ae2-机械-目录   
+* bytes-and-types.md 字节与类型  
+* cabie-subparts.md 线缆-子章节  
+* certus-growth.md 赛特斯石英的生长  
+* channels.md 频道  
+* devices.md 设备  

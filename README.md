@@ -49,3 +49,4 @@
 * certus-growth.md 赛特斯石英的生长  
 * channels.md 频道  
 * devices.md 设备  
+* energy.md 能源

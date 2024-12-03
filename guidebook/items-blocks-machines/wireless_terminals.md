@@ -11,63 +11,52 @@ item_ids:
 - ae2:wireless_crafting_terminal
 ---
 
-# Wireless Terminals
+# 无线终端
 
-<Row>
-  <ItemImage id="wireless_terminal" scale="4" />
+无线终端是常规[终端](terminals.md)的便携式版本。它们和有线版的UI完全相同，除了它们没有用于**显示元件**的插槽，而是用于[升级卡](upgrade_cards.md)的插槽
 
-  <ItemImage id="wireless_crafting_terminal" scale="4" />
-</Row>
+为了将它们与网络配对，请将终端放入**无线访问点**右上角的插槽中来链接到网络。（插槽上有无线终端的描边，下面有一个箭头）
 
-Wireless terminals are portable versions of the regular wired [terminals](terminals.md). They have the exact same UIs as their
-wired counterparts, except instead of slots for <ItemLink id="view_cell" />s, they have slots for [upgrade cards](upgrade_cards.md)
+它们必须在**无线访问点**的范围内才能正常工作。
 
-In order to pair them with a network, insert the terminal in the top-right slot of a <ItemLink id="wireless_access_point" />
-connected to that network. (The slot with a picture of a wireless terminal on it and an arrow below it)
+如同手机一样，**充能器**便是无线终端的“充电器”。你需要将无线终端放入其中来为其“充电”。
 
-They must be within range of a <ItemLink id="wireless_access_point" /> to function.
+# 无线终端
 
-Their energy can be recharged in a <ItemLink id="charger" />.
 
-# Wireless Terminal
+你的基础版终端，现在可以带在身上并查看和访问您的[网络存储](../ae2-mechanics/import-export-storage.md)中的内容。
+并从**无线访问点**范围内的向您的[自动合成](..e2-mechanics/autocrafting.md)装置请求内容。
 
-<ItemImage id="wireless_terminal" scale="4" />
 
-Your basic terminal, now portable! View and access the contents of your [network's storage](../ae2-mechanics/import-export-storage.md)
-and request things from your [autocrafting](../ae2-mechanics/autocrafting.md) setup from anywhere within the range of a
-<ItemLink id="wireless_access_point" />.
+## 无线终端的UI
 
-## The UI
+详见 [终端](terminals.md)
 
-See [terminals](terminals.md)
+## 升级
 
-## Upgrades
+无线终端支持以下类型的[升级](upgrade_cards.md):
 
-The Wireless Terminal supports the following [upgrades](upgrade_cards.md):
+*   放入 **能量卡** 以提高续航。
 
-*   <ItemLink id="energy_card" /> in order to increase the battery capacity
+## 合成配方
 
-## Recipe
+**此处请参照游戏内指南书**
 
-<RecipeFor id="wireless_terminal" />
+# 无线合成终端
 
-# Wireless Crafting Terminal
 
-<ItemImage id="wireless_crafting_terminal" scale="4" />
+无线合成终端类似于普通无线终端，具有相同的设置和功能区，但增加了合成格，该合成格将自动从[网络存储](../ae2-mechanics/import-export-storage.md)填充材料。输出合成结果时要小心！
 
-The Wireless Crafting Terminal is similar to a regular wireless terminal, with all the same settings and sections, but with an added crafting grid that will be automatically
-refilled from [network storage](../ae2-mechanics/import-export-storage.md). Be careful when shift-clicking the output!
+## 无线合成终端的UI
 
-## The UI
+详见 [终端](terminals.md)
 
-See [terminals](terminals.md)
+## 升级
 
-## Upgrades
+无线终端支持以下类型的[升级](upgrade_cards.md):
 
-The Wireless Crafting Terminal supports the following [upgrades](upgrade_cards.md):
+*   放入 **能量卡** 以提高续航。
 
-*   <ItemLink id="energy_card" /> in order to increase the battery capacity
+## 合成配方
 
-## Recipe
-
-<RecipeFor id="wireless_crafting_terminal" />
+**此处请参照游戏内指南书**

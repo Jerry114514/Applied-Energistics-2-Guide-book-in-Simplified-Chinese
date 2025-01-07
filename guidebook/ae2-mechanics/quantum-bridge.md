@@ -5,6 +5,6 @@ navigation:
   icon: quantum_ring
 ---
 
-# The Quantum Network Bridge
+# 量子网桥
 
-See [Quantum Network Bridge](../items-blocks-machines/quantum_bridge.md)
+详请参阅 [量子网桥](../items-blocks-machines/quantum_bridge.md)

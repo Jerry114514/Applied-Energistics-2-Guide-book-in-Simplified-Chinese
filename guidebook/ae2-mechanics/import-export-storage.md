@@ -4,32 +4,31 @@ navigation:
   title: Import, Export, and Storage
 ---
 
-# Import, Export, and Storage
+# 输入，输出，以及存储
 
-**your ME system and the world**
+**你的ME系统与世界**
 
-An important concept in AE2 is the idea of Network Storage. It is the place in which the contents of a network are stored,
-usually [storage cells](../items-blocks-machines/storage_cells.md) or whatever inventory a <ItemLink id="storage_bus" />
-is connected to. Most AE2 [devices](../ae2-mechanics/devices.md) interact with it in one way or another.
+AE2中的一个重要概念是网络存储的概念。 其所指的是存储网络中的内容的地方。
+一般是在[存储元件](../items-blocks-machines/storage_cells.md)或连接到存储总线的任何容器。
+大多数的 AE2 [设备](../ae2-mechanics/devices.md) 都通过某种方式与之交互。
 
-For example,
+举例来说，  
 
-*   <ItemLink id="import_bus" />ses push things into network storage
-*   <ItemLink id="export_bus" />ses pull things from network storage
-*   <ItemLink id="interface" />s both pull from and push to network storage
-*   [Terminals](../items-blocks-machines/terminals.md) both push to and pull from network storage when you insert or take items, or to refill the crafting slots
-*   <ItemLink id="storage_bus" />ses don't really push to or pull from storage, they push to or pull from the connected inventory
-    in order to use it as network storage (so really other devices push to or pull from *them*)
+*   **ME输入总线** 将物品推送至网络存储中。  
+*   **ME输出总线** 从网络存储中输出物品。  
+*   **ME接口** 兼具两种ME总线的功能。  
+*   [终端](../items-blocks-machines/terminals.md) 在你拿取/放入物品时相当于执行了ME输入/输出总线的功能。也可以自动填充合成格。  
+*   **ME存储总线** 并不真正向存储推送内容或从存储中拉取内容，而是会向连接的存储部位进行这一步操作，以便将其用作网络存储(所以实际上是其他设备向)
 
 <GameScene zoom="4" interactive={true}>
   <ImportStructure src="../assets/assemblies/import_export_storage.snbt" />
 
   <BoxAnnotation color="#dddddd" min="8 1 1" max="9 1.3 2">
-        Import Busses import things from inventories they're pointing at into network storage
+        导入总线将指向的库存中的东西导入网络存储
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="8 2 1" max="9 3 1.3">
-        Inserting something into a terminal from your inventory counts as the network importing it
+        从您的库存中向终端导入内容，与网络导入内容相同
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="7 0 1" max="8 1 2">

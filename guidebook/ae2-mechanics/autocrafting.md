@@ -32,20 +32,21 @@ Here is what happens:
 
 1.  某物发送了一个制作请求。这可以是您在终端中单击可自动合成的东西，输出总线，或是与制作卡的接口，请求他们设置为要输出/入库的物品之一。
 
-*   (**IMPORTANT:** use whatever you have bound to "pick block" (usually middle-mouse) to request crafts of something you already have in stock, this can conflict with inventory sorting mods),
+*   （**重要提示：**使用您绑定到“选取方块”（通常是鼠标中键）的键位来请求你已有库存的物品，这可能会与库存管理模组冲突）
 
-2.  The ME system calculates the required ingredients and prerequisite crafting steps to fulfill the request, and stores them in the selected crafting CPU
+2.  ME系统计算满足请求所需的材料和必备的制作步骤，并将其存储在选定的合成CPU中。
 
-3.  The <ItemLink id="pattern_provider" /> with the relevant [pattern](../items-blocks-machines/patterns.md) pushes the ingredients specified in the pattern to any adjacent inventory.
-    In the case of a crafting table recipe (a "crafting pattern") this will be a <ItemLink id="molecular_assembler" />.
-    In the case of a non-crafting recipe (a "processing pattern") this will be some other block or machine or elaborate redstone-controlled setup.
+3.  装有相关[样板](../items-blocks-machines/patterns.md)的样板供应器会将样板中指定的配方推送到任何相邻的库存中。
+    在工作台配方（“制作模式”）的情况下，这将是一个分子组装器。
+    在非制作配方（“加工模式”）的情况下，这将是其他方块、机器或精心制作的红石控制装置。
 
-4.  The result of the craft is returned to the system somehow, be it by import bus, interface, or pushing the result back into a pattern provider.
-    **Note that an "item entering system" event must occur, you can't just pipe the result into a chest with a <ItemLink id="storage_bus" /> on it.**
+4.  本次合成的结果以某种方式返回给系统，无论是通过输入总线、接口，还是将成品送回样板供应器。
+    **请注意，必须发生一个“物品进入系统”的事件，你不能仅仅通过管道将结果输送到一个带有存储总线的箱子中。**
 
-5.  If that craft is a prerequisite for another craft in the request, the items are stored in that crafting CPU and then used in that craft.
+5.  如果该合成的结果是请求中另一个合成的先决条件，则这些物品将存储在该合成CPU中，然后在本次合成中使用。  
+    例如：合成木斧需要木板和木棍，那么合成CPU将会先尝试合成这两样物品并存储，再尝试合成木斧。
 
-# Patterns
+# 样板
 
 <ItemImage id="crafting_pattern" scale="4" />
 

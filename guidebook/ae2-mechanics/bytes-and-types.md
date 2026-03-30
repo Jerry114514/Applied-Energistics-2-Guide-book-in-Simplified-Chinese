@@ -1,12 +1,4 @@
 ---
-AIGC:
-    ContentProducer: Minimax Agent AI
-    ContentPropagator: Minimax Agent AI
-    Label: AIGC
-    ProduceID: af6108e76bbfac14df20da4a9b66f2a9
-    PropagateID: af6108e76bbfac14df20da4a9b66f2a9
-    ReservedCode1: 304502205bbabf645e3e8e92f49c1c7131394b5821d9eb675193aab052a9e2239eea61260221008356a3e2a17f376b8a351948ed6ed21f9fb6522175da8806b20f6e08ce3238a9
-    ReservedCode2: 304402202b71bff26c42e71fb56c48b49a11698320dc27ae7cf647fbd44bed3ad82d538302203296fc9a773ab9e94dc5c9a62b9766ca7196a8dad762d5c108f80a38b2514dab
 navigation:
     icon: creative_item_cell
     parent: ae2-mechanics/ae2-mechanics-index.md

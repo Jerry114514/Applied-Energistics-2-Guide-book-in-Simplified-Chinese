@@ -1,123 +1,110 @@
 ---
 navigation:
-  parent: ae2-mechanics/ae2-mechanics-index.md
-  title: Network Connections
-  icon: fluix_glass_cable
+    parent: ae2-mechanics/ae2-mechanics-index.md
+    title: 网络连接
+    icon: fluix_glass_cable
 ---
 
-# Network Connections
+# 网络连接
 
-## What Does "Network" Mean?
+## "网络"是什么意思？
 
-A "Network" is a group of [devices](../ae2-mechanics/devices.md) linked by blocks that can pass [channels](../ae2-mechanics/channels.md),
-like [cables](../items-blocks-machines/cables.md) or fullblock machines and [devices](../ae2-mechanics/devices.md). 
-(<ItemLink id="charger" />, <ItemLink id="interface" />, <ItemLink id="drive" />, etc.)
-Technically a single cable is a network, actually.
+"网络"是由[设备](../ae2-mechanics/devices.md)和能够传递[频道](../ae2-mechanics/channels.md)的方块（如[线缆](../items-blocks-machines/cables.md)、完整方块机器及[设备](../ae2-mechanics/devices.md)）连接而成的整体。
+（<ItemLink id="charger" />、<ItemLink id="interface" />、<ItemLink id="drive" />等）
+从技术角度来说，一根单独的线缆也是一个网络。
 
-## An Aside On Device Positioning
+## 关于设备位置的说明
 
-For [devices](../ae2-mechanics/devices.md) which have some specific network function (like an <ItemLink id="interface" />
-pushing to and pulling from [network storage](../ae2-mechanics/import-export-storage.md), a <ItemLink id="level_emitter" />
-reading the contents of network storage, an <ItemLink id="drive" /> being network storage, etc.)
-the physical position of the device does not matter.
+对于具有特定网络功能的[设备](../ae2-mechanics/devices.md)（如向[网络存储](../ae2-mechanics/import-export-storage.md)推送或拉取物品的<ItemLink id="interface" />、读取网络存储内容的<ItemLink id="level_emitter" />、作为网络存储的<ItemLink id="drive" />等），设备的物理位置并不重要。
 
-Again, **the physical position of the device does not matter**. All that matters is that the device is connected to the network
-(and of course which network it's connected to).
+再次强调，**设备的物理位置并不重要**。唯一重要的是设备已连接到网络（当然，以及它连接到了哪个网络）。
 
-## Network Connections
+## 网络连接
 
-An easy way of determining what's connected in a network is using a <ItemLink id="network_tool" />. It will show every
-component on the network, so if you see stuff you shouldn't or don't see stuff you should, you have a problem.
+查看网络上连接了哪些组件的简便方法是使用<ItemLink id="network_tool" />。它会显示网络上的所有组件，因此如果你看到了不应该存在的东西或没看到应该存在的东西，就说明有问题。
 
-For example, this is 2 separate networks.
+例如，下图展示的是2个独立的网络：
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/2_networks_1.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="1 2 2">
-        Network 1
+        网络 1
   </BoxAnnotation>
 
 <BoxAnnotation color="#915dcd" min="2 0 0" max="3 2 2">
-        Network 2
+        网络 2
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-This is also 2 separate networks, because the <ItemLink id="quartz_fiber" /> shares [energy](../ae2-mechanics/energy.md)
-without providing a network connection.
+下图也是2个独立的网络，因为<ItemLink id="quartz_fiber" />只共享[能量](../ae2-mechanics/energy.md)，而不提供网络连接。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/2_networks_2.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="1 2 2">
-        Network 1
+        网络 1
   </BoxAnnotation>
 
   <BoxAnnotation color="#915dcd" min="1.3 0 0" max="3 2 2">
-        Network 2
+        网络 2
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-However, this is just 1 network, not 2 separate ones. The [quantum bridge](../items-blocks-machines/quantum_bridge.md) acts like
-a wireless [dense cable](../items-blocks-machines/cables.md#dense-cable), so both ends are on the same network.
+然而，下图只是1个网络，而不是2个独立的网络。[量子网桥](../items-blocks-machines/quantum_bridge.md)的作用类似于无线[致密线缆](../items-blocks-machines/cables.md#dense-cable)，因此两端都在同一个网络上。
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/actually_1_network.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="7 3 3">
-        All 1 network
+        全部为1个网络
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-This is also just 1 network, as [cable](../items-blocks-machines/cables.md) color has nothing to do with network connections other than cables of different colors not
-connecting to each other. All colors connect to fluix (or "uncolored") cables.
+下图也只是1个网络，因为[线缆](../items-blocks-machines/cables.md)颜色与网络连接无关（不同颜色的线缆之间互不连接的情况除外）。所有颜色的线缆都可以连接到萤石（或者说"无色"）线缆。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/actually_1_network_2.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="4 2 2">
-        All 1 network
+        全部为1个网络
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Less Intuitive Connections
+## 不太直观的连接
 
-In this case, this is just 1 network, because the <ItemLink id="pattern_provider" />, being a fullblock device, acts like
-a cable, and the <ItemLink id="inscriber" /> does similar. Thus, the network connection passes through
-the provider and inscriber.
+在下图中，这只是1个网络，因为<ItemLink id="pattern_provider" />作为完整方块设备，其作用类似于线缆，而<ItemLink id="inscriber" />也有类似功能。因此，网络连接会穿过样板供应器和压印器。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/pattern_provider_network_connection_1.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="4 2 2">
-        All 1 network
+        全部为1个网络
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-To prevent this (useful for many autocrafting setups involving [subnetworks](../ae2-mechanics/subnetworks.md)),
-you can right-click the provider with a <ItemLink id="certus_quartz_wrench" /> to make it directional, in which case it will
-not pass channels through one side.
+若要阻止上述情况的发生（这对于涉及[子网络](../ae2-mechanics/subnetworks.md)的许多自动合成设置非常有用），可以用<ItemLink id="certus_quartz_wrench" />右键点击样板供应器，使其变为定向模式。这样它就不会从某一侧传递频道。
 
 <Row gap="40">
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/pattern_provider_network_connection_2.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 0" max="2 2 2">
-        Network 1
+        网络 1
   </BoxAnnotation>
 
   <BoxAnnotation color="#915dcd" min="2 0 0" max="4 2 2">
-        Network 2
+        网络 2
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
@@ -127,16 +114,14 @@ not pass channels through one side.
   <ImportStructure src="../assets/assemblies/pattern_provider_directional_connection.snbt" />
 
   <BoxAnnotation color="#ee3333" min="1 .3 .3" max="1.3 .7 .7">
-        Observe how the cable does not connect
+        注意线缆是如何不连接的
   </BoxAnnotation>
 
   <IsometricCamera yaw="255" pitch="30" />
 </GameScene>
 </Row>
 
-Other parts that do not provide directional network connections are most [subpart](../ae2-mechanics/cable-subparts.md)
-[devices](../ae2-mechanics/devices.md) like <ItemLink id="import_bus" />ses, <ItemLink id="storage_bus" />ses, and
-<ItemLink id="cable_interface" />s.
+其他不提供定向网络连接的部件包括大多数[子部件](../ae2-mechanics/cable-subparts.md)[设备](../ae2-mechanics/devices.md)，如<ItemLink id="import_bus" />、<ItemLink id="storage_bus" />和<ItemLink id="cable_interface" />。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/subpart_no_connection.snbt" />

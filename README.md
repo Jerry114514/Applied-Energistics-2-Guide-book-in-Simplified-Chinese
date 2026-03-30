@@ -1,53 +1,48 @@
 # 应用能源2 （又称AE2）
 
+**该项目翻译由 Jerry114514、DeepSeek Ai、MiniMax Ai Agent 联合提供。**
+
 ## 请于文末查看已翻译完成的文章。
+
 ### 文之所译，未必悉准；错漏之处，敬请指正。
 
-* 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。  
-
-* 因为所有文档皆以Markdown语法写成，若您能经常访问GitHub，建议复刻（Fork）到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读（例如Vscode）。  
+* 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。
+* 因为所有文档皆以Markdown语法写成，若您能经常访问GitHub，建议复刻（Fork）到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读（例如Vscode）。
   当然，你也可以直接用记事本打开，只是可能看不到一些链接，但不影响内容。
-
-* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，您正在阅读的此处文本是针对AE2项目自带的自读文件的汉化。  
-
+* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，您正在阅读的此处文本是针对AE2项目自带的自读文件的汉化。
 * 本项目所翻译之文档仅适用于 Minecraft 1.20.1 版本的AE2模组，若您希望将这些内容应用至其他版本的AE2，请先与官方发布的对应版本的文档进行校对。
-
 * 若您是第一次阅读该文档，请先阅读 `guidebook` 文件夹内的 `读前须知.md`。而非根目录下的 `guidebook.md` ！
-
 * 若您希望了解关于AE2本身的事情，请转到 `AE2-README.md`。
-
 * 若您有任何疑问，请先看一下下面的 Q&A 部分，若还有问题可通过打开我的主页，通过邮件或b站私信向我提问。
-
 * 若您要提出关于翻译或本地化的内容的错误或建议，请通过邮箱或b站私信联系我。
 
 ### 最后，感谢每一位给予本项目意见，纠错的人员，谢谢你们。
 
 ## Q&A
 
-* Q：我可以使用这个项目中的内容用于创作，教学等内容吗？  
-  A：当然可以！本项目同样遵循开源精神及协议。  
-
-* Q：AE2项目的readme在哪？  
+* Q：我可以使用这个项目中的内容用于创作，教学等内容吗？
+  A：当然可以！本项目同样遵循开源精神及协议。
+* Q：AE2项目的readme在哪？
   A：请见根目录下的 `AE2-README.md`。
-
-* Q：我可以直接把这些文件替换原本的文件并打包成模组吗？  
-  A：不可以！本项目内的文件是为了方便直接打开阅读而经过修改的，后续可能会单独推出可以直接替换文件的版本。  
-
-* Q：为何不直接在Crowdin上参与汉化？  
-  A：因为指南书的文本并未在列。  
+* Q：我可以直接把这些文件替换原本的文件并打包成模组吗？
+  A：不可以！本项目内的文件是为了方便直接打开阅读而经过修改的，后续可能会单独推出可以直接替换文件的版本。
+* Q：为何不直接在Crowdin上参与汉化？
+  A：因为指南书的文本并未在列。
 
 ## 已翻译完全的文章
 
 `guidebook`:
+
 * 读前须知.md
-* index.md  总目录  
-* getting-started.md 新手上路  
+* index.md  总目录
+* getting-started.md 新手上路
 
 `guidebook/ae2-mechanics`：
-* ae2-mechanics-index.md ae2-机械-目录   
-* bytes-and-types.md 字节与类型  
-* cabie-subparts.md 线缆-子章节  
-* certus-growth.md 赛特斯石英的生长  
-* channels.md 频道  
-* devices.md 设备  
+
+* ae2-mechanics-index.md ae2-机械-目录
+* bytes-and-types.md 字节与类型
+* cabie-subparts.md 线缆-子章节
+* certus-growth.md 赛特斯石英的生长
+* channels.md 频道
+* devices.md 设备
 * energy.md 能源

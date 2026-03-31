@@ -1,86 +1,75 @@
 ---
 navigation:
-  parent: ae2-mechanics/ae2-mechanics-index.md
-  title: Spatial IO
-  icon: spatial_storage_cell_2
+    parent: ae2-mechanics/ae2-mechanics-index.md
+    title: 跨空间IO
+    icon: spatial_storage_cell_2
 ---
 
-# Spatial IO
+# 跨空间IO
 
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/spatial_storage_1x1x1.snbt" />
 
   <BoxAnnotation color="#33dd33" min="1 1 1" max="2 2 2">
-        The volume to be moved
+        将被移动的体积
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 
 </GameScene>
 
-Spatial IO is a way to cut-and-paste physical volumes of space in your world. It can be used to move <ItemLink id="flawless_budding_quartz" />,
-have a room in your base where you can swap out various interiors to use it for different purposes, or even move
-the end portal!
+跨空间IO是一种剪切-粘贴世界中物理体积的方法。它可以用来移动<ItemLink id="flawless_budding_quartz" />、在你的基地中设置一个可以切换各种内部装饰的房间以用于不同目的，甚至可以移动末地传送门！
 
-It works by *swapping* the defined volume with an identically-sized volume in the spatial storage dimension, sending whatever's
-in the pylon array to the spatial storage dimension, and whatever's in the dimension to the pylon array.
+它的工作原理是将定义的体积与跨空间存储维度中相同大小的体积进行*交换*，将塔阵列中的物品发送到跨空间存储维度，并将维度中的物品发送到塔阵列。
 
-This means that if you have a way of travelling between dimensions (spatial IO *can* be used to make a teleporter,
-but doing it is very complex, a bit janky, and beyond the scope of the guide), you can use them like custom-sized compact machines or pocket
-dimensions.
+这意味着如果你有维度间旅行的方法（跨空间IO*可以*用来制作传送门，但这非常复杂，有点别扭，且超出了本指南的范围），你可以像使用自定义大小的紧凑机器或口袋维度一样使用它们。
 
-# The Multiblock Setup
+---
 
-Spatial IO requires a specific arrangement of its components in order to function, and define the volume to be cut-and-pasted.
+# 多方块设置
 
-All of the components must be on the same [network](me-network-connections.md) in order to function, and you can have only one
-spatial IO setup on a network. Thus, a [subnetwork](subnetworks.md) is recommended.
+跨空间IO需要特定排列的组件才能工作，并定义要剪切-粘贴的体积。
 
-## The Spatial IO Port
+所有组件必须位于同一[网络](me-network-connections.md)上才能工作，并且一个网络上只能有一个跨空间IO设置。因此，建议使用[子网络](subnetworks.md)。
+
+## 跨空间IO端口
 
 <BlockImage id="spatial_io_port" p:powered="true" scale="4" />
 
-The <ItemLink id="spatial_io_port" /> controls the spatial IO operation. It shows stats on the multiblock setup, and holds
-the [spatial cells](../items-blocks-machines/spatial_cells.md)
+<ItemLink id="spatial_io_port" />控制跨空间IO操作。它显示多方块设置的统计信息，并容纳[空间元件](../items-blocks-machines/spatial_cells.md)
 
-It shows
-- Stored and max [energy](energy.md) in the network
-- Required energy to perform the operation. This can be quite large and is used instantaneously, so make sure you have enough
-  [energy cells](../items-blocks-machines/energy_cells.md) to hold it all.
-- Efficiency of the pylon array
-- Size of the defined volume
+它显示：
+- 网络中存储的和最大的[能量](energy.md)
+- 执行操作所需的能量。这可能非常大且是瞬时使用的，因此请确保你有足够的[能源元件](../items-blocks-machines/energy_cells.md)来容纳所有能量
+- 塔阵列的效率
+- 定义的体积大小
 
-To perform a spatial IO operation, place a spatial storage cell in the input slot and give the spatial IO port a redstone pulse.
-It will then *swap* the volume in the pylons with the volume in the spatial storage dimension. This means that if you send some
-set of blocks to the spatial storage dimension, *then put another set of blocks in the pylons*, put the cell back in the input slot,
-and trigger the IO port again, the 2nd set of blocks will disappear and the 1st set of blcks will reappear.
+要执行跨空间IO操作，将空间存储元件放入输入槽，并向跨空间IO端口发送红石脉冲。
+然后它将塔中的体积与跨空间存储维度中的体积进行*交换*。这意味着如果你将一组方块发送到跨空间存储维度，*然后在塔中放置另一组方块*，将元件放回输入槽，并再次触发IO端口，第二组方块将消失，第一组方块将重新出现。
 
-**BE CAREFUL, Any entity in the defined volume, including you, will be carried along, and if you have no way of getting out, you will be trapped
-in the spatial storage dimension, in a dark, featureless box.** Use this to prank your friends!
+**请小心，被定义体积中的任何实体（包括你自己）都将被携带同行，如果你没有办法出去，你将被困在跨空间存储维度中的一个黑暗、无特征的盒子中。** 用这个来恶作剧你的朋友吧！
 
-## Pylons
+## 塔
 
 <BlockImage id="spatial_pylon" p:powered_on="true" scale="4" />
 
-<ItemLink id="spatial_pylon" />s are the main part of a spatial IO setup, and define the volume to be affected.
+<ItemLink id="spatial_pylon" />是跨空间IO设置的主要部分，并定义要影响的体积。
 
-The volume is defined by the bounding box of the outside of the pylons, contracted in by 1 block in all directions.
+体积由塔外部的边界框定义，在所有方向上向内收缩1个方块。
 
-The rules are:
-- Minimum size of 3x3x3 (which defines a 1x1x1 volume)
-- All spatial pylons must be in the outside bounding box
-- All spatial pylons must be on the same network
-- All pylons must be at least 2 blocks long
+规则如下：
+- 最小尺寸为3x3x3（定义1x1x1体积）
+- 所有空间塔必须位于外部边界框内
+- 所有空间塔必须在同一网络上
+- 所有塔必须至少2个方块长
 
-For example, say you want to define a 3x3x3 volume. Following rule 2, all of the pylons must be within a 5x5x5 shell around
-the volume you want to define. They can be in almost any configuration, as long as they're contained within that 1-block-thick
-5x5x5 shell.
+例如，假设你想定义一个3x3x3体积。根据规则2，所有塔必须在你想要定义的体积周围的5x5x5外壳内。它们几乎可以是任何配置，只要它们包含在那1个方块厚的5x5x5外壳内。
 
 <GameScene zoom="4" interactive={true}>
 <ImportStructure src="../assets/assemblies/spatial_storage_3x3x3_pylon_demonstration.snbt" />
 
 <BoxAnnotation color="#33dd33" min="1 1 1" max="4 4 4">
-        The volume to be moved
+        将被移动的体积
   </BoxAnnotation>
 
 <BoxAnnotation color="#3333ff" min="5 5 0" max="0 0 5">
@@ -89,13 +78,13 @@ the volume you want to define. They can be in almost any configuration, as long 
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-A more reasonable setup is this:
+一个更合理的设置是这样的：
 
 <GameScene zoom="4" interactive={true}>
 <ImportStructure src="../assets/assemblies/better_spatial_storage_3x3x3.snbt" />
 
 <BoxAnnotation color="#33dd33" min="1 1 1" max="4 4 4">
-        The volume to be moved
+        将被移动的体积
   </BoxAnnotation>
 
 <BoxAnnotation color="#3333ff" min="5 5 0" max="0 0 5">
@@ -104,20 +93,16 @@ A more reasonable setup is this:
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Efficiency
+## 效率
 
-The efficiency of the pylon array depends on the amount of the shell that you fill. Minimal setups around large volumes
-will be very inefficient and possibly require *billions* of AE.
+塔阵列的效率取决于你填充的外壳数量。大型体积周围的最小设置将非常低效，可能需要*数十亿*的AE。
 
-## Cell Dimensions
+## 元件尺寸
 
-Once a [spatial cell](../items-blocks-machines/spatial_cells.md) has been used, it gains a permanently defined set of XYZ dimensions (eg, 3x4x2)
-and is linked to a volume of space in the spatial storage dimension. **YOU CANNOT RESET, REFORMAT, OR RESIZE A SPATIAL CELL AFTER
-IT HAS BEEN USED.** Make a new cell if you want to use different dimensions. 
+一旦[空间元件](../items-blocks-machines/spatial_cells.md)被使用，它将获得一组永久定义的XYZ尺寸（例如3x4x2），并链接到跨空间存储维度中的一个空间体积。**使用后，你无法重置、重新格式化或调整空间元件的大小。** 如果你想使用不同尺寸，请制作新元件。
 
-These are not the same dimensions in the name of a cell, a 16^3 cell can have any dimensions *up to* 16x16x16
+这些与元件名称中的尺寸不同，16^3元件可以有任何*最大*16x16x16的尺寸。
 
-Note that this volume is directional and cannot be rotated. A 2x2x3 volume is not the same as a 3x2x2 volume, even though they're the
-same size.
+请注意，这个体积是定向的，不能旋转。2x2x3体积与3x2x2体积不同，即使它们大小相同。
 
-if the XYZ dimensions of a cell do not match the defined volume (seen in the IO port), the IO port will not operate.
+如果元件的XYZ尺寸与定义的体积不匹配（在IO端口中可见），IO端口将无法操作。

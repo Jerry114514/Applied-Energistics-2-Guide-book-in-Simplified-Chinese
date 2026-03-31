@@ -1,24 +1,22 @@
 ---
 navigation:
-  parent: ae2-mechanics/ae2-mechanics-index.md
-  title: Meteorites
-  icon: sky_stone_block
+    parent: ae2-mechanics/ae2-mechanics-index.md
+    title: 陨石
+    icon: sky_stone_block
 ---
 
-# Meteorites
+# 陨石
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/meteor_interior.snbt" />
 </GameScene>
 
-Meteorites are the starting point for using AE2. They provide critical materials: [budding certus blocks](../items-blocks-machines/budding_certus.md)
-of various types and a <ItemLink id="mysterious_cube" /> in the center.
+陨石是使用AE2的起点。它们提供关键材料：各种类型的[萌芽赛特斯方块](../items-blocks-machines/budding_certus.md)以及中心的<ItemLink id="mysterious_cube" />。
 
-[Getting Started](../getting-started.md) will provide info on what to do once you find one.
+[新手上路](../getting-started.md)将提供有关找到陨石后如何操作的信息。
 
-## Finding Meteorites
+## 寻找陨石
 
-Meteorites are fairly common and leave massive holes in the ground, so you may have already found a few. if not, a
-<ItemLink id="meteorite_compass" /> will point toward the nearest mysterious cube.
+陨石相当常见，会在地上留下巨大的坑洞，所以你可能已经发现了一些。如果没有的话，<ItemLink id="meteorite_compass" />会指向最近的神秘立方体。
 
-![Meteorite Crater](../assets/assemblies/meteorite-crater.png)
+![陨石坑](../assets/assemblies/meteorite-crater.png)

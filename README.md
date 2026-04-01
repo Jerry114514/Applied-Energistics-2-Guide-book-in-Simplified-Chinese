@@ -39,10 +39,4 @@
 
 `guidebook/ae2-mechanics`：
 
-* ae2-mechanics-index.md ae2-机械-目录
-* bytes-and-types.md 字节与类型
-* cabie-subparts.md 线缆-子章节
-* certus-growth.md 赛特斯石英的生长
-* channels.md 频道
-* devices.md 设备
-* energy.md 能源
+* 已全部完成。

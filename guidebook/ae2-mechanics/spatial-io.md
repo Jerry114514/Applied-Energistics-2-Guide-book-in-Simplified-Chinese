@@ -1,8 +1,16 @@
 ---
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: 3181bf8e800be50689fd61e50d623ed7
+    PropagateID: 3181bf8e800be50689fd61e50d623ed7
+    ReservedCode1: 304402200220892c102e963fa4c0be13dee4330507eab36e2ee4fa1137e4222e890c8d50022072fa706683d8332e3988d9709c1d083265374f55650978758a726bfe79aad4c0
+    ReservedCode2: 30440220319287e76ccd4f335104425dfe40ef73f078ea09eb6b9038afc1b9a1fda7de9602207d24312f860f2c0c8d2cba4a383220c81e0a27ef80cdfac0eafa50fd95a43993
 navigation:
+    icon: spatial_storage_cell_2
     parent: ae2-mechanics/ae2-mechanics-index.md
     title: 跨空间IO
-    icon: spatial_storage_cell_2
 ---
 
 # 跨空间IO

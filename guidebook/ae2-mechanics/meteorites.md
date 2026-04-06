@@ -1,8 +1,16 @@
 ---
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: 39cf468030b6711c738f2ba1e3bb1f5e
+    PropagateID: 39cf468030b6711c738f2ba1e3bb1f5e
+    ReservedCode1: 3044022017c915077dd2f074488773ab32098d968b87d09abe9864cf1752e7bdfe1bcb9a0220083ae6513dc51f2ab95b2503fe7940be1f92291c5bf1566275e72625e31ed92e
+    ReservedCode2: 304502202246d8635e1a775a12a080566e181834a014d143cca25cfb2b740e22dbab91ee022100bf0b2151730eefe3b608cddebc28c98d79d790d6ccc475f2c08ee409f9a623c2
 navigation:
+    icon: sky_stone_block
     parent: ae2-mechanics/ae2-mechanics-index.md
     title: 陨石
-    icon: sky_stone_block
 ---
 
 # 陨石

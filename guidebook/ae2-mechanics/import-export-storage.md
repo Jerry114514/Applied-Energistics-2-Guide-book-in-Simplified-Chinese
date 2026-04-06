@@ -1,4 +1,12 @@
 ---
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: c101b413fbefbbc6744613f0b05a032b
+    PropagateID: c101b413fbefbbc6744613f0b05a032b
+    ReservedCode1: 3046022100fcfb3afd82db2df3d49b08d77d2cfa3730508d1ca9c31a0323562d95a99257fa022100f5d57b4a9344f107f47f7bfb2f79989279ec575dfd3b47c7b319d6201359312d
+    ReservedCode2: 3046022100b15ce4ca737c206bab17c9cf2fc2610b176b973b596c68027e8cf4652261a9ec0221009082dab4a27c29fa4d50dc828f154ad4c1f9b1e6402608e19ac0747577c7d283
 navigation:
     parent: ae2-mechanics/ae2-mechanics-index.md
     title: 输入，输出，以及存储

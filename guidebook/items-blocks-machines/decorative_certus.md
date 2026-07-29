@@ -32,16 +32,16 @@ item_ids:
 - ae2:chiseled_quartz_slab
 ---
 
-# Decorative Certus Blocks
+# 装饰性赛特斯石英方块
 
 <GameScene zoom="3" background="transparent">
-  <ImportStructure src="../assets/assemblies/decorative_certus.snbt" />
+  <Import Structure src="/assets/assemblies/decorative_certus.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-<ItemLink id="quartz_block" />s can be crafted, smelted, and stonecut into some decorative building blocks
+<ItemLink id="quartz_block" /> 可以通过合成、熔炼和切石加工制成多种装饰性建筑方块。
 
-## Recipes
+## 配方
 
 <Column>
   <Row gap="0">

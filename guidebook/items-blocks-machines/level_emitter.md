@@ -11,62 +11,50 @@ item_ids:
 - ae2:energy_level_emitter
 ---
 
-# The Level Emitter
+# 发信器
 
 <GameScene zoom="8" background="transparent">
-  <ImportStructure src="../assets/blocks/level_emitter.snbt" />
+  <Import Structure src="/assets/blocks/level_emitter.snbt" />
 </GameScene>
 
-The Level Emitter emits a redstone signal depending on the quantity of an item in
-[network storage](../ae2-mechanics/import-export-storage.md).
+发信器会根据[网络存储](../ae2-mechanics/import-export-storage.md)中某物品的数量来发出红石信号。
 
-There is also a version that emits a redstone signal depending on the [energy](../ae2-mechanics/energy.md) stored
-in your network.
+还有一种版本会根据网络中存储的[能量](../ae2-mechanics/energy.md)来发出红石信号。
 
-Items and fluids can be dragged into the slot from JEI/REI even if you don't actually have any of that item.
+即使你实际上没有任何该物品，也可以从 JEI/REI 将物品和流体拖入槽位。
 
-Right-click with a fluid container (like a bucket or fluid tank) to set that fluid as a filter instead of the bucket or tank item.
+用流体容器（如桶或储罐）右键点击，可以将该流体设为过滤器，而不是桶或储罐本身。
 
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
+它们是[线缆子部件](../ae2-mechanics/cable-subparts.md)。
 
-Unlike other [devices](../ae2-mechanics/devices.md), level emitters *do not* require a [channel](../ae2-mechanics/channels.md).
+与其他[设备](../ae2-mechanics/devices.md)不同，发信器*不需要*[频道](../ae2-mechanics/channels.md)。
 
-## Settings
+## 设置
 
-*   The Level Emitter can be set to either "greater than/equal to" or "less than" mode
-*   When a <ItemLink id="crafting_card" /> is inserted, it can be set to "emit redstone while item is crafting" or
-    "emit redstone to craft item"
+*   发信器可以设置为「大于/等于」或「小于」模式。
+*   当插入<ItemLink id="crafting_card" />时，可以设置为「合成物品时发出红石信号」或「发出红石信号以合成物品」。
 
-## Upgrades
+## 升级
 
-The level emitter supports the following [upgrades](upgrade_cards.md):
+发信器支持以下[升级](upgrade-cards.md)：
 
-*   <ItemLink id="fuzzy_card" /> lets the emitter filter by damage level and/or ignore item NBT
-*   <ItemLink id="crafting_card" /> enables the crafting functionality
+*   <ItemLink id="fuzzy_card" />让发信器按耐久度过滤和/或忽略物品 NBT。
+*   <ItemLink id="crafting_card" />启用合成功能。
 
-## Crafting Functionality
+## 合成功能
 
-If a <ItemLink id="crafting_card" /> is inserted, the emitter will be switched into crafting mode.
+如果插入了<ItemLink id="crafting_card" />，发信器将切换到合成模式。
 
-This enables two options:
+这会启用两个选项：
 
-The first option, "emit redstone while item is crafting", makes the emitter emit a redstone signal while your [autocrafting](../ae2-mechanics/autocrafting.md)
-is crafting some specific item through <ItemLink id="pattern_provider" />s. This is useful for only turning on specific
-power-hungry automation setups while they are actually being used.
+第一个选项「合成物品时发出红石信号」，使发信器在[自动合成](../ae2-mechanics/autocrafting.md)通过<ItemLink id="pattern_provider" />合成某个特定物品时发出红石信号。这对于只在实际使用时才开启特定耗电的自动化设备非常有用。
 
-The second option, "emit redstone to craft item", is extremely useful for specific use cases like infinite farms and
-automation setups that only have a chance of making an output, instead of a guranteed output.
-This setting creates a virtual [pattern](patterns.md) for [autocrafting](../ae2-mechanics/autocrafting.md) to use, for whatever item
-is in the emitter's filter slot.
-(For correct functionality, an actual pattern for the same item **should not exist** in your <ItemLink id="pattern_provider" />s)
+第二个选项「发出红石信号以合成物品」，对于特定用例（如无限农场和只有概率产出而非保证产出的自动化设备）极为有用。此设置为发信器过滤槽中的任何物品创建一个虚拟[样板](patterns.md)，供[自动合成](../ae2-mechanics/autocrafting.md)使用。
+（为了正确运行，你的<ItemLink id="pattern_provider" />中**不应存在**该物品的实际样板。）
 
-This "pattern" does not define, or even care about ingredients.
-All it says is "If you emit redstone from this level emitter, the ME system will recieve this item at some point in the
-near or distant future". This is usually used to activate and deactivate infinite farms which require no input ingredients,
-or to activate a system that handles recursive recipes (which standard autocafting cannot understand) like, for example, "1 cobblestone = 2 cobblestone"
-if you have a machine that duplicates cobblestone.
+这个「样板」不定义甚至不关心原料。它只是说：「如果你从这个发信器发出红石信号，ME 系统将在不久或很久后的某个时刻收到这个物品。」这通常用于激活和停用不需要输入原料的无限农场，或激活处理递归配方（标准自动合成无法理解）的系统，例如，如果你有一台复制圆石的机器，就可以使用「1 圆石 = 2 圆石」的配方。
 
-## Recipe
+## 配方
 
 <RecipeFor id="level_emitter" />
 

@@ -10,15 +10,15 @@ item_ids:
 - ae2:certus_quartz_crystal
 ---
 
-# The Certus Quartz Crystal
+# 赛特斯石英水晶
 
 <ItemImage id="certus_quartz_crystal" scale="4" />
 
-*"Certus Quartz Crystals possess the unique trait of accepting large quantities of energy into their crystalline matrix"*
+*"赛特斯石英水晶拥有一种独特特性——其晶体基质能够容纳大量能量。"*
 
-One of the primary ingredients for AE2 blocks, [devices](../ae2-mechanics/devices.md), and items. Made by growing it from [budding certus](../ae2-mechanics/certus-growth.md).
+这是 AE2 方块、[设备](../ae2-mechanics/devices.md)和物品的主要原料之一。通过从[萌芽的赛特斯石英母岩](../ae2-mechanics/certus-growth.md)上生长获得。
 
-## Some Alternate Recipes
+## 一些替代配方
 
 <Recipe id="misc/deconstruction_certus_quartz_block" />
 

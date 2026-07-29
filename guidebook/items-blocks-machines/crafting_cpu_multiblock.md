@@ -17,103 +17,93 @@ item_ids:
 - ae2:crafting_unit
 ---
 
-# The Crafting CPU
+# 合成 CPU
 
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="../assets/assemblies/crafting_cpus.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+<Game Scene zoom ="4" background ="transparent ">
+  <Import Structure src ="  /assets /assemblies /crafting cpus snbt " />
+  <Isometric Camera yaw ="195" pitch ="30" />
+</Game Scene >
 
-<Row>
-  <BlockImage id="1k_crafting_storage" scale="4" />
+<Row >
+  <Block Image id ="1k crafting storage " scale ="4" />
 
-  <BlockImage id="crafting_accelerator" scale="4" />
+  <Block Image id ="crafting accelerator " scale ="4" />
 
-  <BlockImage id="crafting_monitor" scale="4" />
+  <Block Image id ="crafting monitor " scale ="4" />
 
-  <BlockImage id="crafting_unit" scale="4" />
-</Row>
+  <Block Image id ="crafting unit " scale ="4" />
+</Row >
 
-Crafting CPUs manage crafting requests/jobs. They store the intermediate ingredients while crafting jobs with multiple steps are
-being carried out, and affect how big jobs can be, and to some degree how fast they are completed. See [autocrafting](../ae2-mechanics/autocrafting.md)
-for more details.
+合成 CPU 负责管理合成请求/任务。在执行多步骤合成任务时，它们会存储中间产物，并影响大型任务的处理能力，在一定程度上也影响完成速度。更多详情请参阅[自动合成](../ae2-mechanics/autocrafting.md)。
 
-Each crafting CPU handles 1 request or job, so if you want to request both a calculation processor and 256 smooth stone at once, you need 2 CPU multiblocks.
+每个合成 CPU 只能处理 1 个请求或任务，因此如果你想同时请求一个计算处理器和 256 个平滑石，就需要 2 个 CPU 多方块结构。
 
-They can be set to handle requests from players, automation (export busses and interfaces), or both.
+它们可以设置为处理来自玩家、自动化设备（输出总线和接口）或两者的请求。
 
-Right-clicking one brings up a crafting status UI where you can check the progress on the crafting job the CPU is handling.
+右键点击可打开合成状态界面，你可以在其中查看该 CPU 正在处理的合成任务的进度。
 
-## Settings
+## 设置
 
-*   The CPU can be set to accept requests from just players, just automation (like <ItemLink id="export_bus" />ses with
-    <ItemLink id="crafting_card" />s), or both.
+*   CPU 可以设置为仅接受来自玩家的请求、仅接受自动化设备（如装有<Item Link id ="crafting card" />的<Item Link id ="export bus" />）的请求，或同时接受两者。
 
-## Construction
+## 构建
 
-Crafting CPUs are multiblocks, and must be solid rectangular prisms with no gaps. They are made out of several components.
+合成 CPU 是多方块结构，必须构成实心长方体，不能有缺口。它们由多种组件构成。
 
-Each CPU must contain at least 1 crafting storage block (and the minimum viable CPU is in fact just a single 1k crafting storage).
+每个 CPU 必须包含至少 1 个合成存储方块（最小可行的 CPU 实际上只是一个 1k 合成存储）。
 
-# Crafting Unit
+# 合成单元
 
-<BlockImage id="crafting_unit" scale="4" />
+<Block Image id ="crafting unit " scale ="4" />
 
-(Optional) Crafting units simply fill space in a CPU in order to make it a solid rectangular prism, if you don't have enough
-of the other components. They are also a base ingredient in the other components.
+（可选）合成单元仅用于填充 CPU 中的空间，使其成为实心长方体——如果你没有足够的其他组件的话。它们也是其他组件的基础材料。
 
-<RecipeFor id="crafting_unit" />
+<Recipe For id ="crafting unit" />
 
-# Crafting Storage
+# 合成存储
 
-<Row>
-  <BlockImage id="1k_crafting_storage" scale="4" />
+<Row >
+  <Block Image id ="1k crafting storage " scale ="4" />
 
-  <BlockImage id="4k_crafting_storage" scale="4" />
+  <Block Image id ="4k crafting storage " scale ="4" />
 
-  <BlockImage id="16k_crafting_storage" scale="4" />
+  <Block Image id ="16k crafting storage " scale ="4" />
 
-  <BlockImage id="64k_crafting_storage" scale="4" />
+  <Block Image id ="64k crafting storage " scale ="4" />
 
-  <BlockImage id="256k_crafting_storage" scale="4" />
-</Row>
+  <Block Image id ="256k crafting storage " scale ="4" />
+</Row >
 
-(Required) Crafting storages are available in all the standard cell sizes (1k, 4k, 16k, 64k, 256k). They store the ingredients and
-intermediate ingredients involved in a craft, so larger or more storages are required for the CPU to handle crafting jobs
-with more ingredients.
+（必需）合成存储提供所有标准元件规格（1k、4k、16k、64k、256k）。它们存储合成过程中涉及的原料和中间产物，因此处理包含更多原料的合成任务时，需要更大或更多的存储。
 
-<Column>
-  <Row>
-    <RecipeFor id="1k_crafting_storage" />
+<Column >
+  <Row >
+    <Recipe For id ="1k crafting storage" />
 
-    <RecipeFor id="4k_crafting_storage" />
+    <Recipe For id ="4k crafting storage" />
 
-    <RecipeFor id="16k_crafting_storage" />
-  </Row>
+    <Recipe For id ="16k crafting storage" />
+  </Row >
 
-  <Row>
-    <RecipeFor id="64k_crafting_storage" />
+  <Row >
+    <Recipe For id ="64k crafting storage" />
 
-    <RecipeFor id="256k_crafting_storage" />
-  </Row>
-</Column>
+    <Recipe For id ="256k crafting storage" />
+  </Row >
+</Column >
 
-# Crafting Co-Processing Unit
+# 合成协处理单元
 
-<BlockImage id="crafting_accelerator" scale="4" />
+<Block Image id ="crafting accelerator " scale ="4" />
 
-(Optional) Crafting co-processors make the system send out ingredient batches from <ItemLink id="pattern_provider" />s more often.
-This allows them to keep up with machines that process quickly. An example of this is a pattern provider surrounded by
-<ItemLink id="molecular_assembler" />s being able to push ingredients faster than a single assembler can process, and thus
-distributing the ingredient batches between the surrounding assemblers.
+（可选）合成协处理器能让系统更频繁地从<Item Link id ="pattern provider" />发送原料批次，从而跟上处理速度较快的机器。例如，当样板供应器周围环绕着<Item Link id ="molecular assembler" />时，协处理器能让原料推送速度超过单个组装器的处理速度，从而将原料批次分配到周围的多个组装器中。
 
-<RecipeFor id="crafting_accelerator" />
+<Recipe For id ="crafting accelerator" />
 
-# Crafting Monitor
+# 合成监视器
 
-<BlockImage id="crafting_monitor" scale="4" />
+<Block Image id ="crafting monitor " scale ="4" />
 
-(Optional) The crafting monitor displays the job the CPU is handling at the moment.
-The screen can be colored with a <ItemLink id="color_applicator" />.
+（可选）合成监视器会显示该 CPU 当前正在处理的任务。可以使用<Item Link id ="color applicator" />为其屏幕染色。
 
 <RecipeFor id="crafting_monitor" />

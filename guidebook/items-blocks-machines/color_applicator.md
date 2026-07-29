@@ -10,29 +10,26 @@ item_ids:
 - ae2:color_applicator
 ---
 
-# The Color Applicator
+# 染色器
 
-<ItemImage id="color_applicator" scale="4" />
+<Item Image id="color applicator" scale="4" />
 
-The color applicator is used to paint colorable blocks like [cables](cables.md), wool, terracotta, glass, and concrete. It uses
-[paintballs](paintballs.md) or dyes, and snowballs can be used in order to clean color off of cables and paintball splotches off of blocks.
+染色器用于为可染色的方块（如[线缆](cables.md)、羊毛、陶瓦、玻璃和混凝土）上色。它使用[颜料球](paintballs.md)或染料，而雪球则可用于清除线缆上的颜色以及方块上的颜料球污渍。
 
-Its energy can be recharged in a <ItemLink id="charger" />.
+其能量可在<Item Link id="charger" />中充能。
 
-Color applicators act like [storage cells](storage_cells.md), and their paint storage can most easily be filled by sticking
-the applicator in the storage cell slot in a <ItemLink id="chest" />
+染色器的作用类似于[存储元件](storage-cells.md)，其颜料存储空间最便捷的填充方式是将染色器放入<Item Link id="chest" />的存储元件槽中。
 
-To use a color applicator, right click to apply, and shift-scroll to cycle through the stored paintballs and dyes.
+使用染色器时，右键点击即可上色，滚动滚轮（按住 Shift）可在已存储的颜料球和染料之间切换。
 
-## Upgrades
+## 升级
 
-Color Applicators support the following [upgrades](upgrade_cards.md), inserted via a <ItemLink id="cell_workbench" />:
+染色器支持以下[升级](upgrade-cards.md)，可通过<Item Link id="cell workbench" />安装：
 
-*   <ItemLink id="equal_distribution_card" /> allocates the same amount of cell byte space to each type, so one type cannot fill up the entire cell
-*   <ItemLink id="void_card" /> voids items inserted if the cell is full (or that specific type's allocated space in the
-    case of an equal distribution card). Be careful to partition this!
-*   <ItemLink id="energy_card" /> in order to increase their battery capacity
+*   <Item Link id="equal distribution card" />：为每种类型分配相同的元件字节空间，避免单一类型占满整个元件。
+*   <Item Link id="void card" />：当元件已满（或在使用均衡分配卡时，特定类型的已分配空间已满）时，丢弃后续插入的物品。请务必谨慎分区！
+*   <Item Link id="energy card" />：用于提升电池容量。
 
-## Recipe
+## 配方
 
 <RecipeFor id="color_applicator" />

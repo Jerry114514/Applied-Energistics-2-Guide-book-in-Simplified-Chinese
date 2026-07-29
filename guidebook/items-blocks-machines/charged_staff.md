@@ -10,15 +10,14 @@ item_ids:
 - ae2:charged_staff
 ---
 
-# The Charged Staff
+# 充能法杖
 
 <ItemImage id="charged_staff" scale="4" />
 
-The Charged Staff is a stick with a <ItemLink id="charged_certus_quartz_crystal" /> on the end. It does 6 damage, using 300 AE
-per attack.
+充能法杖是一根末端装有<ItemLink id="charged_certus_quartz_crystal" />的法杖。每次攻击造成 6 点伤害，消耗 300 AE。
 
-Its energy can be recharged in a <ItemLink id="charger" />.
+其能量可在<ItemLink id="charger" />中重新充能。
 
-## Recipe
+## 配方
 
 <RecipeFor id="charged_staff" />

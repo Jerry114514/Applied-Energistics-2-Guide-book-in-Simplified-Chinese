@@ -38,7 +38,7 @@ navigation:
 * 一个或多个无瑕的石英母岩不会降解
 * 会无限生成石英芽
 * **无法用镐开采或移动**，即使使用精准采集也不行
-* 但可以通过[跨空间存储](ae2-mechanics/spatial-io.md)移动
+* 但可以通过[跨空间存储](guidebook/ae2-mechanics/spatial-io.md)移动
 
 ## 生长加速
 

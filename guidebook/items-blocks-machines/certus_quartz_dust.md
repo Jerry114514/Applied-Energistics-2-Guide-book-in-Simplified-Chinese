@@ -10,13 +10,14 @@ item_ids:
 - ae2:certus_quartz_dust
 ---
 
-# Certus Quartz Dust
+# 赛特斯石英粉
 
 <ItemImage id="certus_quartz_dust" scale="4" />
 
-A <ItemLink id="certus_quartz_crystal" /> that has been crushed by an <ItemLink id="inscriber" />. Used in the production of
-several AE2 materials and components.
+<ItemLink id="certus_quartz_crystal" /> 经 <ItemLink id="inscriber" /> 粉碎后得到。用于制作多种 AE2 材料与组件。
 
-## Recipe
+## 配方
+
+
 
 <RecipeFor id="certus_quartz_dust" />

@@ -4,26 +4,26 @@ navigation:
   position: 50
 ---
 
-# Items, Blocks, and Machines
+# 物品、方块与机器
 
-A list of stuff in the mod for other pages to link to, and a description of their function.
+本模组中各类物品的列表，供其他页面链接引用，并附带其功能说明。
 
-## Misc. Ingredients and Blocks
+## 杂项材料与方块
 
-<CategoryIndex category="misc ingredients blocks" />
+<Category Index category="misc ingredients blocks" />
 
-## Network Infrastructure
+## 网络基础设施
 
-<CategoryIndex category="network infrastructure" />
+<Category Index category="network infrastructure" />
 
-## Devices
+## 设备
 
-<CategoryIndex category="devices" />
+<Category Index category="devices" />
 
-## Machines
+## 机器
 
-<CategoryIndex category="machines" />
+<Category Index category="machines" />
 
-## Tools
+## 工具
 
 <CategoryIndex category="tools" />

@@ -10,20 +10,19 @@ item_ids:
 - ae2:cable_anchor
 ---
 
-# The Cable Anchor
+# 线缆锚
 
 <GameScene zoom="6" background="transparent">
-  <ImportStructure src="../assets/assemblies/cable_anchor.snbt" />
+  <ImportStructure src="/assets/assemblies/cable_anchor.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Small decorative cable-mounted spikes that you can use to prevent cables from connecting, create ladders with cables, or make the cable appear
-connected to the walls around it. Also used to craft <ItemLink id="facade" />.
+一种小型装饰性线缆尖刺，可用于阻止线缆连接、用线缆搭建梯子，或让线缆看起来与周围的墙壁相连。也用于制作<ItemLink id="facade" />。
 
-Cable anchors prevent connections from forming on the side they're mounted on.
+线缆锚可以阻止其安装方向上的连接形成。
 
-You can climb them like a ladder.
+你可以像爬梯子一样攀爬它们。
 
-## Recipe
+## 配方
 
 <RecipeFor id="cable_anchor" />

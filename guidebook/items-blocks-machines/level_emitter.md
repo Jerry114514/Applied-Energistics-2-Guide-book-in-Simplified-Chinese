@@ -11,7 +11,7 @@ item_ids:
 - ae2:energy_level_emitter
 ---
 
-# 发信器
+# ME标准发信器
 
 <GameScene zoom="8" background="transparent">
   <Import Structure src="/assets/blocks/level_emitter.snbt" />

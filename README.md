@@ -1,6 +1,6 @@
 # 应用能源2 （又称AE2）
 
-**该项目翻译由 Jerry114514、DeepSeek Ai、MiniMax Ai Agent 联合提供。**
+**该项目翻译由 Jerry114514、DeepSeek V4 Model、MiniMax Ai Agent 联合提供。**
 
 ## 请于文末查看已翻译完成的文章。
 

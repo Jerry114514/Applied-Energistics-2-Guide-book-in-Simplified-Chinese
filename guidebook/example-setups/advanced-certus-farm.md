@@ -1,76 +1,73 @@
 ---
 navigation:
-  parent: example-setups/example-setups-index.md
-  title: Advanced Certus Farm
-  icon: certus_quartz_crystal
-  position: 120
+    parent: example-setups/example-setups-index.md
+    title: 高级赛特斯石英农场
+    icon: certus_quartz_crystal
+    position: 120
 ---
 
-# Advanced Certus Farm
+# 高级赛特斯石英农场
 
-This is basically just the [Semi-Auto Certus Farm](semiauto-certus-farm.md), except it has been fully integrated into your
-ME system.
+这基本上就是[半自动赛特斯石英农场](semiauto-certus-farm.md)，只不过它已经完全集成到你的ME系统中了。
 
-Instead of having a big stockpile of budding blocks and manually refreshing them every once in a while,
-this setup uses [Charger Automation](charger-automation.md) and [Throwing-In-Water Automation](throw-in-water-automation.md)
-to do it automatically.
+这个设置不是存放大量萌芽方块并偶尔手动刷新它们，而是使用[充能器自动化](charger-automation.md)和[投入水中自动化](throw-in-water-automation.md)来自动完成这一切。
 
-**THIS IS A COMPLEX BUILD WITH STUFF HIDDEN BEHIND OTHER STUFF, PAN AROUND TO VIEW IT FROM ALL ANGLES**
+**这是一个复杂的建筑，有些东西隐藏在其他东西后面，请旋转视角从各个角度查看**
 
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/advanced_certus_farm.snbt" />
 
   <BoxAnnotation color="#ddaaaa" min="3.7 2 1" max="4 3 2">
-        (1) Annihilation Plane #1: No GUI to configure, but can be enchanted with Fortune.
+        (1) 湮灭面 #1：没有GUI可配置，但可以附魔时运。
   </BoxAnnotation>
 
   <BoxAnnotation color="#ddaaaa" min="2 2 1.7" max="3 3 2">
-        (2) Storage Bus #1: Filtered to Certus Quartz Crystal.
+        (2) 存储总线 #1：过滤为赛特斯石英晶体。
         <ItemImage id="certus_quartz_crystal" scale="2" />
   </BoxAnnotation>
 
   <DiamondAnnotation pos="3 2.5 1.5" color="#ff0000">
-    Cluster Breaker Subnet
+    水晶簇破坏子网络
   </DiamondAnnotation>
 
   <BoxAnnotation color="#aaddaa" min="3.7 1 1" max="4 2 2">
-        (3) Annihilation Plane #2: No GUI to configure, but enchanted with Silk Touch.
+        (3) 湮灭面 #2：没有GUI可配置，但附魔了精准采集。
   </BoxAnnotation>
 
   <BoxAnnotation color="#aaddaa" min="2 1 1.7" max="3 2 2">
-        (4) Storage Bus #2: Filtered to Certus Quartz Block.
+        (4) 存储总线 #2：过滤为赛特斯石英方块。
         <BlockImage id="quartz_block" scale="2" />
   </BoxAnnotation>
 
   <DiamondAnnotation pos="3 1.5 1.5" color="#00ff00">
-    Certus Block Breaker Subnet
+    赛特斯方块破坏子网络
   </DiamondAnnotation>
 
   <BoxAnnotation color="#ffddaa" min="4 0.7 1" max="5 1 2">
-        (5) Formation Plane: In its default configuration.
+        (5) 形成面：默认配置。
   </BoxAnnotation>
 
   <BoxAnnotation color="#ffddaa" min="2 0.7 2" max="3 1 3">
-        (6) Import Bus: Filtered to Flawed Budding Certus Quartz.
+        (6) 输入总线：过滤为瑕疵赛特斯石英萌芽。
         <BlockImage id="flawed_budding_quartz" scale="2" />
   </BoxAnnotation>
 
   <DiamondAnnotation pos="3 0.5 1.5" color="#ddcc00">
-    Budding Block Placer Subnet
+    萌芽方块放置子网络
   </DiamondAnnotation>
 
   <BoxAnnotation color="#aaaadd" min="1.7 2 2" max="2 3 3">
-        (7) Storage Bus #3: Filtered to Certus Quartz Crystal. Has priority set higher than your main storage.
+        (7) 存储总线 #3：过滤为赛特斯石英晶体。优先级设置高于你的主存储。
         <ItemImage id="certus_quartz_crystal" scale="2" />
   </BoxAnnotation>
 
   <BoxAnnotation color="#aaaadd" min="2 1 2" max="3 2 3">
-        (8) Interface: Set to keep 1 Flawed Budding Certus Quartz in itself, has a Crafting Card.
+        (8) 接口：设置为在其内部保留1个瑕疵赛特斯石英萌芽，拥有合成卡。
         <Row><BlockImage id="flawed_budding_quartz" scale="2" /> <ItemImage id="crafting_card" scale="2" /></Row>
   </BoxAnnotation>
 
 <DiamondAnnotation pos="1.5 0.5 0" color="#00ff00">
-        To Main Network, Charger Automation, and Throwing-In-Water Automation
+        连接到主网络、充能器自动化和投入水中自动化
         <Row>
         <GameScene zoom="3" background="transparent">
           <ImportStructure src="../assets/assemblies/charger_automation.snbt" />
@@ -86,62 +83,53 @@ to do it automatically.
   <IsometricCamera yaw="165" pitch="5" />
 </GameScene>
 
-## Configurations
+## 配置
 
-### Cluster Breaker:
+### 水晶簇破坏器：
 
-* The first <ItemLink id="annihilation_plane" /> (1) has no GUI and cannot be configured, but can be enchanted with Fortune.
-* The first <ItemLink id="storage_bus" /> (2) is filtered to <ItemLink id="certus_quartz_crystal" />.
+* 第一个<ItemLink id="annihilation_plane" /> (1) 没有GUI，无法配置，但可以附魔时运。
+* 第一个<ItemLink id="storage_bus" /> (2) 过滤为<ItemLink id="certus_quartz_crystal" />。
 
-### Certus Block Breaker:
+### 赛特斯方块破坏器：
 
-* The second <ItemLink id="annihilation_plane" /> (3) has no GUI and cannot be configured, but must be enchanted with Silk Touch.
-* The second <ItemLink id="storage_bus" /> (4) is filtered to <ItemLink id="quartz_block" />.
+* 第二个<ItemLink id="annihilation_plane" /> (3) 没有GUI，无法配置，但必须附魔精准采集。
+* 第二个<ItemLink id="storage_bus" /> (4) 过滤为<ItemLink id="quartz_block" />。
 
-### Budding Block Placer:
+### 萌芽方块放置器：
 
-* The <ItemLink id="formation_plane" /> (5) is in its default configuration.
-* The <ItemLink id="import_bus" /> (6) is filtered to <ItemLink id="flawed_budding_quartz" />.
+* <ItemLink id="formation_plane" /> (5) 处于默认配置。
+* <ItemLink id="import_bus" /> (6) 过滤为<ItemLink id="flawed_budding_quartz" />。
 
-### On Main Network:
+### 在主网络上：
 
-* The third <ItemLink id="storage_bus" /> (7) is filtered to <ItemLink id="certus_quartz_crystal" />, and has its
-  [priority](../ae2-mechanics/import-export-storage.md#storage-priority) set higher than your main storage.
-* The <ItemLink id="interface" /> (8) is set to keep 1 Flawed Budding Certus Quartz in itself, and has a <ItemLink id="crafting_card" />.
+* 第三个<ItemLink id="storage_bus" /> (7) 过滤为<ItemLink id="certus_quartz_crystal" />，并将其[优先级](../ae2-mechanics/import-export-storage.md#storage-priority)设置高于主存储。
+* <ItemLink id="interface" /> (8) 设置为在其内部保留1个瑕疵赛特斯石英萌芽，并拥有一张<ItemLink id="crafting_card" />。
 
-## How It Works
+## 工作原理
 
-### Cluster Breaker:
+### 水晶簇破坏器：
 
-The cluster breaker subnet works very similarly to the subnet in the [simple certus farm](simple-certus-farm.md).
+水晶簇破坏子网络的工作原理与[简易赛特斯石英农场](simple-certus-farm.md)中的子网络非常相似。
 
-1. The <ItemLink id="annihilation_plane" /> attempts to break what is in front of it, but can only break <ItemLink id="quartz_cluster" />
-   because the only storage on the subnet is the <ItemLink id="storage_bus" />, filtered to <ItemLink id="certus_quartz_crystal" />.
-2. The <ItemLink id="storage_bus" /> stores the certus quartz crystals in the barrel.
+1. <ItemLink id="annihilation_plane" />尝试破坏面前的东西，但只能破坏<ItemLink id="quartz_cluster" />，因为子网络上唯一的存储是过滤为<ItemLink id="certus_quartz_crystal" />的<ItemLink id="storage_bus" />。
+2. <ItemLink id="storage_bus" />将赛特斯石英晶体存储到木桶中。
 
-### Certus Block Breaker
+### 赛特斯方块破坏器
 
-The certus block breaker subnet serves to break the depleted budding block once it turns into a plain <ItemLink id="quartz_block" />.
-It works similarly to the cluster breaker.
+赛特斯方块破坏子网络用于在萌芽方块变成普通<ItemLink id="quartz_block" />后将其破坏。
+它的工作原理与水晶簇破坏器类似。
 
-1. The <ItemLink id="annihilation_plane" /> attempts to break what is in front of it, but can only break <ItemLink id="quartz_block" />
-   because the only storage on the subnet is the <ItemLink id="storage_bus" />, filtered to <ItemLink id="quartz_block" />. 
-   The plane needs to have silk touch, so the budding block won't degrade upon being broken, and thus the plane won't break it prematurely.
-2. The <ItemLink id="storage_bus" /> stores the certus quartz block in the <ItemLink id="interface" />, allowing the
-   [Throwing-In-Water Automation](throw-in-water-automation.md) to use it to make a new <ItemLink id="flawed_budding_quartz" />.
+1. <ItemLink id="annihilation_plane" />尝试破坏面前的东西，但只能破坏<ItemLink id="quartz_block" />，因为子网络上唯一的存储是过滤为<ItemLink id="quartz_block" />的<ItemLink id="storage_bus" />。该平面需要精准采集附魔，这样萌芽方块在被破坏时不会退化，因此平面不会过早破坏它。
+2. <ItemLink id="storage_bus" />将赛特斯石英方块存储到<ItemLink id="interface" />中，允许[投入水中自动化](throw-in-water-automation.md)用它来制造新的<ItemLink id="flawed_budding_quartz" />。
 
-### Budding Block Placer
+### 萌芽方块放置器
 
-The budding block placer subnet serves to place a new <ItemLink id="flawed_budding_quartz" /> when the breaker subnet breaks the old depleted one.
+萌芽方块放置子网络用于在破坏子网络破坏旧的耗尽方块时放置新的<ItemLink id="flawed_budding_quartz" />。
 
-1. The <ItemLink id="import_bus" /> Imports a budding block from the <ItemLink id="interface" /> into [network storage](../ae2-mechanics/import-export-storage.md)
-2. The only storage on the subnet is the <ItemLink id="formation_plane" />, which places the budding block.
+1. <ItemLink id="import_bus" />从<ItemLink id="interface" />导入萌芽方块到[网络存储](../ae2-mechanics/import-export-storage.md)
+2. 子网络上唯一的存储是<ItemLink id="formation_plane" />，它放置萌芽方块。
 
-### On the Main Network
+### 在主网络上
 
-* The <ItemLink id="storage_bus" /> gives the main network (and also the [Charger Automation](charger-automation.md)) access to all of the certus quartz crystals in the barrel. It is set to
-  high [priority](../ae2-mechanics/import-export-storage.md#storage-priority) so that certus quartz crystals are preferentially
-  put back in the barrel instead of in your main storage.
-* The <ItemLink id="interface" /> gives the budding block placer subnet access to a <ItemLink id="flawed_budding_quartz" />, and
-    gives the certus block breaker subnet a way to get the depleted blocks back into the main network. The
-    <ItemLink id="crafting_card" /> allows the interface to request new budding blocks from the main network's [autocrafting](../ae2-mechanics/autocrafting.md).
+* <ItemLink id="storage_bus" />使主网络（以及[充能器自动化](charger-automation.md)）能够访问木桶中所有的赛特斯石英晶体。它被设置为高[优先级](../ae2-mechanics/import-export-storage.md#storage-priority)，以便赛特斯石英晶体优先被放回木桶而不是主存储。
+* <ItemLink id="interface" />使萌芽方块放置子网络能够访问<ItemLink id="flawed_budding_quartz" />，并为赛特斯方块破坏子网络提供一种将耗尽的方块返回主网络的方式。<ItemLink id="crafting_card" />允许接口从主网络的[自动合成](../ae2-mechanics/autocrafting.md)请求新的萌芽方块。

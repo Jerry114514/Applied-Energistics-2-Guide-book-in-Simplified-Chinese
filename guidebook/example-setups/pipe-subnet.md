@@ -1,178 +1,166 @@
 ---
 navigation:
-  parent: example-setups/example-setups-index.md
-  title: Item/Fluid "Pipe" Subnet
-  icon: storage_bus
+    parent: example-setups/example-setups-index.md
+    title: 物品/流体"管道"子网络
+    icon: storage_bus
 ---
 
-# Item/Fluid "Pipe" Subnet
+# 物品/流体"管道"子网络
 
-A simple method of emulating an item and/or fluid pipe with AE2 [devices](../ae2-mechanics/devices.md), useful for, well, anything you'd use an item or fluid pipe for.
-This includes returning the result of a craft to a <ItemLink id="pattern_provider" />.
+一种使用AE2[设备](../ae2-mechanics/devices.md)模拟物品和/或流体管道的方法，可用于任何你使用物品或流体管道的场景。
+这包括将合成结果返回到<ItemLink id="pattern_provider" />。
 
-There are generally two different methods of achieving this:
+通常有两种不同的方法来实现这一点：
 
-## Import Bus -> Storage Bus
+## 输入总线 -> 存储总线
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/import_storage_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        (1) Import Bus: Can be filtered.
+        (1) 输入总线：可以过滤。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        (2) Storage Bus: Can be filtered. This (and other storage busses you want to be a destination)
-        must be the only storage on the network.
+        (2) 存储总线：可以过滤。这个（和其他你希望作为目的地的存储总线）必须是网络上唯一的存储。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#00ff00">
-        Source
+        来源
     </DiamondAnnotation>
 
 <DiamondAnnotation pos="0.5 0.5 0.5" color="#00ff00">
-        Destination
+        目的地
     </DiamondAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The <ItemLink id="import_bus" /> (1) on the source inventory imports the items or fluid, and attempts to store them in [network storage](../ae2-mechanics/import-export-storage.md).
-Since the only storage on the network is the <ItemLink id="storage_bus" /> (2) (which is why this is a subnet and not on your main network), the items or fluid
-are placed in the destination inventory, thus being transferred. Energy is provided through a <ItemLink id="quartz_fiber" />.
-Both the import bus and storage bus can be filtered, but the setup will transfer everything it can access if no filters are applied.
-This setup also works with multiple import busses and multiple storage busses.
+源库存上的<ItemLink id="import_bus" /> (1) 导入物品或流体，并尝试将其存储到[网络存储](../ae2-mechanics/import-export-storage.md)中。
+由于网络上唯一的存储是<ItemLink id="storage_bus" /> (2)（这就是为什么这是一个子网络而不是在你的主网络上），物品或流体被放置到目标库存中，从而实现传输。能量通过<ItemLink id="quartz_fiber" />提供。
+输入总线和存储总线都可以进行过滤，但如果不应用过滤，该设置将传输所有可访问的内容。
+此设置也可以使用多个输入总线和多个存储总线。
 
-## Storage Bus -> Export Bus
+## 存储总线 -> 输出总线
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/storage_export_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        (1) Storage Bus: Can be filtered. This (and other storage busses you want to be a source)
-        must be the only storage on the network.
+        (1) 存储总线：可以过滤。这个（和其他你希望作为来源的存储总线）必须是网络上唯一的存储。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        (2) Export Bus: Must be filtered.
+        (2) 输出总线：必须过滤。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#00ff00">
-        Source
+        来源
     </DiamondAnnotation>
 
 <DiamondAnnotation pos="0.5 0.5 0.5" color="#00ff00">
-        Destination
+        目的地
     </DiamondAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The <ItemLink id="export_bus" /> on the destination inventory attempts to pull items in its filter from [network storage](../ae2-mechanics/import-export-storage.md).
-Since the only storage on the network is the <ItemLink id="storage_bus" /> (which is why this is a subnet and not on your main network), the items or fluid
-are pulled from the source inventory, thus being transferred. Energy is provided through a <ItemLink id="quartz_fiber" />.
-Because export busses must be filtered to function, this setup only operates if you filter the export bus.
-This setup also works with multiple storage busses and multiple export busses.
+目标库存上的<ItemLink id="export_bus" />尝试从其过滤器中的[网络存储](../ae2-mechanics/import-export-storage.md)拉取物品。
+由于网络上唯一的存储是<ItemLink id="storage_bus" />（这就是为什么这是一个子网络而不是在你的主网络上），物品或流体从源库存中被拉取，从而实现传输。能量通过<ItemLink id="quartz_fiber" />提供。
+因为输出总线必须进行过滤才能工作，所以此设置只有在过滤输出总线时才会运行。
+此设置也可以使用多个存储总线和多个输出总线。
 
-## A Setup That Does Not Work (Import Bus -> Export Bus)
+## 不起作用的一种设置（输入总线 -> 输出总线）
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/import_export_pipe.snbt" />
 
 <BoxAnnotation color="#dd3333" min="3.7 0 0" max="4 1 1">
-        Import Bus: Since the network has no storage, there is nowhere for it to import to.
+        输入总线：由于网络没有存储，它无法导入任何东西。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dd3333" min="1 0 0" max="1.3 1 1">
-        (2) Export Bus: Since the network has no storage, there is nothing for it to export.
+        (2) 输出总线：由于网络没有存储，它无法导出任何东西。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#ff0000">
-        Source
+        来源
     </DiamondAnnotation>
 
 <DiamondAnnotation pos="0.5 0.5 0.5" color="#ff0000">
-        Destination
+        目的地
     </DiamondAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-A setup with just an import and export bus will not work. The import bus will attempt to pull from the source inventory
-and store the items or fluid in network storage. The export bus will attempt to pull from network storage and put the
-items or fluid in the destination inventory. However since this network **has no storage**, the import bus can't import
-and the export bus can't export, so nothing happens.
+仅使用输入和输出总线的设置是行不通的。输入总线将尝试从源库存中拉取物品或流体并将其存储到网络存储中。输出总线将尝试从网络存储中拉取物品或流体并将其放入目标库存中。然而，由于这个网络**没有存储**，输入总线无法导入，输出总线也无法导出，所以什么都不会发生。
 
-## Inputting And Outputting Through 1 Face
+## 通过一个面输入和输出
 
-Say you have some machine that can receive input and have its output pulled through 1 face. (Like a <ItemLink id="charger" />)
-You can both push in the ingredients and pull out the result, by combining the 2 pipe subnet methods:
+假设你有一个可以通过一个面接收输入并拉取输出的机器。（比如<ItemLink id="charger" />）
+你可以通过结合两种管道子网络方法来同时推入材料和拉出结果：
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/import_storage_export_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="4 1 1" max="5 1.3 2">
-        (1) Import Bus: Can be filtered.
+        (1) 输入总线：可以过滤。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2 1 1" max="3 1.3 2">
-        (2) Storage Bus: Can be filtered. This (and other storage busses you want to push and pull items)
-        must be the only storage on the network.
+        (2) 存储总线：可以过滤。这个（和其他你希望推入和拉取物品的存储总线）必须是网络上唯一的存储。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2 0 1" max="3 1 2">
-        (3) Thing You Want To Push To And Pull From: In this case a Charger.
+        (3) 你想要推入和拉取的物品：这里是充能器。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 1" max="1 1.3 2">
-        (4) Export Bus: Must be filtered.
+        (4) 输出总线：必须过滤。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 1.5" color="#00ff00">
-        Source
+        来源
     </DiamondAnnotation>
 
 <DiamondAnnotation pos="0.5 0.5 1.5" color="#00ff00">
-        Destination
+        目的地
     </DiamondAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Interfaces
+## 接口
 
-It turns out there are [devices](../ae2-mechanics/devices.md) besides import busses and export busses that push items into
-and pull items out of [network storage](../ae2-mechanics/import-export-storage.md)!
-Of relevance here is the <ItemLink id="interface" />. If an item is inserted that the interface is not set to stock, the interface will
-push it to network storage, which we can exploit similarly to the import bus -> storage bus pipe. Setting an interface to
-stock some item will pull it from network storage, similar to the storage bus -> export bus pipe. Interfaces can be set to
-stock some things and not stock others, allowing you to remotely push and pull through storage busses, if you for some reason want to do that.
+事实证明，除了输入总线和输出总线之外，还有[设备](../ae2-mechanics/devices.md)可以向[网络存储](../ae2-mechanics/import-export-storage.md)推送和从中拉取物品！
+这里涉及到的是<ItemLink id="interface" />。如果插入的物品是接口未设置为存储的，接口会将其推送到网络存储，我们可以像利用输入总线 -> 存储总线管道一样来利用这一点。将接口设置为存储某些物品会从网络存储中拉取它，类似于存储总线 -> 输出总线管道。接口可以设置为存储某些物品而不存储其他物品，允许你通过存储总线远程推送和拉取，如果你出于某种原因想要这样做的话。
 
 <GameScene zoom="6" background="transparent">
 <ImportStructure src="../assets/assemblies/interface_pipes.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        Interface
+        接口
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        Storage Bus
+        存储总线
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.7 0 2" max="4 1 3">
-        Storage Bus
+        存储总线
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 2" max="1 1.3 3">
-        Storage Bus
+        存储总线
   </BoxAnnotation>
 
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## One-To-Many and Many-To One (and many-to-many)
+## 一对多和多对一（以及多对多）
 
-Of course, you don't have to use just one <ItemLink id="import_bus" /> or <ItemLink id="export_bus" /> or <ItemLink id="storage_bus" />
+当然，你不必只使用一个<ItemLink id="import_bus" />或<ItemLink id="export_bus" />或<ItemLink id="storage_bus" />
 
 <GameScene zoom="3" background="transparent">
 <ImportStructure src="../assets/assemblies/many_to_many_pipe.snbt" />
@@ -180,32 +168,28 @@ Of course, you don't have to use just one <ItemLink id="import_bus" /> or <ItemL
 <IsometricCamera yaw="185" pitch="30" />
 </GameScene>
 
-## Providing To Multiple Places
+## 向多个地方供应
 
-From all this, we can derive a method to send ingredients from one <ItemLink id="pattern_provider" /> face to many different
-locations, like an array of machines, or several different faces of one machine.
+从这里，我们可以推导出一种方法，将原料从一个<ItemLink id="pattern_provider" />的一个面发送到多个不同的位置，比如一组机器，或者一个机器的多个不同面。
 
-We don't want an import -> storage pipe or a storage -> export pipe because the <ItemLink id="pattern_provider" /> never
-actually contains the ingredients. Instead, providers *push* the ingredients to adjacent inventories, so we need some 
-adjacent inventory that can also import items.
+我们不希望使用输入 -> 存储管道或存储 -> 输出管道，因为<ItemLink id="pattern_provider" />实际上从不包含材料。相反，供应器*推送*材料到相邻的库存，所以我们需要一个也能导入物品的相邻库存。
 
-This sounds like... an <ItemLink id="interface" />!
-Make sure the provider is in directional or flat subpart mode and/or the interface is in flat subpart mode, so the two don't form a network
-connection.
+这听起来像是...一个<ItemLink id="interface" />！
+确保供应器处于方向性子部件或平面子部件模式，和/或接口处于平面子部件模式，这样两者就不会形成网络连接。
 
 <GameScene zoom="6" background="transparent">
 <ImportStructure src="../assets/assemblies/provider_interface_storage.snbt" />
 
 <BoxAnnotation color="#dddddd" min="2.7 0 1" max="3 1 2">
-        Interface (must be flat, not fullblock)
+        接口（必须是平面的，不是完整方块）
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 4">
-        Storage Busses
+        存储总线
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 0 0" max="1 1 4">
-        Places you want to pattern-provide to (multiple machines, or multiple faces of 1 machine)
+        你想要样板供应的地方（多个机器，或一个机器的多个面）
   </BoxAnnotation>
 
 <IsometricCamera yaw="185" pitch="30" />

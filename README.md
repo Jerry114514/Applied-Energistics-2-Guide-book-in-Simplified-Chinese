@@ -43,8 +43,8 @@
 
 ## 特别感谢：
 
-* Continue -- open source AI code Agent： `VsCode Extension`/`VsCode 扩展` 
-* TransGo： `VsCode Extension`/`VsCode 扩展` 
-* Support from `DeepSeek Open Platform` ———— 来自`Deepseek开放平台`的协助
+* Continue -- open source AI code Agent： `VsCode Extension` | `VsCode 扩展` 
+* TransGo： `VsCode Extension` | `VsCode 扩展` 
+* Support from `DeepSeek Open Platform` ———— 来自`Deepseek开放平台`的协助: `https://platform.deepseek.com/`
 * MiniMax Ai Agent: `https://agent.minimaxi.com/`
 * And you.

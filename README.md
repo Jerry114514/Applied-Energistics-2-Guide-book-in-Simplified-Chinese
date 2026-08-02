@@ -40,3 +40,8 @@
 `guidebook/ae2-mechanics`：
 
 * 已全部完成。
+
+## 特别感谢：
+Continue -- open source AI code Agent： `VsCode Extension`/`VsCode 扩展` 
+TransGo： `VsCode Extension`/`VsCode 扩展` 
+

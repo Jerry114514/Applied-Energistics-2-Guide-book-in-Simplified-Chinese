@@ -38,7 +38,7 @@
 * 读前须知.md
 * index.md  总目录
 * getting-started.md 新手上路
-* continue-glossory.md 这是为名为`continue`的vscode扩展准备的术语表，便于翻译
+* continue-glossary.md 这是为名为`continue`的vscode扩展准备的术语表，便于翻译
 
 ### guidebook/ae2-mechanics：
 

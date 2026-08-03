@@ -16,7 +16,7 @@ item_ids:
 
 *"赛特斯石英水晶拥有一种独特特性——其晶体基质能够容纳大量能量。"*
 
-这是 AE2 方块、[设备](../ae2-mechanics/devices.md)和物品的主要原料之一。通过从[萌芽的赛特斯石英母岩](../ae2-mechanics/certus-growth.md)上生长获得。
+这是 AE2 方块、[设备](../ae2-mechanics/devices.md)和物品的主要原料之一。通过从[萌芽的赛特斯石英母岩](../ae2-mechanics/certus-growth.md)上生长获得。  
 
 ## 一些替代配方
 

@@ -14,8 +14,8 @@ item_ids:
 
 <ItemImage id="charged_certus_quartz_crystal" scale="4" />
 
-将<ItemLink id="certus_quartz_crystal" />放入<ItemLink id="charger" />中充能获得。用于制作<ItemLink id="fluix_crystal" />和[萌芽的赛特斯石英母岩](../items-blocks-machines/budding-certus.md)。
+将<ItemLink id="certus_quartz_crystal" />放入<ItemLink id="charger" />中充能获得。用于制作<ItemLink id="fluix_crystal" />和[萌芽的赛特斯石英母岩](../items-blocks-machines/budding-certus.md)。  
 
-## 配方
+## 配方  
 
 <RecipeFor id="charged_certus_quartz_crystal" />

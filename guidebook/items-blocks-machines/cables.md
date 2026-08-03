@@ -122,7 +122,7 @@ item_ids:
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-<ItemLink id="fluix_glass_cable" /> 是最简单的线缆，可传输能量和最多 8 个[频道](../ae2-mechanics/channels.md)。它有 17 种不同颜色，默认颜色为福鲁伊克斯，可以使用 16 种染料中的任意一种染色。
+<ItemLink id="fluix_glass_cable" /> 是最简单的线缆，可传输能量和最多 8 个[频道](../ae2-mechanics/channels.md)。它有 17 种不同颜色，默认颜色为福鲁伊克斯，可以使用 16 种染料中的任意一种染色。  
 
 要制作彩色线缆，用任意类型的染料围住 8 根同类型的线缆（线缆的颜色不重要，但必须是同类型，如玻璃线缆、智能线缆等）。你也可以在游戏世界中用任何兼容 Forge 的画笔给线缆涂色。
 

@@ -28,7 +28,7 @@ item_ids:
 
 *   <Item Link id="equal distribution card" />：为每种类型分配相同的元件字节空间，避免单一类型占满整个元件。
 *   <Item Link id="void card" />：当元件已满（或在使用均衡分配卡时，特定类型的已分配空间已满）时，丢弃后续插入的物品。请务必谨慎分区！
-*   <Item Link id="energy card" />：用于提升电池容量。
+*   <Item Link id="energy card" />：用于提升电池容量。  
 
 ## 配方
 

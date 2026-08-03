@@ -12,7 +12,7 @@ item_ids:
 
 # 控制器
 
-<BlockImage id="controller" p:state="online" scale="8" />
+<BlockImage id="controller" p:state="online" scale="8" />  
 
 控制器是 [ME 网络](../ae2-mechanics/me-network-connections.md) 的路由枢纽。没有控制器时，网络处于"临时"状态，最多只能连接 8 个使用频道的[设备](../ae2-mechanics/devices.md)。
 

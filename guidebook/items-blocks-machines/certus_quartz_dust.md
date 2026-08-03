@@ -14,7 +14,7 @@ item_ids:
 
 <ItemImage id="certus_quartz_dust" scale="4" />
 
-<ItemLink id="certus_quartz_crystal" /> 经 <ItemLink id="inscriber" /> 粉碎后得到。用于制作多种 AE2 材料与组件。
+<ItemLink id="certus_quartz_crystal" /> 经 <ItemLink id="inscriber" /> 粉碎后得到。用于制作多种 AE2 材料与组件。  
 
 ## 配方
 

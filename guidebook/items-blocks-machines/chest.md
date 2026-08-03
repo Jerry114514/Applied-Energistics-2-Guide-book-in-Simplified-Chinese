@@ -24,7 +24,7 @@ ME 箱子有 2 种不同的 GUI，并且具有物品运输的方向性。与顶�
 
 可以使用<ItemLink id="certus_quartz_wrench" />旋转。
 
-它有一个小型的 AE 能量存储缓冲，因此如果所在网络没有[能源元件](../items-blocks-machines/energy-cells.md)，一次性插入或取出太多物品可能会导致其断电。
+它有一个小型的 AE 能量存储缓冲，因此如果所在网络没有[能源元件](../items-blocks-machines/energy-cells.md)，一次性插入或取出太多物品可能会导致其断电。  
 
 终端可以使用<ItemLink id="color_applicator" />染色。
 

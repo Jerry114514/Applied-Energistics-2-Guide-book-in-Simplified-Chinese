@@ -19,7 +19,7 @@ item_ids:
 
 # 萌芽的赛特斯石英母岩
 
-（另见：[赛特斯石英生长](../ae2-mechanics/certus-growth.md)）
+（另见：[赛特斯石英生长](../ae2-mechanics/certus-growth.md)）  
 
 <GameScene zoom="4" background="transparent">
   <Import Structure src="/assets/assemblies/budding_blocks.snbt" />

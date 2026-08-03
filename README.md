@@ -31,15 +31,24 @@
 
 ## 已翻译完全的文章
 
-`guidebook`:
+### guidebook:
 
 * 读前须知.md
 * index.md  总目录
 * getting-started.md 新手上路
+* continue-glossory.md 这是为名为`continue`的vscode扩展准备的术语表，便于翻译
 
-`guidebook/ae2-mechanics`：
+### guidebook/ae2-mechanics：
 
 * 已全部完成。
+
+### guidebook/assets
+
+* 其下为说明书准备的图片示例，物品图片等资产
+
+### guidebook/example-setups
+
+### guidebook/items-blocks-machines
 
 ## 特别感谢：
 

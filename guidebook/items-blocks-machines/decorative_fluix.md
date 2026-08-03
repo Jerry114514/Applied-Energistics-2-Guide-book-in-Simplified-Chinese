@@ -12,14 +12,9 @@ item_ids:
 - ae2:fluix_slab
 ---
 
-# 装饰性福鲁伊克斯水晶
+# 装饰性福鲁伊克斯方块
 
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="/assets/assemblies/decorative_fluix.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
-<ItemLink id="fluix_block" /> 可以被合成并切石加工成多种装饰性建筑方块。
+福鲁伊克斯块<ae2:fluix_block>可以通过合成和切石制作成一些装饰性建筑方块。
 
 ## 配方
 

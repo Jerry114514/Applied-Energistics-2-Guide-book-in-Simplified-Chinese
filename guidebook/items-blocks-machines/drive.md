@@ -10,42 +10,32 @@ item_ids:
 - ae2:drive
 ---
 
-# The ME Drive
+# ME 驱动器
 
-<GameScene zoom="8" background="transparent">
-  <ImportStructure src="../assets/blocks/drive.snbt" />
-</GameScene>
+ME 驱动器是你插入[存储元件](storage_cells.md)以将其用作[网络存储](../ae2-mechanics/import-export-storage.md)的[设备](../ae2-mechanics/devices.md)。它有10个槽位，每个槽位可以容纳一个元件。  
 
-The Drive is the [device](../ae2-mechanics/devices.md) you plug your [storage cells](storage_cells.md) into in order to use them for
-[network storage](../ae2-mechanics/import-export-storage.md). It has 10 slots which each accept a cell.
+如果出于某种原因你想这么做，你可以使用任何物品物流方式（如漏斗或 AE2 总线）从其库存中推出和拉入元件。  
 
-If for some reason you want to, you can push and pull the cells from its inventory with any item logistics like hoppers or ae2 busses.
+它可以使用赛特斯石英扳手<ae2:certus_quartz_wrench>进行旋转。  
 
-It can be rotated with a <ItemLink id="certus_quartz_wrench" />.
+## 元件状态 LED
 
-## Cell Status LEDs
+驱动器中的元件上有一个 LED 显示其状态：
+| 颜色 | 状态 |
+| :--- | :--- |
+| 绿色 | 空 |
+| 蓝色 | 有一些内容 |
+| 橙色 | [类型](../ae2-mechanics/bytes-and-types.md)已满，无法添加新类型 |
+| 红色 | [字节](../ae2-mechanics/bytes-and-types.md)已满，无法插入更多物品 |
+| 黑色 | 无能量或驱动器没有[频道](../ae2-mechanics/channels.md) |
 
-The cells in the drive have an LED on them which shows their status:
+## 优先级
 
-| Color  | Status                                                                           |
-| :----- | :------------------------------------------------------------------------------- |
-| Green  | Empty                                                                            |
-| Blue   | Has some contents                                                                |
-| Orange | [Types](../ae2-mechanics/bytes-and-types.md) full, no new types can be added     |
-| Red    | [Bytes](../ae2-mechanics/bytes-and-types.md) full, no more items can be inserted |
-| Black  | No power or drive has no [channel](../ae2-mechanics/channels.md)                 |
+优先级可以通过点击 GUI 右上角的扳手来设置。  
+进入网络的物品将以最高优先级的存储作为第一目的地。  
 
-## Priority
+如果两个存储或元件具有相同优先级，且其中一个已经包含该物品，它们将优先选择该存储。当与其他存储处于同一优先级组时，任何[分区](cell_workbench.md)的元件都将被视为已包含该物品。从存储中移除的物品将从优先级最低的存储中移除。这个优先级系统意味着当物品被插入和移出网络存储时，高优先级的存储将被填满，而低优先级的存储将被清空。
 
-Priorities can be set by clicking the wrench in the top-right of the GUI.
-Items entering the network will start at the highest priority storage as
-their first destination. In the case of two storages or cells have the same priority,
-if one already contains the item, they will prefer that storage over any
-other. Any [partitioned](cell_workbench.md) cells will be treated as already containing the item
-when in the same priority group as other storages. Items being removed from storage will
-be removed from the storage with the lowest priority. This priority system means as items are inserted and removed
-from network storage, higher priority storages will be filled and lower priority storages will be emptied.
-
-## Recipe
+## 配方
 
 <RecipeFor id="drive" />

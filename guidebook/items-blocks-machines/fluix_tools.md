@@ -14,27 +14,13 @@ item_ids:
 - ae2:fluix_sword
 ---
 
-# Fluix Tools
+# 福鲁伊克斯工具
 
-<Row>
-  <ItemImage id="fluix_axe" scale="4" />
+[福鲁伊克斯](fluix_crystal.md)工具类似于铁工具，拥有3倍的耐久度以及略高的攻击伤害和挖掘速度。  
+所有福鲁伊克斯工具都如同拥有至少时运/抢夺1级，这在能够使用附魔台之前非常有用。  
+你将需要制作一个福鲁伊克斯升级<ae2:fluix_upgrade_smithing_template>。  
 
-  <ItemImage id="fluix_hoe" scale="4" />
-
-  <ItemImage id="fluix_shovel" scale="4" />
-
-  <ItemImage id="fluix_pickaxe" scale="4" />
-
-  <ItemImage id="fluix_sword" scale="4" />
-</Row>
-
-[Fluix](fluix_crystal.md) tools are similar to iron tools, having 3x the durability and a slightly higher attack damage and mining speed.
-
-All fluix tools act as if they have at least fortune/looting 1, which is useful before getting access to an enchanting table.
-
-You will need to make a <ItemLink id="fluix_upgrade_smithing_template" />
-
-## Recipes
+## 配方
 
 <Column>
   <Row>

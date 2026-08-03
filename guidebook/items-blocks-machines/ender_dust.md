@@ -10,13 +10,10 @@ item_ids:
 - ae2:ender_dust
 ---
 
-# Ender Dust
+# 末影珍珠粉
 
-<ItemImage id="ender_dust" scale="4" />
+一个经过压印器<ae2:inscriber>压碎的末影珍珠。用于生产无线信号增幅器<ae2:wireless_booster>和成对的量子缠绕态奇点<ae2:quantum_entangled_singularity>。
 
-An ender pearl that has been crushed by an <ItemLink id="inscriber" />. Used in the production of <ItemLink id="wireless_booster" />s
-and <ItemLink id="quantum_entangled_singularity" /> pairs.
-
-## Recipe
+## 配方
 
 <RecipeFor id="ender_dust" />

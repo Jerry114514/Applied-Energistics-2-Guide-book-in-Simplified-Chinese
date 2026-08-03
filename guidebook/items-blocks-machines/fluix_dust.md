@@ -12,13 +12,10 @@ item_ids:
 - ae2:fluix_dust
 ---
 
-# Fluix Dust
+# 福鲁伊克斯粉
 
-<ItemImage id="fluix_dust" scale="4" />
+一个经过压印器<ae2:inscriber>压碎的福鲁伊克斯水晶<ae2:fluix_crystal>。用于生产几种 AE2 机器和组件。
 
-A <ItemLink id="fluix_crystal" /> that has been crushed by an <ItemLink id="inscriber" />. Used in the production of
-several AE2 machines and components.
-
-## Recipe
+## 配方
 
 <RecipeFor id="fluix_dust" />

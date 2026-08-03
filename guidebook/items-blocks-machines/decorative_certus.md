@@ -34,12 +34,7 @@ item_ids:
 
 # 装饰性赛特斯石英方块
 
-<GameScene zoom="3" background="transparent">
-  <Import Structure src="/assets/assemblies/decorative_certus.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
-<ItemLink id="quartz_block" /> 可以通过合成、熔炼和切石加工制成多种装饰性建筑方块。
+赛特斯石英块<ae2:quartz_block>可以通过合成、烧炼和切石制作成一些装饰性建筑方块。
 
 ## 配方
 

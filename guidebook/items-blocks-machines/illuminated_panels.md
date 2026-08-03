@@ -12,18 +12,12 @@ item_ids:
 - ae2:dark_monitor
 ---
 
-# Illuminated Panels
+# 照明面板
 
-<GameScene zoom="6" background="transparent">
-  <ImportStructure src="../assets/assemblies/illuminated_panels.snbt" />
-  <IsometricCamera yaw="-75" pitch="30" />
-</GameScene>
+照明面板是一种装饰性光源，也用于生产[终端](terminals.md)。  
+它们属于一种[线缆子部件](../ae2-mechanics/cable-subparts.md)。 
 
-Illuminated panels are a decorative light source that is also used in the production of [terminals](terminals.md).
-
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
-
-## Recipes
+## 配方
 
 <Row>
   <RecipeFor id="monitor" />

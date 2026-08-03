@@ -23,20 +23,11 @@ item_ids:
 - ae2:sky_stone_small_brick_slab
 ---
 
-# Decorative Sky Stone
+# 装饰性陨石
 
-<Row>
-  <GameScene zoom="3" background="transparent">
-    <ImportStructure src="../assets/assemblies/decorative_sky_stone.snbt" />
-    <IsometricCamera yaw="195" pitch="30" />
-  </GameScene>
-  <BlockImage id="sky_stone_chest" scale="4" />
-  <BlockImage id="smooth_sky_stone_chest" scale="4" />
-</Row>
+陨石块<ae2:sky_stone_block>可以通过合成和切石制作成一些装饰性建筑方块。
 
-<ItemLink id="sky_stone_block" /> blocks can be crafted and stonecut into some decorative building blocks
-
-## Recipes
+## 配方
 
 <Column gap="5">
   <Row>

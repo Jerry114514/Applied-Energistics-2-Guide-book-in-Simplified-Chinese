@@ -10,74 +10,41 @@ item_ids:
 - ae2:inscriber
 ---
 
-# The Inscriber
+# 压印器
 
-<BlockImage id="inscriber" scale="8" />
+压印器用于使用[压印模板](presses.md)来压印电路和[处理器](processors.md)，以及将各种物品粉碎成粉。  
+它可以接受 AE2 的能量（AE）或 Fabric/Forge 能量（E/FE）。它可以分面使用，这样从不同面插入物品会将它们插入到其库存中的不同槽位。为了便于实现这一点，它可以使用赛特斯石英扳手<ae2:certus_quartz_wrench>进行旋转。  
 
-The inscriber is used to inscribe circuits and [processors](processors.md) using [presses](presses.md), and to crush various items into dust.
-It can accept either AE2's power (AE) or Fabric/Forge Energy (E/FE). It can be sided, such that inserting items from different sides
-inserts them into different slots in its inventory. To facilitate this, it can be rotated with a <ItemLink id="certus_quartz_wrench" />.
-It can also be set to push the results of crafts to adjacent inventories.
+它也可以设置为将合成结果推送到相邻的容器中。  
+输入缓冲区的大小可以调整。例如，如果你想让一个容器向一大排压印器供料，你需要一个小缓冲区，以便材料能更优化地分配在各压印器之间（而不是第一个压印器填满到64，其余的都是空的）。  
 
-The size of the input buffer can be adjusted. For example, if you want to feed from one inventory into a big array of inscribers,
-you want a small buffer so that the materials are distributed between the inscribers more optimally (instead of the first
-inscriber filling up to 64 and the rest being empty).
+4个电路压印模板用于制作[处理器](processors.md)。  
+而名称压印模板可以用来像铁砧一样给方块命名，这对于在 ME 样板管理终端<ae2:pattern_access_terminal>中标记物品非常有用。  
 
-The 4 circuit presses are used to craft [processors](processors.md)
+## 设置
+* 压印器可以设置为分面模式（如下所述），或允许从任何面输入到任何槽位，通过内部过滤器决定什么物品进入哪个槽位。在非分面模式下，物品不能从顶部和底部槽位中提取。
+* 压印器可以设置为将物品推送到相邻的容器中。
+* 输入缓冲区的大小可以调整，大缓冲区选项适用于手动供料的独立压印器，小缓冲区选项是为大型并行化 setup 提供更好的可行性。
 
-<Row>
-  <ItemImage id="silicon_press" scale="4" />
+## GUI 与分面
 
-  <ItemImage id="logic_processor_press" scale="4" />
+在分面模式下，压印器根据你插入或提取的面来过滤什么物品进入哪个槽位。  
+![Inscriber GUI](../assets/diagrams/inscriber_gui.png) ![Inscriber Sides](../assets/diagrams/inscriber_sides.png)  
+A. **顶部输入** 通过压印器的顶面访问（物品可以被推入和拉出此槽位）  
+B. **中心输入** 通过压印器的左、右、前、后侧面插入（物品只能被推入此槽位，不能被拉出）  
+C. **底部输入** 通过压印器的底面访问（物品可以被推入和拉出此槽位）  
+D. **输出** 通过压印器的左、右、前、后侧面拉出（物品只能从此槽位拉出，不能被推入）  
 
-  <ItemImage id="calculation_processor_press" scale="4" />
+## 简单自动化
 
-  <ItemImage id="engineering_processor_press" scale="4" />
-</Row>
+作为一个例子，分面性和可旋转性意味着你可以像这样半自动化压印器：  
+或者，在非分面模式下，只需将管道输入和输出压印器。  
 
-While the name press can be used to name blocks similar to an anvil, useful for labeling things in a <ItemLink id="pattern_access_terminal" />.
+## 升级
 
-<ItemImage id="name_press" scale="4" />
+压印器支持以下[升级](upgrade_cards.md)：  
+* 加速卡<ae2:speed_card>  
 
-## Settings
-
-* The inscriber can be set to be sided (as explained below) or allow inputs to any slot from any side, with an internal filter deciding
-    what goes where. While in non-sided mode, items cannot be extracted from the top and bottom slots.
-* The inscriber can be set to push items into adjacent inventories.
-* The size of the input buffer can be adjusted, the large option is for a standalone inscriber you feed manually, the
-small option is to make large parallelized setups more viable.
-
-## The GUI And Sidedness
-
-When in sided mode, the inscriber filters what goes where by which side you insert or extract from.
-
-![Inscriber GUI](../assets/diagrams/inscriber_gui.png) ![Inscriber Sides](../assets/diagrams/inscriber_sides.png)
-
-A. **Top Input** accessed via the top side of the inscriber (items can be both pushed to and pulled from this slot)
-
-B. **Center Input** inserted to via the left, right, front, and rear sides of the inscriber (items can only be pushed to this slot, not pulled from)
-
-C. **Bottom Input** accessed via the bottom side of the inscriber (items can be both pushed to and pulled from this slot)
-
-D. **Output** pulled from via the left, right, front, and rear sides of the inscriber (items can only be pulled from this slot, not pushed to)
-
-## Simple Automation
-
-As an example, the sidedness and rotateability mean you can semi-automate inscribers like so:
-
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="../assets/assemblies/inscriber_hopper_automation.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
-Or just pipe into and out of the inscriber when in non-sided mode.
-
-## Upgrades
-
-The inscriber supports the following [upgrades](upgrade_cards.md):
-
-*   <ItemLink id="speed_card" />
-
-## Recipe
+## 配方
 
 <RecipeFor id="inscriber" />

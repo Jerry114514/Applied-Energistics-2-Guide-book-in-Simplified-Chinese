@@ -10,13 +10,10 @@ item_ids:
 - ae2:fluix_pearl
 ---
 
-# Fluix Pearl
+# 福鲁伊克斯珍珠
 
-<ItemImage id="fluix_pearl" scale="4" />
+一颗包裹着福鲁伊克斯水晶<ae2:fluix_crystal>的末影珍珠，用于生产几种 AE2 组件。
 
-An ender pearl coated in <ItemLink id="fluix_crystal" />, used in the production of
-several AE2 components.
-
-## Recipe
+## 配方
 
 <RecipeFor id="fluix_pearl" />

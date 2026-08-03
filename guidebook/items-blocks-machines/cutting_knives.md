@@ -13,14 +13,9 @@ item_ids:
 
 # 石英工具
 
-<Row>
-  <ItemImage id="certus_quartz_cutting_knife" scale="4" />
-  <ItemImage id="nether_quartz_cutting_knife" scale="4" />
-</Row>
+切割刀用于制作名称压印模板<ae2:name_press>和线缆锚<ae2:cable_anchor>。  
 
-切割刀用于制作<ItemLink id="name_press" />和<ItemLink id="cable_anchor" />。
-
-要制作铭牌，右键点击切割刀并放入一块金属锭，然后输入你想要刻在铭牌上的名称，最后取出制作完成的铭牌即可。
+要合成名称压印模板，请右键点击切割刀并插入一块金属锭，然后你需要输入你希望刻在板上的名称，之后直接提取制作完成的板即可。  
 
 ## 配方
 

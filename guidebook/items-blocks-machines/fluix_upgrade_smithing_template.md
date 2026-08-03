@@ -12,12 +12,11 @@ item_ids:
 
 <ItemImage id="fluix_upgrade_smithing_template" scale="8" />
 
-# Fluix Smithing Template
+# 福鲁伊克斯锻造模板
 
-Unlike the vanilla smithing template, you can make this one from scratch.
+与原版锻造模板不同，你可以从零开始制作这个。  
+[福鲁伊克斯工具](fluix_tools.md)所需。  
 
-Required for [fluix tools](fluix_tools.md)
-
-## Recipe
+## 配方
 
 <RecipeFor id="fluix_upgrade_smithing_template" />

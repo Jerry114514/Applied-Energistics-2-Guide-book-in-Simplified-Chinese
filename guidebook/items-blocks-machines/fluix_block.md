@@ -10,12 +10,10 @@ item_ids:
 - ae2:fluix_block
 ---
 
-# The Fluix Block
+# 福鲁伊克斯块
 
-<BlockImage id="fluix_block" scale="8" />
+福鲁伊克斯块是福鲁伊克斯水晶<ae2:fluix_crystal>的存储方块。它也用于一些机器的配方中。  
 
-The storage block for <ItemLink id="fluix_crystal" />. It is also used in the recipes for a few machines.
-
-## Recipe
+## 配方
 
 <RecipeFor id="fluix_block" />

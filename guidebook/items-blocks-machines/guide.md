@@ -9,17 +9,15 @@ item_ids:
 - ae2:guide
 ---
 
-# The Guide
+# 指南
 
-<ItemImage id="guide" scale="8" />
+### 你现在正在阅读的这本指南，满足你所有的 AE2 引导需求。
 
-### This guide that you are reading now, for all your AE2 guiding needs.
+* 访问左侧边栏以找到目录
+* 许多页面都有交互式场景。如果场景旁边有![Plus](../assets/diagrams/plus.png)和![Minus](../assets/diagrams/minus.png)（缩放）按钮，你可以旋转和移动摄像机。
 
-* Access the sidebar on the left to find a table of contents
-* Many pages have interactive scenes. If a scene has ![Plus](../assets/diagrams/plus.png)
-  and ![Minus](../assets/diagrams/minus.png) (zoom) buttons next to it, you can rotate and move the camera.
-  Left click and drag to rotate, right click and drag to translate.
+左键点击并拖动以旋转，右键点击并拖动以平移。  
 
-## Recipe
+## 配方
 
 <RecipeFor id="guide" />

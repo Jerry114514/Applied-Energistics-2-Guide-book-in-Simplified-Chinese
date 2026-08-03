@@ -10,13 +10,10 @@ item_ids:
 - ae2:meteorite_compass
 ---
 
-# The Meteorite Compass
+# 陨石罗盘
 
-<ItemImage id="meteorite_compass" scale="4" />
+陨石罗盘指向最近的<ae2:mysterious_cube>，因此也就指向最近的[陨石](../ae2-mechanics/meteorites.md)。它是你应该最早制作的 AE2 物品之一。
 
-The Meteorite Compass points at the nearest <ItemLink id="mysterious_cube" />, which thus points it at the nearest
-[meteorite](../ae2-mechanics/meteorites.md). It's one of the first AE2 items you should make.
-
-## Recipe
+## 配方
 
 <RecipeFor id="meteorite_compass" />

@@ -11,13 +11,12 @@ item_ids:
 - ae2:quantum_ring
 ---
 
-# The Quantum Network Bridge
+# 量子网桥
 
-![A formed Quantum Network Bridge](../assets/diagrams/quantum_bridge_demonstration.png)
+![一个已成型的量子网桥](../assets/diagrams/quantum_bridge_demonstration.png)  
 
-Quantum Network Bridges can extend a [network](../ae2-mechanics/me-network-connections.md) over infinite distances and even between dimensions.
-They can carry 32 channels in total (regardless of how cables are connected to each face), essentially
-acting like a wireless [dense cable](cables.md#dense-cable).
+量子网桥可以将[网络](../ae2-mechanics/me-network-connections.md)扩展到无限远的距离，甚至跨维度。  
+它们总共可以承载32个频道（无论线缆如何连接到每个面），本质上就像一个无线[致密线缆](cables.md#dense-cable)。  
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/quantum_bridge_internal_structure_1.snbt" />
@@ -28,39 +27,20 @@ acting like a wireless [dense cable](cables.md#dense-cable).
   <ImportStructure src="../assets/assemblies/quantum_bridge_internal_structure_2.snbt" />
 
   <BoxAnnotation color="#33dd33" min="1 1 1" max="6 2 3">
-        An imaginary cable between the two endpoints
+        两个端点之间的一条虚拟线缆
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Of note, **both sides must be chunkloaded** so a <ItemLink id="spatial_anchor" /> or other chunkloader must be used
-if the 2 sides are far apart.
+需要注意的是，**两端的区块都必须被加载**，因此如果两侧相距很远，必须使用空间锚<ae2:spatial_anchor>或其他区块加载器。
+Carpet模组当中的`FakePlayer`也算是其中一种。
 
-# Quantum Ring
+# 量子环
 
-<BlockImage id="quantum_ring" scale="8" />
+将8个这样的方块围绕着一个量子链接仓<ae2:quantum_link>放置，就会创建一个量子网桥。  
+只有与量子链接仓<ae2:quantum_link>相邻的4个量子环<ae2:quantum_ring>方块会接受网络连接，4个角落的方块不能连接线缆。  
 
-Eight of these blocks placed around a <ItemLink id="quantum_link" /> will create a
-Quantum Network Bridge. Only the 4 <ItemLink id="quantum_ring" /> blocks adjacent to
-the <ItemLink id="quantum_link" /> will accept network connections,
-the 4 corner blocks cannot connect to cables.
-
-## Recipe
-
-<RecipeFor id="quantum_ring" />
-
-# Quantum Link Chamber
-
-<BlockImage id="quantum_link" scale="8" />
-
-One of these blocks surrounded by a <ItemLink id="quantum_ring" />
-will create a Quantum Network Bridge. This block doesn't connect to any cables and only registers
-as part of the network with the full bridge is made.
-
-This block's inventory can only hold a single <ItemLink id="quantum_entangled_singularity" /> and is
-automation accessible.
-
-## Recipe
+## 配方
 
 <RecipeFor id="quantum_link" />

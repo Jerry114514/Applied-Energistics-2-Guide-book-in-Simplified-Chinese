@@ -10,10 +10,8 @@ item_ids:
 - ae2:matter_ball
 ---
 
-# Matter Balls
+# 物质球
 
-<ItemImage id="matter_ball" scale="4" />
+一个通用物质球，可用作物质炮<ae2:matter_cannon>的弹药，或用于生产[染色球](paintballs.md)。  
 
-A ball of generic matter, useful as ammunition for a <ItemLink id="matter_cannon" /> or for producing [paintballs](paintballs.md).
-
-Made with 256 items or buckets in a <ItemLink id="condenser" /> in matter ball mode.
+在物质聚合器<ae2:condenser>的物质球模式下，用256个物品或桶制作。  

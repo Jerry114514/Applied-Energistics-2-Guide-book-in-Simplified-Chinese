@@ -11,52 +11,37 @@ item_ids:
 - ae2:conversion_monitor
 ---
 
-# Monitors
+# 监控器
 
-<GameScene zoom="8" background="transparent">
-<ImportStructure src="../assets/assemblies/monitors.snbt" />
-<IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+监控器允许可视化和交互单个物品或流体类型，而无需打开 GUI。  
+监控器会继承它们所安装的[线缆](cables.md)的颜色。  
+如果监控器在地板或天花板上，你可以使用赛特斯石英扳手<ae2:certus_quartz_wrench>进行旋转。  
+它们属于一种[线缆子部件](../ae2-mechanics/cable-subparts.md)。  
 
-Monitors allow visualization and interaction with a single item or fluid type, without opening a GUI.
+# 存储监控器
 
-Monitors will inherit the color of the [cable](cables.md) they are mounted on.
+将显示一个物品或流体及其数量。把它们放在你的农场旁边之类的...  
+*不*需要[频道](../ae2-mechanics/channels.md)。  
+按键绑定：  
+* 用物品右键点击或用流体容器双击右键点击来将监控器设置为该物品/流体。
+* 用空手右键点击来清除监控器。
+* 用空手 Shift 右键点击来锁定监控器。
 
-If the monitor is on the floor or ceiling, you can rotate it with a <ItemLink id="certus_quartz_wrench" />.
-
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
-
-# Storage Monitor
-
-Will show an item or fluid and its quantity. Put them next to your farms or something...
-
-Does *not* require a [channel](../ae2-mechanics/channels.md).
-
-Keybinds:
-
-*   Right-click with an item or double-right-click with a fluid container to set the monitor to that item/fluid.
-*   Right-click with an empty hand to clear the monitor.
-*   Shift-right-click with an empty hand to lock the monitor.
-
-## Recipe
+## 配方
 
 <RecipeFor id="storage_monitor" />
 
-# Conversion Monitor
+# 交换监控器
 
-The Conversion Monitor is similar to a storage monitor, but allows you to insert or extract its configured item.
+交换监控器类似于存储监控器，但允许你插入或提取其配置的物品。  
+如果配置的物品可以[自动合成](../ae2-mechanics/autocrafting.md)且存储中没有，尝试取出物品将改为打开一个 UI 以指定要合成的数量。  
+*确实*需要[频道](../ae2-mechanics/channels.md)。  
 
-If the configured item is [autocraftable](../ae2-mechanics/autocrafting.md) and none are in storage, attemping to take an
-item will instead open a UI to specify the amount to be crafted.
+额外的按键绑定：  
+* 左键点击以提取一组配置的物品，或者如果存储中没有该物品则请求合成该物品。
+* 用任意物品右键点击以插入该物品。
+* 用空手右键点击以从你的物品栏中插入所有配置的物品。
 
-*Does* require a [channel](../ae2-mechanics/channels.md).
-
-Additional keybinds:
-
-*   Left-click to extract a stack of the configured item, or request craft of that item if none are in storage.
-*   Right-click with any item to insert that item.
-*   Right-click with an empty hand to insert all of the configured item from your inventory.
-
-## Recipe
+## 配方
 
 <RecipeFor id="conversion_monitor" />

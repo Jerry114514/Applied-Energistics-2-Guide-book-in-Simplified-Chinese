@@ -4,25 +4,25 @@ navigation:
   position: 50
 ---
 
-# 物品、方块与机器
+# 物品，方块，机械
 
-本模组中各类物品的列表，供其他页面链接引用，并附带其功能说明。
+本页是模组中各种物品的列表，供其他页面链接引用，并附带其功能描述。
 
 ## 杂项材料与方块
 
-<Category Index category="misc ingredients blocks" />
+<CategoryIndex category="misc ingredients blocks" />
 
 ## 网络基础设施
 
-<Category Index category="network infrastructure" />
+<CategoryIndex category="network infrastructure" />
 
 ## 设备
 
-<Category Index category="devices" />
+<CategoryIndex category="devices" />
 
-## 机器
+## 机械
 
-<Category Index category="machines" />
+<CategoryIndex category="machines" />
 
 ## 工具
 

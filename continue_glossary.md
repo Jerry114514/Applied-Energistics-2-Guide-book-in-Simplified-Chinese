@@ -7,6 +7,8 @@
 
 | 英文 | 中文 |
 | :--- | :--- |
+| cobblestone | 圆石 |
+| tick | （游戏）刻 |
 | Furnace | 熔炉 |
 | Blast Furnace | 高炉 |
 | Smoker | 烟熏炉 |

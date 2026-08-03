@@ -11,16 +11,12 @@ item_ids:
 - ae2:not_so_mysterious_cube
 ---
 
-# The Mysterious Cube
+# 神秘方块
 
-<BlockImage id="mysterious_cube" scale="8" />
+还记得你不得不找一堆陨石来找到所有压印模板的日子吗？不用了！现在陨石会附带一个神秘方块。  
+我好奇如果你（不使用精准采集）打破它会怎么样...  
+你也可以制作一个复制品，那个没那么神秘的方块。  
 
-Remember when you had to find a bunch of meteors to find all the presses? No more! Now meteorites come with a Mysterious Cube.
-
-I wonder what happens when you break it (without silk touch)...
-
-You can also make a replica, the Not So Mysterious Cube
-
-## Recipe
+## 配方
 
 <RecipeFor id="not_so_mysterious_cube" />

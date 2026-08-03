@@ -41,65 +41,20 @@ item_ids:
 - ae2:black_lumen_paint_ball
 ---
 
-# Paintballs
+# 染色球
 
-<Row gap="-8">
-  <ItemImage id="white_paint_ball" scale="4" />
+染色球用于染色器<ae2:color_applicator>中，以给可染色方块上色，比如[线缆](cables.md)、羊毛、陶瓦、玻璃和混凝土。它们也可以用于物质炮<ae2:matter_cannon>中，射出小片的颜料斑点。  
 
-  <ItemImage id="orange_paint_ball" scale="4" />
+## 配方
 
-  <ItemImage id="green_paint_ball" scale="4" />
+8个物质球围绕一种染料
 
-  <ItemImage id="blue_paint_ball" scale="4" />
+# 光通染色球
 
-  <ItemImage id="red_paint_ball" scale="4" />
-</Row>
+它们的行为与普通染色球完全相同，但从物质炮<ae2:matter_cannon>射出时，斑点会发光。  
+我觉得可以用作一种信号枪之类的。  
 
-Paintballs are used in a <ItemLink id="color_applicator" /> in order to paint colorable blocks like [cables](cables.md),
-wool, terracotta, glass, and concrete. They can also be used in a <ItemLink id="matter_cannon" /> to shoot little splotches of paint.
-
-## Recipes
-
-8 matter balls around a dye
-
-<Column>
-  <Row>
-    <RecipeFor id="white_paint_ball" />
-
-    <RecipeFor id="orange_paint_ball" />
-
-    <RecipeFor id="green_paint_ball" />
-  </Row>
-
-  <Row>
-    <RecipeFor id="blue_paint_ball" />
-
-    <RecipeFor id="red_paint_ball" />
-
-    <RecipeFor id="black_paint_ball" />
-  </Row>
-
-  <br />
-</Column>
-
-# Lumen Paintballs
-
-<Row gap="-8">
-  <ItemImage id="white_lumen_paint_ball" scale="4" />
-
-  <ItemImage id="orange_lumen_paint_ball" scale="4" />
-
-  <ItemImage id="green_lumen_paint_ball" scale="4" />
-
-  <ItemImage id="blue_lumen_paint_ball" scale="4" />
-
-  <ItemImage id="red_lumen_paint_ball" scale="4" />
-</Row>
-
-They act identically to regular paintballs but the splotches emit light when shot out of a <ItemLink id="matter_cannon" />.
-Useful as a sort of flaregun I guess.
-
-## Recipes
+## 配方
 
 8 paintballs around a glowstone dust
 

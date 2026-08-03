@@ -14,47 +14,30 @@ item_ids:
 - ae2:stonecutting_pattern
 ---
 
-# Patterns
+# 样板
 
-<ItemImage id="crafting_pattern" scale="4" />
+样板是在 ME 样板编码终端<ae2:pattern_encoding_terminal>中用空白样板制作的，并插入到 ME 样板供应器<ae2:pattern_provider>或分子装配室<ae2:molecular_assembler>中。  
 
-Patterns are made in a <ItemLink id="pattern_encoding_terminal" /> out of blank patterns, and inserted in <ItemLink id="pattern_provider" />s
-or <ItemLink id="molecular_assembler" />s.
-
-There are several different types of pattern for different things:
-
-*   <ItemLink id="crafting_pattern" />s encode recipes made by a crafting table. They can be put directly in a <ItemLink id="molecular_assembler" /> to make it
-    craft the result whenever given the ingredients, but their main use is in a <ItemLink id="pattern_provider" /> next to a molecular assembler.
-    Pattern providers have special behavior in this case, and will send the relevant pattern along with the ingredients to adjacent assemblers.
-    Since assemblers auto-eject the results of crafts to adjacent inventories, an assembler on a pattern provider is all that is needed to automate crafting patterns.
+有几种不同类型的样板用于不同用途：  
+* 合成样板<ae2:crafting_pattern>编码工作台制作的配方。它们可以直接放入分子装配室<ae2:molecular_assembler>中，使其在给定原料时合成结果，但它们的主要用途是放在分子装配室旁边的 ME 样板供应器<ae2:pattern_provider>中。在这种情况下，样板供应器有特殊行为：它们会将相关样板连同原料一起发送给相邻的分子装配室。由于分子装配室会自动将合成结果弹出到相邻的容器中，所以在样板供应器旁放一个分子装配室就足以自动化合成样板。
 
 ***
 
-*   <ItemLink id="smithing_table_pattern" />s are very similar to crafting patterns, but they encode smithing table recipes. They are also automated by a pattern
-    provider and molecular assembler, and function in the exact same way. In fact, crafting, smithing, and stonecutting patterns can be
-    used in the same setup.
+* 锻造台样板<ae2:smithing_table_pattern>与合成样板非常相似，但它们编码锻造台配方。它们也由样板供应器和分子装配室自动化，并且功能完全相同。事实上，合成、锻造和切石样板可以在同一个配置中使用。
 
 ***
 
-*   <ItemLink id="stonecutting_pattern" />s are very similar to crafting patterns, but they encode stonecutter recipes. They are also automated by a pattern
-    provider and molecular assembler, and function in the exact same way. In fact, crafting, smithing, and stonecutting patterns can be
-    used in the same setup.
+* 切石机样板<ae2:stonecutting_pattern>与合成样板非常相似，但它们编码切石机配方。它们也由样板供应器和分子装配室自动化，并且功能完全相同。事实上，合成、锻造和切石样板可以在同一个配置中使用。
 
 ***
 
-*   <ItemLink id="processing_pattern" />s are where a lot of flexibility in autocrafting comes from. They are the most generalized type, simply
-    saying "if a pattern provider pushes these ingredients to adjacent inventories, the ME system will recieve these items at some point in the
-    near or distant future". They are how you will autocraft with almost any modded machine, or furnaces and the like. Because they are so
-    general in use and do not care what happens between pushing ingredients and receiving the result, you can do some really funky stuff, like inputting
-    the ingredients into an entire complex factory production chain which will sort out stuff, take in other ingredients from infinitely-producing
-    farms, print the entirety of the Bee Movie script, the ME system does not care as long as it gets the result the pattern specifies. In fact,
-    it doesn't even care if the ingredients are in any way related to the result. You could tell it "1 cherry wood planks = 1 nether star" and have
-    your wither farm kill a wither upon receiving a cherry wood planks and it would work.
+* 处理样板<ae2:processing_pattern>是自动合成中大量灵活性的来源。  
+它们是最通用的类型，简单地说“如果样板供应器将这些原料推送到相邻的容器中，ME 系统将在不久或遥远的将来收到这些物品”。  
 
-Multiple <ItemLink id="pattern_provider" />s with identical patterns are supported and work in parallel. Additionally, you can have a pattern say,
-for example, 8 cobblestone = 8 stone instead of 1 cobblestone = 1 stone, and the pattern provider will insert 8 cobblestone into
-your smelting setup every operation instead of one at a time.
+这就是你如何用几乎任何模组机器、熔炉等自动化合成的方式。由于它们使用非常通用，不关心推送原料和接收结果之间发生了什么，你可以做一些非常奇特的事情，比如将原料输入到整个复杂的工厂生产链中，它会整理东西、从无限生产的农场中获取其他原料、打印整个《蜜蜂总动员》剧本，只要 ME 系统得到样板指定的结果，它都不在乎。事实上，它甚至不关心原料是否与结果有任何关系。你可以告诉它“1个樱桃木木板 = 1个下界之星”，然后让你的凋灵农场在收到一个樱桃木木板时杀死一只凋灵，这样就能工作。  
 
-## Recipe
+多个具有相同样板的 ME 样板供应器<ae2:pattern_provider>是受支持的，并且可以并行工作。此外，你可以让样板指定，例如，8个圆石 = 8个石头，而不是1个圆石 = 1个石头，这样样板供应器每次操作都会将8个圆石插入你的烧炼设定组，而不是一次一个。
+
+## 配方
 
 <RecipeFor id="blank_pattern" />

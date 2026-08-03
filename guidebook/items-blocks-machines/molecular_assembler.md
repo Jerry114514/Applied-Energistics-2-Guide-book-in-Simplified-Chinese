@@ -10,44 +10,24 @@ item_ids:
 - ae2:molecular_assembler
 ---
 
-# The Molecular Assembler
+# 分子装配室
 
-<BlockImage id="molecular_assembler" scale="8" />
+分子装配室接收输入到其中的物品，并执行由相邻的 ME 样板供应器<ae2:pattern_provider>所定义的操作，或者执行插入的合成样板<ae2:crafting_pattern>、锻造台样板<ae2:smithing_table_pattern>或切石机样板<ae2:stonecutting_pattern>所定义的操作，然后将结果推送到相邻的容器中。  
+这个分子装配室有一个合成样板，指定了1个橡木原木 = 4个橡木木板 的配方。当橡木原木被送入上方的漏斗时，分子装配室会合成并将橡木木板吐入下方的漏斗。
 
-The molecular assembler takes items input into it and carries out the operation defined by an adjacent <ItemLink id="pattern_provider" />,
-or the inserted <ItemLink id="crafting_pattern" />, <ItemLink id="smithing_table_pattern" />, or <ItemLink id="stonecutting_pattern" />,
-then pushes the result to adjacent inventories.
+## 分子装配室的主要用途
 
-This assembler has a crafting pattern that specifies the 1 oak log = 4 oak planks recipe. When oak logs are fed into the upper hopper,
-the assembler crafts and spits oak planks into the lower hopper.
+然而，它们的主要用途是放在 ME 样板供应器<ae2:pattern_provider>旁边。在这种情况下，样板供应器有特殊行为：它们会将相关样板的信息连同原料一起发送给相邻的分子装配室。由于分子装配室会自动将合成结果弹出到相邻的容器中（从而进入样板供应器的返回槽位），所以在样板供应器旁放一个分子装配室就足以自动化合成样板。  
 
-<GameScene zoom="6" background="transparent">
-  <ImportStructure src="../assets/assemblies/standalone_assembler.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+## 升级
 
-## The Main Use Of The Molecular Assembler
+分子装配室支持以下[升级](upgrade_cards.md)：
+* 加速卡<ae2:speed_card>
 
-However, their main use is next to a <ItemLink id="pattern_provider" />. Pattern providers have special behavior in this case,
-and will send information about the relevant pattern along with the ingredients to adjacent assemblers. Since assemblers auto-eject the results of
-crafts to adjacent inventories (and thus into the return slots of the pattern provider), an assembler on a pattern provider
-is all that is needed to automate crafting patterns.
-
-<GameScene zoom="4" background="transparent">
-  <ImportStructure src="../assets/assemblies/assembler_tower.snbt" />
-  <IsometricCamera yaw="195" pitch="30" />
-</GameScene>
-
-## Upgrades
-
-The Molecular Assembler supports the following [upgrades](upgrade_cards.md):
-
-*   <ItemLink id="speed_card" />
-
-## Recipe
+## 配方
 
 <RecipeFor id="molecular_assembler" />
 
-## Note
+## 注意
 
-Optifine breaks the "push to adjacent inventories" function so most crafting setups with assemblers won't work.
+Optifine 会破坏“推送到相邻容器”的功能，因此大多数带有分子装配室的合成配置将无法工作。

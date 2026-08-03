@@ -10,35 +10,27 @@ item_ids:
 - ae2:network_tool
 ---
 
-# Network Tool
+# 网络工具
 
-<ItemImage id="network_tool" scale="4" />
+网络工具是一种改进的[扳手](wrench.md)，它还能显示网络诊断信息，并且可以存储[升级卡](upgrade_cards.md)。  
+虽然它保留了扳手快速拆卸物品和从线缆上拉下[子部件](../ae2-mechanics/cable-subparts.md)的能力，但它不能旋转物品。  
+它有9个槽位用于存储[升级卡](upgrade_cards.md)，如果工具在你的物品栏中任何位置，这些升级卡将在任何 AE2 设备 UI 中可用。  
+右键点击网络的任何部分将显示一个诊断信息窗口，类似于右键点击 ME 控制器<ae2:controller>。  
 
-The Network Tool is a modified [wrench](wrench.md) that also shows network diagnostic information and can store [upgrade cards](upgrade_cards.md).
-While it retains the wrench's ability to quickly disassemble things and pull [subparts](../ae2-mechanics/cable-subparts.md)
-off of a cable, it cannot rotate things.
+此窗口显示：
+* 网络上正在使用的频道数量
+* 一个开关，用于全局设置以 AE 或 E/FE 查看能量
+* 网络中存储的[能量](../ae2-mechanics/energy.md)数量，以及网络的最大能量容量
+* 进入网络和被网络使用的能量数量
+* 网络上所有[设备](../ae2-mechanics/devices.md)和组件的列表  
 
-It has 9 slots in which to store [upgrade cards](upgrade_cards.md), and they will be available in any AE2 device UI if the tool
-is anywhere in your inventory.
+此窗口在摆弄[子网络](../ae2-mechanics/subnetworks.md)时，也有助于判断两条不同的线缆或设备是否属于同一个网络。
 
-Right-clicking any part of a network will show a diagnostic info window, similar to right-clicking a <ItemLink id="controller" />.
-This window shows
+## 隐藏线缆伪装板
 
-*   The amount of channels in-use on the network
-*   A toggle for the global setting to view energy in AE or E/FE
-*   The amount of [energy](../ae2-mechanics/energy.md) stored in the network, and the network's maximum energy capacity
-*   The amount of energy entering and being used by the network
-*   A list of all the [devices](../ae2-mechanics/devices.md) and components on the network
+手持网络工具时，[线缆伪装板](facades.md)将被隐藏。  
+你可以与隐藏的线缆伪装板后面的方块进行交互，而无需先移除线缆伪装板。  
 
-This window is also helpful for figuring out if two different cables or devices are part of the same network when messing around with
-[Subnetworks](../ae2-mechanics/subnetworks.md).
-
-## Hiding Facades
-
-<a href="facades.md">Facades</a> will be hidden while holding a network tool in either hand.
-
-You can interact with blocks behind hidden facades without having to remove the facades first.
-
-## Recipe
+## 配方
 
 <RecipeFor id="network_tool" />

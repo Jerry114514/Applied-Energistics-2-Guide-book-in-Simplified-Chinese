@@ -9,7 +9,7 @@
 * 本项目（即本仓库）是Jerry Jiang @Jerry114514 的个人汉化项目，仓库内所有文件皆来自于AE2官方在github上开源的MD文档。
 * 因为所有文档皆以Markdown语法写成，若您能经常访问GitHub，建议复刻（Fork）到自己的库里，直接通过GitHub网页阅读，或下载其他的Markdown阅读器以便阅读（例如Vscode）。
   当然，你也可以直接用记事本打开，只是可能看不到一些链接，但不影响内容。
-* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，您正在阅读的此处文本是针对AE2项目自带的自读文件的汉化。
+* 关于游戏内指南书的部分，请查阅位于 `guidebook` 文件夹内的 .md 文件，您正在阅读的此处文本是针对该汉化项目的自读文件。
 * 本项目所翻译之文档仅适用于 Minecraft 1.20.1 版本的AE2模组，若您希望将这些内容应用至其他版本的AE2，请先与官方发布的对应版本的文档进行校对。
 * 若您是第一次阅读该文档，请先阅读 `guidebook` 文件夹内的 `读前须知.md`。而非根目录下的 `guidebook.md` ！
 * 若您希望了解关于AE2本身的事情，请转到 `AE2-README.md`。
@@ -40,3 +40,11 @@
 `guidebook/ae2-mechanics`：
 
 * 已全部完成。
+
+## 特别感谢：
+
+* Continue -- open source AI code Agent： `VsCode Extension` | `VsCode 扩展` 
+* TransGo： `VsCode Extension` | `VsCode 扩展` 
+* Support from `DeepSeek Open Platform` ———— 来自`Deepseek开放平台`的协助: `https://platform.deepseek.com/`
+* MiniMax Ai Agent: `https://agent.minimaxi.com/`
+## * And you.

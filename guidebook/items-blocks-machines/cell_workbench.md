@@ -16,7 +16,7 @@ item_ids:
 
 元件工作台允许你配置[存储元件](storage-cells.md)和<ItemLink id="view_cell" />。
 
-你可以添加[升级卡](upgrade-cards.md)并设置"分区"来过滤元件将存储的内容。
+你可以添加[升级卡](upgrade-cards.md)并设置"分区"来过滤元件将存储的内容。  
 
 即使你实际上没有某种物品，也可以从 JEI/REI 将物品和流体拖入槽位。
 

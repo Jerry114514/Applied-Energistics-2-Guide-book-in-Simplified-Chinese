@@ -1,78 +1,103 @@
 ---
 navigation:
-  parent: ae2-mechanics/ae2-mechanics-index.md
-  title: Bytes and Types
-  icon: creative_storage_cell
+    icon: creative_item_cell
+    parent: ae2-mechanics/ae2-mechanics-index.md
+    title: 字节与类型
 ---
 
-# Bytes and Types
+# 字节与类型
 
-<Row>
-    <ItemImage id="item_storage_cell_1k" scale="4" />
+[存储元件](../items-blocks-machines/storage_cells.md)由 **字节** 和 **类型** 定义。
 
-    <ItemImage id="item_storage_cell_4k" scale="4" />
+## 基本概念
 
-    <ItemImage id="item_storage_cell_16k" scale="4" />
+### 字节
 
-    <ItemImage id="item_storage_cell_64k" scale="4" />
+字节就像电脑的硬盘，是存储元件中的"东西"总量的计量单位。每个物品占用1位空间，因此：
+- 8个物品 = 1个字节
+- 一个64个物品的堆叠占用8个字节
 
-    <ItemImage id="item_storage_cell_256k" scale="4" />
-  </Row>
+对于流体存储元件，每字节可存储8桶对应的流体。
 
-[Storage Cells](../items-blocks-machines/storage_cells.md) are defined by both *bytes* and *types*. Bytes, like in
-your actual computer, are a measure of the total amount of "stuff" in a storage cell. Types are a measure of how many different,
-well, *types* of things are stored in a cell. Each type represents a unique item, so 4,096 cobblestone is 1 type but 16 different
-swords with different enchantments are 16 types.
+**注意**：这一性质不会受到原版游戏的堆叠方式影响。无论物品在ME网络之外如何堆叠，64个鞍占用的空间不会比64个石英大。
 
-Each storage cell can store a fixed amount
-of data. Each type consumes a number of bytes upfront (which varies with the cell
-size), and each item consumes one bit of storage, so eight items consume one
-byte, and a full stack of 64 consumes 8 bytes, regardless of how the item
-would stack outside an ME network. For instance, 64 identical saddles don't
-take up more space than 64 stone.
+### 类型
 
-Again, each item is 1 bit, so 8 items equals 1 byte. For fluid cells, this is 8 buckets per byte.
+类型是衡量一个单元格中存储了多少不同类型的物品的单位。每个类型代表一个独特的物品。
 
-Many people complain about the limited number of types a cell can hold, but they are a ***necessary limitation***.
-Cells store their data in an NBT tag on the item itself, which makes them rather stable. However, this means putting too much
-data on a cell can cause too much data to be sent to a player, causing an effect similar to "Book Banning" in vanilla minecraft.
-Additionally, having too many different types in your system increases the load on sorting and item handling. However, this
-limitation does not end up being very restrictive. One <ItemLink id="drive" /> bay full of cells is 630 types which is actually
-quite a lot as long as you don't store loads of unique unstackable items.
+**举例说明**：
+- 4096块圆石 = 1种类型
+- 16把拥有不同附魔的剑 = 16种类型
 
-For this reason, types exist to "firmly discourage" you from dumping the hundreds of randomly damaged armor and tools from
-a mob farm directly into your ME system. Each armor piece with unique damage and enchantments has to be stored as a separate entry,
-causing bloat. it is recommended to filter them out of the item stream before they touch your system.
+---
 
-Gunning straight for top tier storage cells is generally not the best idea,
-since you use more resources but don't get any extra type storage. This means that all sizes of cell are still useful even
-lategame, as they have tradeoffs.
+## 类型数量限制
 
-Below is a table comparing the different tiers of storage cells, how much they store, and
-a rough estimate of their cost.
+许多人抱怨一个元件可以容纳的类型数量有限，但这是**必要的限制**。
 
-## Storage Cell Contents Vs Cost
+### 技术原因
 
-| Cell                                     |   Bytes | Types | Bytes Per Type | Certus | Redstone | Gold | Glowstone |
-| ---------------------------------------- | ------: | ----: | -------------: | -----: | -------: | ---: | --------: |
-| <ItemLink id="item_storage_cell_1k" />   |   1,024 |    63 |              8 |      4 |        5 |    1 |         0 |
-| <ItemLink id="item_storage_cell_4k" />   |   4,096 |    63 |             32 |  14.25 |       20 |    3 |         0 |
-| <ItemLink id="item_storage_cell_16k" />  |  16,384 |    63 |            128 |     45 |       61 |    9 |         4 |
-| <ItemLink id="item_storage_cell_64k" />  |  65,536 |    63 |            512 | 137.25 |      184 |   27 |        16 |
-| <ItemLink id="item_storage_cell_256k" /> | 262,144 |    63 |           2048 |    414 |      553 |   81 |        48 |
+元件将数据存储在该元件本身的NBT标签中，这使得它们相当稳定。然而，这意味着：
 
-## Storage Capacity with Varying Type Count
+- 在一个格内放置太多的数据可能会导致区块加载时瞬间向玩家发送巨量数据
+- 可能导致游戏卡顿、甚至崩溃
+- 每次读取存档时游戏便直接崩溃（又称"禁人塔"）
 
-The upfront cost of types is such that a cell holding 1 type can hold 2x as much as a cell with all 63 types in use.
+### 实际影响
 
-| Cell                                     | Total Capacity of Cell With 1 Type In Use | Total Capacity of Cell With 63 Types In Use |
-| ---------------------------------------- | ----------------------------------------: | ------------------------------------------: |
-| <ItemLink id="item_storage_cell_1k" />   |                                     8,128 |                                       4,160 |
-| <ItemLink id="item_storage_cell_4k" />   |                                    32,512 |                                      16,640 |
-| <ItemLink id="item_storage_cell_16k" />  |                                   130,048 |                                      66,560 |
-| <ItemLink id="item_storage_cell_64k" />  |                                   520,192 |                                     266,240 |
-| <ItemLink id="item_storage_cell_256k" /> |                                 2,080,768 |                                   1,064,960 |
+- 系统中有太多不同的类型会增加分拣和物品处理的负担
+- 一个放满存储元件的 **ME驱动器** 可以存储630种类型
+- 只要不存储大量*独特的不可堆叠物品*就可以了，但这个限制实际上并没有那么严格
 
-![A Cell With 1 Type](../assets/diagrams/1_type_cell.png)
+译者注：
+> **什么是“独特的不可堆叠物品”？**  
+> 以两把钻石剑为例：一把耐久度为 199，另一把为 200，它们在存储系统中会占用两种类型，因为*耐久度*的差异让它们无法堆叠，且每种都算作“独特”物品。
+> 还是以两把钻石剑为例：一把附魔有耐久 III，另一把附魔有耐久 I，它们在存储系统中会占用两种类型，因为*附魔*的差异让它们无法堆叠，且每种都算作“独特”物品。
 
-![A Cell With 63 Types](../assets/diagrams/63_type_cell.png)
+**设计目的**：类型的存在是为了阻止你将刷怪塔中的数百件随机耐久度的装备直接倒入ME系统中。每个具有独特伤害和附魔的装备都必须作为单独的条目存储。
+
+---
+
+## 存储单元选择建议
+
+直接将所有资源用以制作顶级存储元件通常不是最好的主意，因为使用了海量的资源，但却没有得到更多的存储类型。
+
+**好消息**：小型存储单元在游戏后期依然有用。即使存储空间有差异，但每种元件的存储类型数量都是一样的。
+
+下表比较了不同等级的存储元件、存储量以及所需材料的粗略估计：
+
+## 存储单元容量对比成本
+
+| 存储元件类型 | 字节量 | 可存储类型数 | 平均每字节可存类型 | 赛特斯石英水晶 | 红石 | 金锭 | 萤石 |
+|-------------|-------:|------------:|-----------------:|-------------:|------:|-----:|-----:|
+| 1k ME物品存储元件 | 1,024 | 63 | 8 | 4 | 5 | 1 | 0 |
+| 4k ME物品存储元件 | 4,096 | 63 | 32 | 14.25 | 20 | 3 | 0 |
+| 16k ME物品存储元件 | 16,384 | 63 | 128 | 45 | 61 | 9 | 4 |
+| 64k ME物品存储元件 | 65,536 | 63 | 512 | 137.25 | 184 | 27 | 16 |
+| 256k ME物品存储元件 | 262,144 | 63 | 2048 | 414 | 553 | 81 | 48 |
+
+---
+
+## 不同类型的存储容量
+
+关于每种类型的消耗空间，一个有趣的点是：如果一个格子只用于存储一种类型的物品，那么其可收纳物品的数量要比存放63种物品类型的数量要多出一倍。
+
+| 存储元件类型 | 只存储一种类型时的总容量 | 存储63种类型时的总容量 |
+|-------------|----------------------:|----------------------:|
+| 1k ME物品存储元件 | 8,128 | 4,160 |
+| 4k ME物品存储元件 | 32,512 | 16,640 |
+| 16k ME物品存储元件 | 130,048 | 66,560 |
+| 64k ME物品存储元件 | 520,192 | 266,240 |
+| 256k ME物品存储元件 | 2,080,768 | 1,064,960 |
+
+下面的两幅图直观比较了单一类型和63种类型对一个存储单元的占用情况：
+
+![只存储了一种类型物品的存储单元](../assets/diagrams/1_type_cell.png)
+
+![存储了63类型物品的存储单元](../assets/diagrams/63_type_cell.png)
+
+---
+
+## 建议
+
+建议在具有独特伤害和附魔的装备进入系统之前将其从物品流中过滤掉，这样可以有效减少存储类型占用。

@@ -10,16 +10,15 @@ item_ids:
 - ae2:crank
 ---
 
-# 曲柄
+# The Crank
 
 <GameScene zoom="6" background="transparent">
-  <Import Structure src="/assets/assemblies/crank_on_stuff.snbt" />
-  <Isometric Camera yaw="195" pitch="30" />
+  <ImportStructure src="../assets/assemblies/crank_on_stuff.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-曲柄用于在无法获得电力（或没有**能源接收器**）时为机器提供动力。
-（早期游戏没有办法的办法，是不是？）
+The crank is used to power machines when you don't otherwise have access to power (or an <ItemLink id="energy_acceptor" />). Early-game struggles, am I right?
 
-## 配方
+## Recipe
 
 <RecipeFor id="crank" />

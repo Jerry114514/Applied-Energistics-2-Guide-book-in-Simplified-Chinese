@@ -19,11 +19,7 @@ item_ids:
   <ItemImage id="nether_quartz_wrench" scale="4" />
 </Row>
 
-Wrenches are used to rotate ae2 devices (right-click), and disassemble ae2 blocks (shift-right-click).
-[Subparts](../ae2-mechanics/cable-subparts.md) can be removed from a cable without breaking everything on the cable
-(or the cable can be removed without breaking the subparts.)
-
-Many ae2 blocks can be rotated, so just because this guide doesn't say you can rotate something doesn't mean you can't.
+扳手用于旋转 AE2 设备（右键点击），以及拆卸 AE2 方块（Shift+右键点击）。[子部件](../ae2-mechanics/cable-subparts.md) 可以从线缆上移除，而不会破坏线缆上的其他部件（或者也可以移除线缆而不破坏子部件）。许多 AE2 方块都可以旋转，所以即使本指南没有提到某个方块可以旋转，也并不意味着它不能旋转。
 
 ## Recipes
 

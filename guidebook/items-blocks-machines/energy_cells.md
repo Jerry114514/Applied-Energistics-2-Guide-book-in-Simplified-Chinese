@@ -29,7 +29,7 @@ item_ids:
 ## 元件类型
 
 * 能源元件<ae2:energy_cell>可以存储200k AE，对于大多数使用场景来说一个就足够了，可以轻松应对正常网络使用的功率波动。
-* 致密能源元件<ae2:dense_energy_cell>可以存储1.6M AE，适用于你想依靠存储的能量运行网络，或者应对大型[空间存储](../ae2-mechanics/spatial-io.md) setup 的巨大瞬时能量消耗的情况。
+* 致密能源元件<ae2:dense_energy_cell>可以存储1.6M AE，适用于你想依靠存储的能量运行网络，或者应对大型[空间存储](../ae2-mechanics/spatial-io.md)装置的巨大瞬时能量消耗的情况。
 * 创造能源元件<ae2:creative_energy_cell>是用于测试的创造物品，提供无限能量。
 
 ## 配方

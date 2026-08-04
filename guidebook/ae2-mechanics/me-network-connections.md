@@ -10,18 +10,18 @@ navigation:
 ## "网络"是什么意思？
 
 "网络"是由[设备](../ae2-mechanics/devices.md)和能够传递[频道](../ae2-mechanics/channels.md)的方块（如[线缆](../items-blocks-machines/cables.md)、完整方块机器及[设备](../ae2-mechanics/devices.md)）连接而成的整体。
-（<ItemLink id="charger" />、<ItemLink id="interface" />、<ItemLink id="drive" />等）
+（充能器<ae2:charger>、ME 接口<ae2:interface>、ME 驱动器<ae2:drive>等）
 从技术角度来说，一根单独的线缆也是一个网络。
 
 ## 关于设备位置的说明
 
-对于具有特定网络功能的[设备](../ae2-mechanics/devices.md)（如向[网络存储](../ae2-mechanics/import-export-storage.md)推送或拉取物品的<ItemLink id="interface" />、读取网络存储内容的<ItemLink id="level_emitter" />、作为网络存储的<ItemLink id="drive" />等），设备的物理位置并不重要。
+对于具有特定网络功能的[设备](../ae2-mechanics/devices.md)（如向[网络存储](../ae2-mechanics/import-export-storage.md)推送或拉取物品的ME接口<ae2:interface>、读取网络存储内容的ME标准发信器<ae2:level_emitter>、作为网络存储的ME驱动器<ae2:drive>等），设备的物理位置并不重要。
 
 再次强调，**设备的物理位置并不重要**。唯一重要的是设备已连接到网络（当然，以及它连接到了哪个网络）。
 
 ## 网络连接
 
-查看网络上连接了哪些组件的简便方法是使用<ItemLink id="network_tool" />。它会显示网络上的所有组件，因此如果你看到了不应该存在的东西或没看到应该存在的东西，就说明有问题。
+查看网络上连接了哪些组件的简便方法是使用网络工具<ae2:network_tool>。它会显示网络上的所有组件，因此如果你看到了不应该存在的东西或没看到应该存在的东西，就说明有问题。
 
 例如，下图展示的是2个独立的网络：
 
@@ -39,7 +39,7 @@ navigation:
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-下图也是2个独立的网络，因为<ItemLink id="quartz_fiber" />只共享[能量](../ae2-mechanics/energy.md)，而不提供网络连接。
+下图也是2个独立的网络，因为石英纤维<ae2:quartz_fiber>只共享[能量](../ae2-mechanics/energy.md)，而不提供网络连接。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="/assets/assemblies/2_networks_2.snbt" />
@@ -81,7 +81,7 @@ navigation:
 
 ## 不太直观的连接
 
-在下图中，这只是1个网络，因为<ItemLink id="pattern_provider" />作为完整方块设备，其作用类似于线缆，而<ItemLink id="inscriber" />也有类似功能。因此，网络连接会穿过样板供应器和压印器。
+在下图中，这只是1个网络，因为ME样板供应器<ae2:pattern_provider>作为完整方块设备，其作用类似于线缆，而压印器<ae2:inscriber>也有类似功能。因此，网络连接会穿过样板供应器和压印器。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/pattern_provider_network_connection_1.snbt" />
@@ -93,7 +93,7 @@ navigation:
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-若要阻止上述情况的发生（这对于涉及[子网络](../ae2-mechanics/subnetworks.md)的许多自动合成设置非常有用），可以用<ItemLink id="certus_quartz_wrench" />右键点击样板供应器，使其变为定向模式。这样它就不会从某一侧传递频道。
+若要阻止上述情况的发生（这对于涉及[子网络](../ae2-mechanics/subnetworks.md)的许多自动合成设置非常有用），可以用赛特斯石英扳手<ae2:certus_quartz_wrench>右键点击样板供应器，使其变为定向模式。这样它就不会从某一侧传递频道。
 
 <Row gap="40">
 <GameScene zoom="6" background="transparent">
@@ -121,7 +121,7 @@ navigation:
 </GameScene>
 </Row>
 
-其他不提供定向网络连接的部件包括大多数[子部件](../ae2-mechanics/cable-subparts.md)[设备](../ae2-mechanics/devices.md)，如<ItemLink id="import_bus" />、<ItemLink id="storage_bus" />和<ItemLink id="cable_interface" />。
+其他不提供定向网络连接的部件包括大多数[子部件](../ae2-mechanics/cable-subparts.md)[设备](../ae2-mechanics/devices.md)，如ME输入总线<ae2:import_bus>、ME存储总线<ae2:storage_bus>和ME接口<ae2:cable_interface>。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="/assets/assemblies/subpart_no_connection.snbt" />

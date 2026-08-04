@@ -11,7 +11,7 @@ navigation:
   <ImportStructure src="../assets/assemblies/meteor_interior.snbt" />
 </GameScene>
 
-陨石是使用AE2的起点。它们提供关键材料：各种类型的[萌芽赛特斯方块](../items-blocks-machines/budding_certus.md)以及中心的<ItemLink id="mysterious_cube" />。
+陨石是使用AE2的起点。它们提供关键材料：各种类型的[萌芽赛特斯方块](../items-blocks-machines/budding_certus.md)以及中心的神秘方块<ae2:mysterious_cube>。
 
 [新手上路](../getting-started.md)将提供有关找到陨石后如何操作的信息。
 

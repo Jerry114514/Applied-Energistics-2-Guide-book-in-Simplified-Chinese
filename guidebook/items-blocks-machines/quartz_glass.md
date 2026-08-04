@@ -11,16 +11,13 @@ item_ids:
 - ae2:quartz_vibrant_glass
 ---
 
-# Quartz Glass
+# 石英玻璃
 
-<BlockImage id="quartz_glass" scale="8" />
+石英玻璃是用赛特斯石英粉<ae2:certus_quartz_dust>制成的一种近乎透明的玻璃。  
+用于制作许多 AE2 机器和物品。  
+还有一种变体，即聚能石英玻璃，它会发光。  
 
-Mostly clear glass made with <ItemLink id="certus_quartz_dust" />.
-Used to make many AE2 machines and items.
-
-There is a variant, vibrant quartz glass, that emits light.
-
-## Recipes
+## 配方
 
 <RecipeFor id="quartz_glass" />
 

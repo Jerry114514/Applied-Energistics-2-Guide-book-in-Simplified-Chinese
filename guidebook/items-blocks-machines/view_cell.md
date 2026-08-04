@@ -10,19 +10,17 @@ item_ids:
 - ae2:view_cell
 ---
 
-# View Cell
+# 显示元件
 
-<ItemImage id="view_cell" scale="2" />
+显示元件用于过滤[终端](terminals.md)的显示内容。  
 
-View Cells are used to filter the display of [terminals](terminals.md). You partition them in a <ItemLink id="cell_workbench" />.
+你要在元件工作台<ae2:cell_workbench>中对它们进行分区。  
 
-For example, say you want a terminal to only display a selection of stone building materials. Partition the view cell to those
-materials and place it in a terminal, and only those items will be shown.
+例如，假设你想要一个只显示一组石头建筑材料的终端。将显示元件分区为那些材料并放入终端中，就只会显示那些物品。  
 
-View cells are additive, if you have a view cell for oak planks and a view cell for cobblestone, putting both in will show
-both planks and cobblestone.
+显示元件是累加的，如果你有一个用于橡木木板的显示元件和一个用于圆石的显示元件，将两者都放入会同时显示木板和圆石。  
 
-## Recipe
+## 配方
 
 <Recipe id="network/cells/view_cell_storage" />
 

@@ -110,7 +110,7 @@ item_ids:
   <ImportStructure src="../assets/assemblies/provider_misconception_1.snbt" />
 
   <BoxAnnotation color="#dddddd" min="1 0 3" max="2 1 4">
-        Not A Blast Furnace
+        不是高炉
   </BoxAnnotation>
 
   <IsometricCamera yaw="95" pitch="5" />

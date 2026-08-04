@@ -10,13 +10,11 @@ item_ids:
 - ae2:quartz_block
 ---
 
-# The Certus Quartz Block
+# 赛特斯石英块
 
-<BlockImage id="quartz_block" scale="8" />
+赛特斯石英块是赛特斯石英水晶<ae2:certus_quartz_crystal>的存储方块。  
+可用于制作[赛特斯石英母岩](budding_certus.md)或[装饰性赛特斯石英方块](decorative_certus.md)。  
 
-The storage block for <ItemLink id="certus_quartz_crystal" />. Can be used to make [budding certus blocks](budding_certus.md)
-or [decorative certus blocks](decorative_certus.md).
-
-## Recipe
+## 配方
 
 <RecipeFor id="quartz_block" />

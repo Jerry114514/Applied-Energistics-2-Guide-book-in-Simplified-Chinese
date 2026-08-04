@@ -10,12 +10,10 @@ item_ids:
 - ae2:wireless_receiver
 ---
 
-# Wireless Receiver
+# 无线接收器
 
-<ItemImage id="wireless_receiver" scale="4" />
+一个放在反射碟中的福鲁伊克斯珍珠<ae2:fluix_pearl>，是短距离无线 ME 技术的组件之一。
 
-A <ItemLink id="fluix_pearl" /> in a reflector dish, a component of short-range wireless ME technology.
-
-## Recipe
+## 配方
 
 <RecipeFor id="wireless_receiver" />

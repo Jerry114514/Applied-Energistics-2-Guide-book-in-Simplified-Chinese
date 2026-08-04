@@ -11,16 +11,13 @@ item_ids:
 - ae2:smooth_sky_stone_block
 ---
 
-# Sky Stone
+# 陨石
 
-<BlockImage id="sky_stone_block" scale="8" />
+陨石是构成[陨石](../ae2-mechanics/meteorites.md)的材料，用于陨石储罐<ae2:sky_stone_tank>、没那么神秘的方块<ae2:not_so_mysterious_cube>、256k ME 存储组件<ae2:cell_component_256k>，以及最重要的——ME 控制器<ae2:controller>的配方。  
 
-The material [meteorites](../ae2-mechanics/meteorites.md) are made out of, used in the recipes of the <ItemLink id="sky_stone_tank" />, <ItemLink id="not_so_mysterious_cube" />,
-<ItemLink id="cell_component_256k" />, and most importantly, the <ItemLink id="controller" />.
+## 配方
 
-## Recipes
-
-place an annihilation plane facing up at max worldheight to get sky stone dust
+在世界高度上限处放置一个朝上的破坏面板以获得陨石粉。
 
 <RecipeFor id="sky_stone_block" />
 

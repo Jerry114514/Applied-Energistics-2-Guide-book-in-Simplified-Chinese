@@ -15,25 +15,17 @@ item_ids:
 - ae2:spatial_cell_component_128
 ---
 
-# Spatial Storage Cells
+# 空间存储元件
 
-  <Row>
-    <ItemImage id="spatial_storage_cell_2" scale="4" />
+空间存储元件用于[存储物理空间体积](../ae2-mechanics/spatial-io.md)。  
 
-    <ItemImage id="spatial_storage_cell_16" scale="4" />
+它们用于空间 IO 端口<ae2:spatial_io_port>。  
 
-    <ItemImage id="spatial_storage_cell_128" scale="4" />
-  </Row>
+与[存储元件](../items-blocks-machines/storage_cells.md)不同，空间元件无法重新格式化。  
 
-Spatial Storage Cells are used to [store physical volumes of space](../ae2-mechanics/spatial-io.md). 
-They are used in a <ItemLink id="spatial_io_port" />.
+再次强调，**空间元件一旦使用后，你不能重置、重新格式化或调整其大小。** 如果你想使用不同的尺寸，请制作一个新的元件。  
 
-Unlike [Storage Cells](../items-blocks-machines/storage_cells.md), spatial cells cannot be reformatted.
-
-Again, **YOU CANNOT RESET, REFORMAT, OR RESIZE A SPATIAL CELL AFTER IT HAS BEEN USED.** Make a new cell if you want to use different dimensions.
-
-
-## Recipes
+## 配方
 
   <Row>
     <Recipe id="network/cells/spatial_storage_cell_2_cubed_storage" />
@@ -43,24 +35,19 @@ Again, **YOU CANNOT RESET, REFORMAT, OR RESIZE A SPATIAL CELL AFTER IT HAS BEEN 
     <Recipe id="network/cells/spatial_storage_cell_128_cubed_storage" />
   </Row>
 
-# Housings
+# 外壳
 
-Cells can be made with a spatial component and a housing or with the housing recipe around a spatial component:
+元件可以用一个空间组件和一个外壳制作，或者用外壳配方围绕一个空间组件制作：  
 
-<Row>
-  <Recipe id="network/cells/spatial_storage_cell_2_cubed" />
-
-  <Recipe id="network/cells/spatial_storage_cell_2_cubed_storage" />
-</Row>
-
-Housings by themselves are crafted like so:
+外壳本身是这样合成的：  
 
   <RecipeFor id="item_cell_housing" />
 
-# Spatial Components
+# 空间组件
 
-Spatial Components are the core of spatial storage cells. Each tier increases the dimensions of the volume that can be
-stored by factor of 8.
+空间组件是空间存储元件的核心。  
+
+每升一级，可存储的体积尺寸就会增加8倍。  
 
   <Row>
     <RecipeFor id="spatial_cell_component_2" />

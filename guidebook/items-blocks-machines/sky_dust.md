@@ -10,15 +10,13 @@ item_ids:
 - ae2:sky_dust
 ---
 
-# Sky Stone Dust
+# 陨石粉
 
-<ItemImage id="sky_dust" scale="4" />
+一个经过压印器<ae2:inscriber>压碎的陨石<ae2:sky_stone_block>。  
+用于生产256k ME 存储组件<ae2:cell_component_256k>和陨石<ae2:sky_stone_block>。  
 
-A <ItemLink id="sky_stone_block" /> block that has been crushed by an <ItemLink id="inscriber" />. Used in the production of
-<ItemLink id="cell_component_256k" /> and <ItemLink id="sky_stone_block" />.
+也可以通过在世界高度限制处朝上放置一个 ME 破坏面板<ae2:annihilation_plane>来获得。  
 
-Can also be obtained by pointing an <ItemLink id="annihilation_plane" /> upward at world height limit.
-
-## Recipe
+## 配方
 
 <RecipeFor id="sky_dust" />

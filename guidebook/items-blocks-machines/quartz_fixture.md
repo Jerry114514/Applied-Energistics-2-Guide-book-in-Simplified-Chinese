@@ -11,19 +11,12 @@ item_ids:
 - ae2:light_detector
 ---
 
-# Quartz Fixtures
+# 充能石英灯具
 
-<Row>
-<BlockImage id="quartz_fixture" scale="8" />
+充能石英灯具是一个会发光的小装饰件。  
+而光亮探测器则是根据其所在方块的光照等级发出红石信号。  
 
-<BlockImage id="light_detector" scale="8" />
-</Row>
-
-The charged quartz fixture is a little greeble that emits light.
-
-The light detecting fixture instead emits a redstone signal according to the light level of its block.
-
-## Recipes
+## 配方
 
 <RecipeFor id="quartz_fixture" />
 

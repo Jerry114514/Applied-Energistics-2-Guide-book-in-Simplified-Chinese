@@ -10,12 +10,10 @@ item_ids:
 - ae2:sky_stone_tank
 ---
 
-# The Sky Stone Tank
+# 陨石储罐
 
-<BlockImage id="sky_stone_tank" scale="8" />
+陨石储罐是一个流体储罐，可以存储16桶流体。被拾起时不会保留其内容物。没什么别的可说了。  
 
-It's a fluid tank that stores 16 buckets of fluid. Does not retain its contents when picked up. Not much else to say.
-
-## Recipe
+## 配方
 
 <RecipeFor id="sky_stone_tank" />

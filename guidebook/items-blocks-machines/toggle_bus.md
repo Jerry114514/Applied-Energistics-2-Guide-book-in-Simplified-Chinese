@@ -11,25 +11,17 @@ item_ids:
 - ae2:inverted_toggle_bus
 ---
 
-# The Toggle Bus
+# ME 触发总线
 
-<GameScene zoom="8" background="transparent">
-<ImportStructure src="../assets/assemblies/toggle_bus.snbt" />
-<IsometricCamera yaw="195" pitch="30" />
-</GameScene>
+一种总线，功能类似于福鲁伊克斯色 ME 玻璃线缆<ae2:fluix_glass_cable>或其他线缆，但它允许通过红石切换其连接状态。这允许你切断[ME 网络](../ae2-mechanics/me-network-connections.md)的一部分。  
 
-A bus which functions similarly to <ItemLink id="fluix_glass_cable" /> or other cables, but it
-allows its connection state to be toggled via redstone. This allows you to cut
-off a section of a [ME Network](../ae2-mechanics/me-network-connections.md).
+当收到红石信号时，该部件启用连接；ME 反相触发总线<ae2:inverted_toggle_bus>则提供相反的行为，改为禁用连接。  
 
-When redstone signal supplied the part enables the connection, <ItemLink id="inverted_toggle_bus" /> provides the reverse
-behavior by disabling the connection instead.
+值得注意的是，切换这些可能会导致网络重新启动并重新计算已连接的设备。  
 
-Of note, toggling these may cause the network to reboot and recalculate the connected devices.
+它们属于一种[线缆子部件](../ae2-mechanics/cable-subparts.md)。  
 
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
-
-## Recipes
+## 配方
 
 <RecipeFor id="toggle_bus" />
 

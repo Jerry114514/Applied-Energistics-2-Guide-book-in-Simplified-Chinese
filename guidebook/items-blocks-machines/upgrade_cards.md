@@ -20,151 +20,69 @@ item_ids:
 - ae2:energy_card
 ---
 
-# Upgrade Cards
+# 升级卡
 
-<Row>
-  <ItemImage id="redstone_card" scale="2" />
+升级卡改变 AE2 [设备](../ae2-mechanics/devices.md)和机器的行为，提高它们的速度、改善过滤容量、启用红石控制等。  
 
-  <ItemImage id="capacity_card" scale="2" />
+## 卡的基础组件
 
-  <ItemImage id="void_card" scale="2" />
+卡是用基础卡或高级卡基底制作的。  
 
-  <ItemImage id="fuzzy_card" scale="2" />
+## 红石卡
 
-  <ItemImage id="speed_card" scale="2" />
+红石卡添加红石控制，在设备的 GUI 中添加一个切换按钮，用于在各种红石条件之间切换。   
 
-  <ItemImage id="inverter_card" scale="2" />
+## 容量卡
 
-  <ItemImage id="crafting_card" scale="2" />
+容量卡增加输入、输出和存储总线以及成型面板中的过滤槽位数量。  
 
-  <ItemImage id="equal_distribution_card" scale="2" />
+## 溢出销毁卡
 
-  <ItemImage id="energy_card" scale="2" />
-</Row>
+溢出销毁卡可以在元件工作台<ae2:cell_workbench>中应用于[存储元件](storage_cells.md)，当元件已满时删除进入的物品。（请务必[分区](cell_workbench.md)你的元件！）与均分卡结合使用时，如果特定物品的元件分区已满，即使其他物品的分区是空的，该物品也会被销毁。  
 
-Upgrade cards change the behavior of AE2 [devices](../ae2-mechanics/devices.md) and machines, increasing their speed, improving their
-filter capacity, enabling redstone control, etc.
+## 模糊卡
 
-## Card Components
+模糊卡让带有过滤器的设备和工具按耐久度进行过滤和/或忽略物品 NBT，允许你导出所有铁斧，无论其耐久度和附魔如何，或者只导出损坏的钻石剑，而不是完全修复的。  
 
-<Row>
-  <ItemImage id="basic_card" scale="2" />
+以下是模糊耐久度比较模式如何工作的示例，左侧是总线配置，顶部是被比较的物品。  
 
-  <ItemImage id="advanced_card" scale="2" />
-</Row>
+| 25% | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 完全修复镐 |
+| :--- | :--- | :--- | :--- | :--- |
+| 几乎损坏的镐 | ✅ | \*\*\*\* | \*\*\*\* | \*\*\*\* |
+| 完全修复的镐 | \*\*\*\* | ✅ | ✅ | ✅ |
+| 50% | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 完全修复镐 |
+| :--- | :--- | :--- | :--- | :--- |
+| 几乎损坏的镐 | ✅ | ✅ | \*\*\*\* | \*\*\*\* |
+| 完全修复的镐 | \*\*\*\* | \*\*\*\* | ✅ | ✅ |
+| 75% | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 完全修复镐 |
+| :--- | :--- | :--- | :--- | :--- |
+| 几乎损坏的镐 | ✅ | ✅ | \*\*\*\* | \*\*\*\* |
+| 完全修复的镐 | \*\*\*\* | | ✅ | ✅ |
+| 99% | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 完全修复镐 |
+| :--- | :--- | :--- | :--- | :--- |
+| 几乎损坏的镐 | ✅ | ✅ | ✅ | \*\*\*\* |
+| 完全修复的镐 | \*\*\*\* | \*\*\*\* | \*\*\*\* | ✅ |
+| 忽略 | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 完全修复镐 |
+| :--- | :--- | :--- | :--- | :--- |
+| 几乎损坏的镐 | ✅ | ✅ | ✅ | **✅** |
+| 完全修复的镐 | **✅** | **✅** | **✅** | ✅ |
 
-Cards are crafted with either basic or advanced card bases
+## 加速卡
 
-<Row>
-  <RecipeFor id="basic_card" />
+加速卡让东西运作得更快，使输入和输出总线每次操作移动更多物品，并让压印器和分子装配室工作得更快。  
 
-  <RecipeFor id="advanced_card" />
-</Row>
+## 反相卡
 
-## Redstone Card
+反相卡将设备和工具中的过滤器从白名单切换为黑名单。  
 
-<ItemImage id="redstone_card" scale="2" />
+## 合成卡
 
-Redstone cards add redstone control, adding a toggle button in the device's GUI to swap between various redstone conditions.
+合成卡让设备向你的[自动合成](../ae2-mechanics/autocrafting.md)系统发送合成请求以获取它想要的物品。  
 
-<RecipeFor id="redstone_card" />
+## 均分卡
 
-## Capacity Card
+均分卡可以在元件工作台<ae2:cell_workbench>中应用于[存储元件](storage_cells.md)，并根据卡被[分区](cell_workbench.md)到的内容将元件分割为大小相等的分区。这可以防止一种物品类型完全填满元件。  
 
-<ItemImage id="capacity_card" scale="2" />
+## 能源卡
 
-Capacity cards increase the amount of filter slots in import, export, and storage busses, and formation planes.
-
-<RecipeFor id="capacity_card" />
-
-## Overflow Destruction Card
-
-<ItemImage id="void_card" scale="2" />
-
-Overflow destruction cards can be applied to [storage cells](storage_cells.md) in a <ItemLink id="cell_workbench" />
-and will delete incoming items if the cell is full. (make sure to [partition](cell_workbench.md) your cells!) Combined with an equal distribution card,
-items will be voided if that specific item's section of the cell is full, even if other items' sections are empty.
-
-<RecipeFor id="void_card" />
-
-## Fuzzy Card
-
-<ItemImage id="fuzzy_card" scale="2" />
-
-Fuzzy cards let devices and tools with filters filter by damage level and/or ignore item NBT, allowing you to export
-all iron axes no matter the damage level and enchantments, or only export damaged diamond swords, not fully repaired ones.
-
-Below is an example of how Fuzzy Damage comparison mods work, left side is the
-bus config, top is the compared item.
-
-| 25%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | \*\*\*\*            | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | ✅                   | ✅                   | ✅                   |
-
-| 50%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | \*\*\*\*            | ✅                   | ✅                   |
-
-| 75%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            |                     | ✅                   | ✅                   |
-
-| 99%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | ✅                   | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | \*\*\*\*            | \*\*\*\*            | ✅                   |
-
-| Ignore                 | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | ✅                   | **✅**               |
-| Fully Repaired Pickaxe | **✅**               | **✅**               | **✅**               | ✅                   |
-
-<RecipeFor id="fuzzy_card" />
-
-## Acceleration Card
-
-<ItemImage id="speed_card" scale="2" />
-
-Acceleration cards make stuff go faster, making import and export busses move more items per operation, and making inscribers
-and assemblers work faster.
-
-<RecipeFor id="speed_card" />
-
-## Inverter Card
-
-<ItemImage id="inverter_card" scale="2" />
-
-Inverter cards swap filters in devices and tools from whitelist to blacklist.
-
-<RecipeFor id="inverter_card" />
-
-## Crafting Card
-
-<ItemImage id="crafting_card" scale="2" />
-
-Crafting cards let the device send crafting requests to your [autocrafting](../ae2-mechanics/autocrafting.md)
-system to get the items it desires.
-
-<RecipeFor id="crafting_card" />
-
-## Equal Distribution Card
-
-<ItemImage id="equal_distribution_card" scale="2" />
-
-Equal distribution cards can be applied to [storage cells](storage_cells.md) in a <ItemLink id="cell_workbench" /> and
-split the cell into equally-sized sections based on what the card is [partitioned](cell_workbench.md) to. This prevents one item type from completely
-filling the cell.
-
-<RecipeFor id="equal_distribution_card" />
-
-## Energy Card
-
-<ItemImage id="energy_card" scale="2" />
-
-Energy cards add more energy storage to certain tools like portable terminals, and make <ItemLink id="vibration_chamber" />s
-more efficient.
-
-<RecipeFor id="energy_card" />
+能源卡为某些工具如便携终端添加更多能量存储，并让谐振仓<ae2:vibration_chamber>更高效。  

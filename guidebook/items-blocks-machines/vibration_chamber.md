@@ -10,39 +10,32 @@ item_ids:
 - ae2:vibration_chamber
 ---
 
-# The Vibration Chamber
+# 谐振仓
 
-<BlockImage id="vibration_chamber" p:active="true" scale="8" />
+虽然为你的网络提供[能量](../ae2-mechanics/energy.md)的主要预期方式是能源接收器<ae2:energy_acceptor>，但谐振仓可以直接生成小到中等量的 AE。
 
-While the primary intended method of providing [energy](../ae2-mechanics/energy.md) to your network is an
-<ItemLink id="energy_acceptor" />, the vibration chamber can directly generate small to middling amounts of AE.
+默认情况下（没有[升级](upgrade_cards.md)和默认配置），它产生40 AE/t。
 
-By default (no [upgrades](upgrade_cards.md) and default configs) it makes 40 AE/t.
+当网络的[能量](../ae2-mechanics/energy.md)存储已满时，谐振仓会降低功率以节约燃料，但不能完全关闭。
 
-When the network's [energy](../ae2-mechanics/energy.md) storage is full, the vibration chamber throttles down to conserve
-fuel, but cannot fully shut off.
+## 设置
 
-## Settings
+* 谐振仓提供用于以 AE 或 E/FE 查看能量的全局设置。
 
-*   The vibration chamber provides access to the global setting to view energy in AE or E/FE.
+## 升级
 
-## Upgrades
+谐振仓支持以下[升级](upgrade_cards.md)：  
+* 能源卡<ae2:energy_card>使谐振仓的效率提高+50%，最高+150%，即基础效率的250%。
+* 加速卡<ae2:speed_card>使谐振仓的燃烧速率提高+50%，最高+150%，即基础功率输出的250%。  
 
-The vibration chamber supports the following [upgrades](upgrade_cards.md):
+## 配置
 
-*   <ItemLink id="energy_card" /> increases the efficiency of the chamber by +50%, for a max of +150%, or 250% of the base efficiency.
-*   <ItemLink id="speed_card" /> increases the burn rate of the chamber by +50%, for a max of +150%, or 250% of the base power output.
+谐振仓的属性可以在你的 .minecraft/config/ae2 文件夹中的 common.json 中编辑。  
 
-## Config
+* baseEnergyPerFuelTick 设置谐振仓的基础、未升级效率。
+* minEnergyPerGameTick 设置最低可能的能量生成（即使网络不需要能量，谐振仓也总是会缓慢消耗一些燃料）。
+* maxEnergyPerGameTick 设置未升级的最大输出（和速度）。
 
-The properties of the vibration chamber can be edited in common.json in the ae2 folder in the config folder of your .minecraft\
-directory.
-
-*   baseEnergyPerFuelTick sets the base, un-upgraded efficiency of the vibration chamber.
-*   minEnergyPerGameTick sets the lowest possible energy generation (the chamber will always slowly use some fuel even if the network
-    requires no energy).
-*   maxEnergyPerGameTick sets the un-upgraded max output (and speed) of the vibration chamber.
-
-## Recipe
+## 配方
 
 <RecipeFor id="vibration_chamber" />

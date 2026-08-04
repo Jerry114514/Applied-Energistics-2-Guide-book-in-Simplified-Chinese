@@ -10,15 +10,12 @@ item_ids:
 - ae2:tiny_tnt
 ---
 
-# Tiny TNT
+# 迷你 TNT
 
-<BlockImage id="tiny_tnt" scale="8" />
+迷你 TNT 是用于小爆炸的小型 TNT。对于制作量子缠绕态奇点<ae2:quantum_entangled_singularity>对非常有用。
 
-Small TNT for small explosions. Useful for making <ItemLink id="quantum_entangled_singularity" /> pairs.
+如果你想在服务器上禁用 TNT 和苦力怕，可以在配置中禁用其方块破坏功能，以便在不造成破坏的情况下制作奇点。
 
-It can have its block damage disabled in the config to allow making singularities without the possibility
-of griefing, if you want to disable TNT and creepers on your server.
-
-## Recipe
+## 配方
 
 <RecipeFor id="tiny_tnt" />

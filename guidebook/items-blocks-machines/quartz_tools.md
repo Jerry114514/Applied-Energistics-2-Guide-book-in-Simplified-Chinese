@@ -19,36 +19,12 @@ item_ids:
 - ae2:nether_quartz_sword
 ---
 
-# Quartz Tools
+# 石英工具
 
-<Row>
-  <ItemImage id="certus_quartz_axe" scale="4" />
+石英工具在功能上与铁工具完全一致，具有相同的伤害、耐久度、挖掘速度等。  
+有下界石英和[赛特斯石英](fluix_crystal.md)两种变体。  
 
-  <ItemImage id="certus_quartz_hoe" scale="4" />
-
-  <ItemImage id="certus_quartz_shovel" scale="4" />
-
-  <ItemImage id="certus_quartz_pickaxe" scale="4" />
-
-  <ItemImage id="certus_quartz_sword" scale="4" />
-</Row>
-
-<Row>
-  <ItemImage id="nether_quartz_axe" scale="4" />
-
-  <ItemImage id="nether_quartz_hoe" scale="4" />
-
-  <ItemImage id="nether_quartz_shovel" scale="4" />
-
-  <ItemImage id="nether_quartz_pickaxe" scale="4" />
-
-  <ItemImage id="nether_quartz_sword" scale="4" />
-</Row>
-
-Quartz tools are functionally identical to iron tools, with the same damage, durability, mining speed, etc.
-There are nether quartz and [certus quartz](fluix_crystal.md) variants.
-
-## Recipes
+## 配方
 
 <Column>
   <Row>

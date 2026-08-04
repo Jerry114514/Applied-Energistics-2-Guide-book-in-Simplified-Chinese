@@ -13,50 +13,43 @@ item_ids:
 
 # 无线终端
 
-无线终端是常规[终端](terminals.md)的便携式版本。它们和有线版的UI完全相同，除了它们没有用于**显示元件**的插槽，而是用于[升级卡](upgrade_cards.md)的插槽
+无线终端是普通有线[终端](terminals.md)的便携版本。它们与有线版本有完全相同的 UI，只是没有显示元件<ae2:view_cell>的槽位，而是有[升级卡](upgrade_cards.md)的槽位。
 
-为了将它们与网络配对，请将终端放入**无线访问点**右上角的插槽中来链接到网络。（插槽上有无线终端的描边，下面有一个箭头）
+为了将它们与网络配对，将终端插入连接到该网络的 ME 无线访问点<ae2:wireless_access_point>的右上角槽位中。（那个槽位上有无线终端的图片，下方有一个箭头）  
 
-它们必须在**无线访问点**的范围内才能正常工作。
+它们必须在 ME 无线访问点<ae2:wireless_access_point>的范围内才能工作。  
 
-如同手机一样，**充能器**便是无线终端的“充电器”。你需要将无线终端放入其中来为其“充电”。
+它们的能量可以在充能器<ae2:charger>中重新充能。  
 
 # 无线终端
 
+你的基础终端，现在可以便携使用了！在 ME 无线访问点<ae2:wireless_access_point>范围内的任何地方，查看和访问你的[网络存储](../ae2-mechanics/import-export-storage.md)的内容，并从你的[自动合成](../ae2-mechanics/autocrafting.md)配置中请求物品。
 
-你的基础版终端，现在可以带在身上并查看和访问您的[网络存储](../ae2-mechanics/import-export-storage.md)中的内容。
-并从**无线访问点**范围内的向您的[自动合成](..e2-mechanics/autocrafting.md)装置请求内容。
+## UI
 
-
-## 无线终端的UI
-
-详见 [终端](terminals.md)
+参见[终端](terminals.md)
 
 ## 升级
 
-无线终端支持以下类型的[升级](upgrade_cards.md):
+无线终端支持以下[升级](upgrade_cards.md)：  
+* 能源卡<ae2:energy_card>用于增加电池容量
 
-*   放入 **能量卡** 以提高续航。
-
-## 合成配方
-
-**此处请参照游戏内指南书**
+## 配方
 
 # 无线合成终端
 
+无线合成终端与普通无线终端类似，具有所有相同的设置和部分，但增加了一个合成网格，该网格会自动从[网络存储](../ae2-mechanics/import-export-storage.md)中补充。Shift 点击输出时要小心！
 
-无线合成终端类似于普通无线终端，具有相同的设置和功能区，但增加了合成格，该合成格将自动从[网络存储](../ae2-mechanics/import-export-storage.md)填充材料。输出合成结果时要小心！
+## UI
 
-## 无线合成终端的UI
-
-详见 [终端](terminals.md)
+参见[终端](terminals.md)
 
 ## 升级
 
-无线终端支持以下类型的[升级](upgrade_cards.md):
+无线合成终端支持以下[升级](upgrade_cards.md)：
 
-*   放入 **能量卡** 以提高续航。
+* 能源卡<ae2:energy_card>用于增加电池容量
 
-## 合成配方
+## 配方
 
-**此处请参照游戏内指南书**
+<RecipeFor id="wireless_crafting_terminal" />

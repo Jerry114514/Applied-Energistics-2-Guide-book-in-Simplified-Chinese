@@ -11,29 +11,18 @@ item_ids:
 - ae2:quantum_entangled_singularity
 ---
 
-# Singularity
+# 奇点
 
-<ItemImage id="singularity" scale="4" />
+奇点是一个极其致密的物质球。  
+在物质聚合器<ae2:condenser>的奇点模式下，用256,000个物品或桶制作。  
 
-A very compact ball of matter.
+## 量子缠绕态奇点
 
-Made with 256,000 items or buckets in a <ItemLink id="condenser" /> in singularity mode.
+量子缠绕态奇点是创建两个[量子网桥](quantum_bridge.md)之间连接所必需的，它们总是成对产生。要创建连接，请将一对量子缠绕态奇点中的一个放入每侧网桥的量子链接仓<ae2:quantum_link>中。  
 
-## Quantum Entangled Singularity
+它们是通过使末影珍珠<ae2:minecraft:ender_pearl>或末影粉<ae2:ender_dust>与奇点<ae2:singularity>之间发生反应来制作的。任何爆炸力都应该足以触发反应。  
 
-<ItemImage id="quantum_entangled_singularity" scale="4" />
+***几乎任何爆炸——甚至苦力怕——都可以！***  
 
-Required to create a connection between two [Quantum Network Bridges](quantum_bridge.md), they are always produced in matching
-pairs. To create a connection place 1 of the pair of quantum entangled singularities into the <ItemLink id="quantum_link" /> of
-the bridge on each side.
-
-They are crafted by causing a reaction between <ItemLink id="minecraft:ender_pearl" /> or <ItemLink id="ender_dust" />\
-and a <ItemLink id="singularity" />. Any explosive force should be enough to trigger the reaction.
-
-<RecipeFor id="quantum_entangled_singularity" />
-
-***Nearly any explosion - even creepers - will work.***
-
-Always produced in pairs, but only require a single <ItemLink id="singularity" />.
-
-It might be a good idea to label these with names when you create them using the vanilla anvil.
+总是成对产生，但只需要一个奇点<ae2:singularity>。  
+当你用原版铁砧创建这些时，给它们加上名称标签可能是个好主意。  

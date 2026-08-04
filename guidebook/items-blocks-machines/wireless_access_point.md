@@ -11,28 +11,23 @@ item_ids:
 - ae2:wireless_access_point
 ---
 
-# The Wireless Access Point
+# ME 无线访问点
 
-<BlockImage id="wireless_access_point" p:state="has_channel" scale="8" />
+允许通过无线终端<ae2:wireless_terminal>进行无线访问。  
 
-Allows wireless access via a <ItemLink id="wireless_terminal" />.
-Range and power usage is determined based on the number of <ItemLink id="wireless_booster" /> installed.
+范围和能量消耗取决于安装的无线信号增幅器<ae2:wireless_booster>数量。  
 
-A network can have any number of wireless access points with any number
-of <ItemLink id="wireless_booster" /> in each one, allowing you to optimize power usage
-and range by altering your setup.
+一个网络可以有任意数量的无线访问点，每个访问点中可以安装任意数量的无线信号增幅器<ae2:wireless_booster>，允许你通过改变配置来优化能量消耗和范围。  
 
-Requires a [channel](../ae2-mechanics/channels.md).
+需要1个[频道](../ae2-mechanics/channels.md)。  
 
-Also used to bind [wireless terminals](wireless_terminals.md)
+也用于绑定[无线终端](wireless_terminals.md)。  
 
-# Wireless Booster
+# 无线信号增幅器
 
-<ItemImage id="wireless_booster" scale="2" />
+用于增加无线访问点的范围。
 
-Used to increase the range of the wireless access point.
-
-## Recipes
+## 配方
 
 <RecipeFor id="wireless_access_point" />
 

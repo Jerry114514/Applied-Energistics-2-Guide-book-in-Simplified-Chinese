@@ -10,17 +10,14 @@ item_ids:
 - ae2:spatial_pylon
 ---
 
-# The Spatial Pylon
+# 空间塔
 
-<BlockImage id="spatial_pylon" p:powered_on="true" scale="8" />
+空间塔用于[空间 IO](../ae2-mechanics/spatial-io.md)中，用来生成空间力场并定义受影响的体积。  
 
-The Spatial Pylon is used in [spatial IO](../ae2-mechanics/spatial-io.md) to generate the spatial field and define the volume
-to be affected.
+每条连续的空间塔线路占用1个[频道](../ae2-mechanics/channels.md)。  
 
-Each continuous line of pylons uses 1 [channel](../ae2-mechanics/channels.md)
+空间塔线路必须至少2格长才能运作。  
 
-Lines of pylons must be at least 2 blocks long to function.
-
-## Recipe
+## 配方
 
 <RecipeFor id="spatial_pylon" />

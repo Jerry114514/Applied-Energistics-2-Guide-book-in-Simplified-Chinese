@@ -63,4 +63,5 @@
 * TransGo： `VsCode Extension` | `VsCode 扩展` 
 * Support from `DeepSeek Open Platform` ———— 来自`Deepseek开放平台`的协助: `https://platform.deepseek.com/`
 * MiniMax Ai Agent: `https://agent.minimaxi.com/`
-## * And you.
+* YouDao Lobster Agent Desktop ———— 有道开源的桌面Agent应用Lobster： `https://github.com/netease-youdao/lobsterai`
+## * And you. | 以及浏览，使用，支持这个项目的每一个 *你* 。
